@@ -1,0 +1,52 @@
+.custom-outline {
+    border: 3px;
+}
+
+.btn-txt{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+@media (max-width: 575.99px) {
+    .fs-sm {
+      font-size: 26px; /* Small screen and above */
+    }
+
+    .btn-sm{
+        width: 146px;
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 576px) {
+    .fs-sm {
+      font-size: 26px; /* Small screen and above */
+    }
+
+    .btn-sm{
+        width: 146px;
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+}
+  
+@media (min-width: 768px) {
+
+}
+  
+@media (min-width: 992px) {
+    .fs-lg {
+        font-size: 40px; /* Large screen and above */
+    }
+
+    .btn-lg {
+        width: 248px;
+        margin-left: 10px; 
+        margin-right: 10px;
+    }
+}
+  
+@media (min-width: 1200px) {
+
+}
