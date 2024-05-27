@@ -8,9 +8,10 @@ export const Home = () =>{
     return(
         <div style={{overflow: "hidden"}}>
             <div className="section-container">
-                <NavBar />
+            <NavBar />
                 <img src={myImage} className="section-img"></img>
                 <div className="section-overlay d-flex align-items-center">
+                    
                     <Container>
                         <h1 className="title-1" style={{fontSize: "4rem"}}>JORDAN COOLIGAN PANG</h1>
                         <h3 className="title-2" style={{fontSize: "2.5rem"}}>Multimedia Developer & Designer</h3>
