@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import { NavBar } from '../components/NavBar';
+import { NavBar2 } from '../components/NavBar2';
 import { CustomBtn } from "../components/CustomBtn";
 import myImage from '../assets/images/4.jpg';
 
@@ -8,7 +9,7 @@ export const Home = () =>{
     return(
         <div style={{overflow: "hidden"}}>
             <div className="section-container">
-            <NavBar />
+                
                 <img src={myImage} className="section-img"></img>
                 <div className="section-overlay d-flex align-items-center">
                     

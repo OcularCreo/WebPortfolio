@@ -1,23 +1,35 @@
-import { useRef } from "react";
+import { useState } from "react";
+import '../styles/Navbar.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
+
 
 export const NavBar = () => {
     
-    const navRef = useRef();    //useRef returns obj with single property "current". Used to store ref of DOM element
+    const [isOpen, setIsOpen] = useState(false);
 
-    //function toggles the current nav ref's classes (removing or adding the class)
-    const showNavBar = () =>{
-        navRef.current.classList.toggle("responsive_nav");
+    const handleToggle = () =>{
+        setIsOpen(!isOpen);
     }
 
     return (
-        <header>
-            <a href="#">JCP</a>
-            <nav ref={navRef}>
-                <a>About</a>
-                <button className="nav-btn nav-close-btn" onClick={showNavBar}>close</button>
-            </nav>
-            <button className="nav-btn" onClick={showNavBar}>hamberger</button>
-        </header>
+
+        <nav className="navbar">
+            <div className="navbar-container">
+                <div className="navbar-title">JCP.</div>
+                <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+                <div className="navbar-close" onClick={handleToggle}>
+                    <FaTimes />
+                </div>
+                </div>
+                <div className="navbar-toggle" onClick={handleToggle}>
+                    <FaBars />
+                </div>
+            </div>
+        </nav>
         
     );
 }
