@@ -22,7 +22,7 @@
     text-decoration: none;
 }
 
-.nav-links a{
+.nav-page{
     color: white; 
     font-family: 'Montserrat', sans-serif;
     font-size: 1.35rem; 
@@ -50,11 +50,6 @@
     display: none;
 }
 
-.menu-info a{
-    font-size: 1rem;
-    font-weight: 300;
-}
-
  /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
 
  /* Extra small devices (phones, 600px and down) */     
@@ -66,6 +61,12 @@
 
     .menu-info{
         display: block;
+    }
+
+    .menu-info-icon{
+        margin-left: 50%; 
+        margin-right: 50%;
+        font-size: 30px;
     }
 
     .menu-email{
@@ -112,7 +113,7 @@
         opacity: 1;
     }
 
-    .nav-links a{
+    .nav-page{
         font-weight: 700;
         font-size: clamp(20px, 2.75vh, 28px);
         margin: 0;

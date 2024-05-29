@@ -1,6 +1,9 @@
 import { useState, useRef } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Container, Row, Col } from "react-bootstrap";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import "../styles/Navbar2.css"
 
 export const NavBar2 = () => {
@@ -17,25 +20,24 @@ export const NavBar2 = () => {
             <a className="nav-title" href="">JCP.</a>
 
             <div className={`nav-links ${isOpen ? "active": ""}`}>
-                <a href="">About</a>
-                <a href="">Game Dev</a>
-                <a href="">Photography</a>
-                <a href="">web dev</a>
-                <a href="">2D</a>
-                <a href="">3D</a>
-                <a href="">extras</a>
-                
+                <a className="nav-page" href="">About</a>
+                <a className="nav-page" href="">Game Dev</a>
+                <a className="nav-page" href="">Photography</a>
+                <a className="nav-page" href="">web dev</a>
+                <a className="nav-page" href="">2D</a>
+                <a className="nav-page" href="">3D</a>
+                <a className="nav-page" href="">extras</a>
                 <button className="nav-btn nav-btn-close" onClick={toggleMenu}> <FaTimes /> </button>
 
                 {isOpen && (
-                    <Container className="menu-info">
+                    <Container className="menu-info" style={{marginTop: "100px"}}>
                         <Row className="justify-content-center">
                             <p className="menu-email">cooliganpangjordan@gmail.com</p>
                         </Row>
-                        <Row className="justify-content-center">
-                            <Col><a href="">Gmail</a></Col>
-                            <Col><a href="">Gmail</a></Col>
-                            <Col><a href="">Gmail</a></Col>
+                        <Row className="">
+                            <Col><a href="" className=""><FontAwesomeIcon icon={faEnvelope} style={{color: "#ffffff",}} /></a></Col>
+                            <Col><a href="" className=""><FontAwesomeIcon icon={faGithub} style={{color: "#ffffff",}} /></a></Col>
+                            <Col><a href="" className=""><FontAwesomeIcon icon={faLinkedinIn} style={{color: "#ffffff",}} /></a></Col>
                         </Row>
                     </Container>
                     )
