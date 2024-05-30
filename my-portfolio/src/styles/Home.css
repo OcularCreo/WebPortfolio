@@ -1,0 +1,96 @@
+.img-section{
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.section-overlay{
+    background-color: rgba(23, 24, 29, 0.4);
+    width: 100%; 
+    height: 100%;
+}
+
+.home-section{
+    background-image: url(../assets/images/4.jpg);
+    background-position-y: center;
+}
+
+.img-section h1, .img-section h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    z-index: 1;
+}
+
+.name-title{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.descr-title{
+    font-weight: 300;
+}
+
+
+ /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
+
+ /* Extra small devices (phones, 600px and down) */     
+ @media only screen and (max-width: 600px) {
+
+    .name-title{
+        font-size: clamp(20px, 12vw, 60px);
+    }
+
+    .descr-title{
+        font-size: clamp(15px, 4.25vw, 22px);
+    }
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 601px) {
+    
+    .name-title{
+        font-size: clamp(10px, 4.95vw, 60px);
+        margin-bottom: 1.25vh;
+    }
+
+    .descr-title{
+        font-size: clamp(8px, 3vw, 42px);
+    }
+
+    .home-section{
+        background-position-x: 78%;
+    }
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    
+    .name-title{
+        font-size: clamp(10px, 3.25vw, 90px);
+        margin-bottom: 0;
+    }
+
+    .descr-title{
+        font-size: clamp(10px, 2.025vw, 60px);
+    }
+
+    .home-section{
+        background-position-x: auto;
+    }
+
+ }
