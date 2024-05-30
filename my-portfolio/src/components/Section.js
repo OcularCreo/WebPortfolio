@@ -1,10 +1,7 @@
 import React from "react";
 
-export const Section = ({imageURL}) =>{
+export const Section = ({imageURL, setHeight}) =>{
     return (
-        <div
-            className=""    
-        >
-        </div>
+        <div></div>
     );
 }

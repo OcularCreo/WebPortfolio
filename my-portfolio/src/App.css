@@ -95,3 +95,18 @@
 
 
 /* CUSTOM NAV BAR CSS */
+.test{
+  width: 100%;
+  height: 100px;
+  background-image: url(./assets/images/5.jpg);
+}
+
+.test-overlay {
+  background-color: rgba(23, 24, 29, 0.9);
+  width: 100%; 
+  height: 100%;
+}
+
+.test-text{
+  color: white;
+}

@@ -1,14 +1,14 @@
 import React from "react";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import { NavBar } from '../components/NavBar';
-import { NavBar2 } from '../components/NavBar2';
 import { CustomBtn } from "../components/CustomBtn";
 import myImage from '../assets/images/4.jpg';
 
 export const Home = () =>{
     return(
         <div style={{overflow: "hidden"}}>
-            <div className="section-container">
+            
+            <div className="section-container home-section">
                 
                 <img src={myImage} className="section-img"></img>
                 <div className="section-overlay d-flex align-items-center">
@@ -21,28 +21,20 @@ export const Home = () =>{
                             <CustomBtn btnTxt="Portfolio"/>
                         </Container>
                         
-                        {/*
-
-                        <Container className="mt-5">
-                            <Row fluid className="justify-content-center">
-                                <Col className="col-6 col-md-3 col-lg-2 mb-2 mx-1">
-                                    <Button variant="outline-light rounded-pill border-2" className="w-100" size="lg">
-                                        <span className="title-4">RESUME</span>
-                                    </Button>
-                                </Col>
-                                <Col className="col-6 col-md-3 col-lg-2 mb-2 mx-1">
-                                    <Button variant="outline-light rounded-pill border-2" className="w-100" size="lg">
-                                        <span className="title-4">PORTFOLIO</span>
-                                    </Button>
-                                </Col>
-                            </Row>
-                        </Container>
-
-                        */}
                     </Container>
                 </div>
             </div>
-            <div style={{height: "100px"}}></div>
+
+            {/* Section 2: About me */}
+            <div className="section-about">
+                <div className="section-overlay">
+                    
+                    <p>test stuff hehe</p>
+
+                </div>
+            </div>
+
+
         </div>
     );
 }
