@@ -19,7 +19,7 @@ export const Home = () =>{
                         <h2 className="descr-title">Multimedia Developer & Designer</h2>
                         
                         {/* Buttons Container */}
-                        <Container className="mt-5">
+                        <Container className="btn-container">
                             <CustomBtn btnTxt="Resume"/>
                             <CustomBtn btnTxt="Portfolio"/>
                         </Container>
@@ -30,7 +30,7 @@ export const Home = () =>{
             {/* Section 2: About me */}
             <div className="img-section about-section">      {/* BG image container */}                                     
                 <div className="section-overlay">            {/* Image overlay container */}
-                
+                    <p style={{color: "white"}}>Hello World</p>
                 </div>
             </div>
 

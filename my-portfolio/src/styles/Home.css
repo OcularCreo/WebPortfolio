@@ -17,6 +17,20 @@
     background-position-y: center;
 }
 
+.about-section{
+    background-image: url(../assets/images/5.jpg); 
+    background-position: 0% 10%;
+}
+
+.about-section .section-overlay{
+    background: linear-gradient(to right, 
+        rgba(20, 21, 22, 0) 0%, 
+        rgba(20, 21, 22, 0.2) 20%, 
+        rgba(20, 21, 22, 0.5) 50%, 
+        rgba(20, 21, 22, 0.8) 80%, 
+        rgba(20, 21, 22, 1) 100%);
+}
+
 .img-section h1, .img-section h2 {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -40,11 +54,23 @@
  @media only screen and (max-width: 600px) {
 
     .name-title{
-        font-size: clamp(20px, 12vw, 60px);
+        font-size: clamp(20px, 12vw, 75px);
     }
 
     .descr-title{
         font-size: clamp(15px, 4.25vw, 22px);
+    }
+
+    .home-section{
+        background-position-x: 19.5%;
+    }
+
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5.5vh;
     }
 
  }
@@ -53,7 +79,7 @@
  @media only screen and (min-width: 601px) {
     
     .name-title{
-        font-size: clamp(10px, 4.95vw, 60px);
+        font-size: clamp(10px, 4.9vw, 55px);
         margin-bottom: 1.25vh;
     }
 
@@ -65,6 +91,10 @@
         background-position-x: 78%;
     }
 
+    .btn-container{
+        margin-top: 5.5vw;
+    }
+
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
@@ -74,6 +104,10 @@
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
+
+    .btn-container{
+        margin-top: 3vw;
+    }
 
  }
  
