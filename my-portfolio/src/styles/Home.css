@@ -18,17 +18,13 @@
 }
 
 .about-section{
-    background-image: url(../assets/images/5.jpg); 
-    background-position: 0% 10%;
+    background-image: url(../assets/images/Spiral-cropped-01.png); 
+    background-position-y: center;
+    background-position-x: 20%;
 }
 
 .about-section .section-overlay{
-    background: linear-gradient(to right, 
-        rgba(20, 21, 22, 0) 0%, 
-        rgba(20, 21, 22, 0.2) 20%, 
-        rgba(20, 21, 22, 0.5) 50%, 
-        rgba(20, 21, 22, 0.8) 80%, 
-        rgba(20, 21, 22, 1) 100%);
+    display: flex;
 }
 
 .img-section h1, .img-section h2 {
@@ -47,6 +43,58 @@
     font-weight: 300;
 }
 
+
+.profile-div{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 37vw;
+}
+
+.profile-img{
+    border-radius: 50%;
+    width: 25vw; 
+    height: 25vw; 
+    object-fit: cover;
+    object-position: 0% 15%;
+    opacity: 100%;
+}
+
+.about-title{
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.about-title.t1{
+    font-size: 96px;
+}
+
+.about-title.t2{
+    font-size: 40px;
+}
+
+.about-title .thick{
+    font-weight: 900;
+}
+
+.about-title .thin{
+    font-weight: 300;
+}
+
+.about-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    flex: 1;
+}
+
+.about-p{
+    font-size: 32px;
+    color: white;
+}
 
  /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
 
