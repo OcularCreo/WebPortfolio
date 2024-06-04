@@ -28,8 +28,11 @@
 
     .btn-element{
         width: 19vw;
+
+        /*
         margin-left: 1.3vw; 
         margin-right: 1.3vw;
+        */
     }
 
  }
@@ -48,8 +51,11 @@
 
     .btn-element{
         width: 12.75vw;
+
+        /*
         margin-left: 1.3vw; 
         margin-right: 1.3vw;
+        */
     }
 
  }

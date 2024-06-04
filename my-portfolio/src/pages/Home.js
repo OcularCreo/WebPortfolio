@@ -1,38 +1,12 @@
 import React from "react";
-import { Button, Container, Row, Col } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { CustomBtn } from "../components/CustomBtn";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Home.css";
 
 import profileImg from "../assets/images/8.jpg";
 
 export const Home = () =>{
-    
-    const handleClick = (event) =>{
-        const posX = event.clientX; 
-        const posY = event.clientY; 
-
-        console.log(`Clicked at position: ${posX}px, ${posY}px`);
-    }
-
-
-    const updateProfilePos = () =>{
-
-        const vw = window.innerWidth;   //get the viewport width 
-        const vh = window.innerHeight;  //get the viewport height
-
-        const imageRatio = 16 / 9;      //calculate the ratio of the image (1920 : 1080)
-        const viewportRatio = vw / vh;  //calculate the aspect ratio of the viewport window
-
-        //when the viewport is wider than the image aspect ratio
-        if(imageRatio < viewportRatio){
-
-            const scaledRatio = vw / imageRatio;
-            
-
-        }
-
-    }
-
 
     return(
         <div>
@@ -56,7 +30,7 @@ export const Home = () =>{
             </div>
 
             {/* Section 2: About me */}
-            <div className="img-section about-section" onClick={handleClick}>         {/* BG image container */}                                     
+            <div className="img-section about-section">         {/* BG image container */}                                     
                 <div className="section-overlay">               {/* Image overlay container */}
                     
                     {/* Profile image div */}
@@ -73,8 +47,12 @@ export const Home = () =>{
                         <div className="">
                             <h1 className="about-title t2"><span className="thin">my</span> <span className="thick">services</span></h1>
                         </div>
-                        <div className="">
+                        <div className="about-links">
                             <CustomBtn btnTxt="Resume" />
+                            <a className="about-icon" href=""><FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#ffffff",}} /></a>
+                            <a className="about-icon" href=""><FontAwesomeIcon icon="fa-brands fa-linkedin-in" style={{color: "#ffffff",}} /></a>
+                            <a className="about-icon" href=""><FontAwesomeIcon icon="fa-regular fa-envelope" style={{color: "#ffffff",}} /></a>
+                            <a className="about-email-link" >cooliganpangjordan@gmail.com</a>
                         </div>
                     </div>
                 </div>
