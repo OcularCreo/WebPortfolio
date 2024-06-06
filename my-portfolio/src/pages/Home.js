@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Home.css";
 
 import profileImg from "../assets/images/8.jpg";
+import { MultiCarousel } from "../components/MultiCarousel";
 
 export const Home = () =>{
 
@@ -45,7 +46,8 @@ export const Home = () =>{
                             <p className="about-p">I have a versatile background, including but not limited to Game Development, Photography, Web Development, and Animation. </p>
                         </div>
                         <div className="">
-                            <h1 className="about-title t2"><span className="thin">my</span> <span className="thick">services</span></h1>
+                            <h1 className="about-title t2"><span className="thin">my</span> <span className="thick">education</span></h1>
+                            <MultiCarousel />
                         </div>
                         <div className="about-links">
                             <CustomBtn btnTxt="Resume" />
