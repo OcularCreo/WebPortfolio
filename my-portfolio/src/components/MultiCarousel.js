@@ -33,32 +33,51 @@ export const MultiCarousel = () =>{
     const [currentIdx, setCurIdx] = useState(0);        //used to track the current slide index
 
     //function for moving to the next slides
-    const nextSlide = () =>{
+    function nextSlide(){
         
+        //set the current index with the following logic
+        setCurIdx(index =>{
+            if(index === (data.length -1)) {
+                return 0;           //if you're at the last index, loop back to the first
+            } else {
+                return index + 1;   //otherwise add one to the current index
+            }
+        })
     }
 
     //funciton for moving to the previous slide
-    const prevSlide = () =>{
-
+    function prevSlide(){
+        
+        //set the current index with the following logic
+        setCurIdx(index =>{
+            if(index === 0) {
+                return data.length -1; //if you're at the first index, loop back to the last
+            } else {
+                return index - 1;      //otherwise subtract one from the current index
+            }
+        })
     }
 
-
-
     return (
-        <div className="carousel">
-            {
-                //loop through all indexes in data, create the following elements
-                data.map((d) => (
-                    <div className="box">
-                        
-                        <h1 className="title">{d.Title}</h1>
-                        <p className="icon">{d.icon}</p>
-                        <p className="desc">{d.description}</p>
+        <div>
+            <div className="carousel">
+                {
+                    //loop through all indexes in data, create the following elements
+                    data.map((d) => (
+                        <div className="box" style={{translate: `${-100 * currentIdx}%`}}>
+                            
+                            <h1 className="title">{d.Title}</h1>
+                            <p className="icon">{d.icon}</p>
+                            <p className="desc">{d.description}</p>
 
-                    </div>
-                ))
-            }
+                        </div>
+                    ))
+                }
+            </div>
+            <button onClick={prevSlide}>Left</button>
+            <button onClick={nextSlide}>Right</button>
         </div>
+        
     );
 
 }

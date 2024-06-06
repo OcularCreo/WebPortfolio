@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Home.css";
 
 import profileImg from "../assets/images/8.jpg";
-import { MultiCarousel } from "../components/MultiCarousel";
+import { MultiCarousel } from "../components/MultiCarousel.js";
 
 export const Home = () =>{
 
