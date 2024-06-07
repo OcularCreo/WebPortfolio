@@ -49,6 +49,8 @@
     justify-content: end;
     align-items: center;
     width: 40vw;
+
+    flex-shrink: 0;
 }
 
 .profile-img{
@@ -81,6 +83,8 @@
     text-align: start;
     flex: 1;
     margin-left: 5vw;
+
+    flex-grow: 0;
 }
 
 .about-links{

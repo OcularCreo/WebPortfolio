@@ -1,6 +1,6 @@
 .carousel{
     display: flex;
-    gap: 15px;
+    gap: 0px;
     overflow: hidden;
 }
 
@@ -16,7 +16,7 @@
     
     flex-grow: 0;
     flex-shrink: 0;
-    transition: translate 300ms ease-in-out;
+    /*transition: translate 300ms ease-in-out;*/
 }
 
 .box .title{

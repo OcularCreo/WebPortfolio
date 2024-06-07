@@ -1,5 +1,4 @@
-
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../styles/Education.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -30,7 +29,64 @@ export const MultiCarousel = () =>{
     ]; 
 
     const isMobileScreen = window.innerWidth <= 768;    //used to determine if the screen is currently at a moblie size
-    const [currentIdx, setCurIdx] = useState(0);        //used to track the current slide index
+    const [currentIdx, setCurIdx] = useState(1);        //used to track the current slide index
+
+    const carouselRef = useRef();                       //used to keep a reference of the carousel div
+
+    const dupData = [data[data.length -1], ...data, data[0]];   //used to display the content of the carousel
+
+    //handles the carousel actions moving either to the next or previous
+    const actionHandler = (mode) =>{
+        
+        const children = Array.from(carouselRef.current.children);  //get the children of the carousel array here
+
+        children.map(child =>{
+            child.style.transitionDuration = "300ms";               //add the transition duration back here (incase it was removed)
+        })
+        
+        //if the passed mode is previous and the current index is not equal to 0
+        if(mode === "prev" && currentIdx !== 0){
+            setCurIdx(currentIdx - 1);
+        } 
+        //if the passed mode is next and the current index is not equal to the last index
+        else if(mode === "next" && currentIdx !== (dupData.length -1)){
+            setCurIdx(currentIdx + 1);
+        }
+    }
+
+    //called whenever currentIdx is changed
+    useEffect(() =>{
+
+        //function for transition ends
+        const transitionEnd = () =>{
+
+            const children = Array.from(carouselRef.current.children);
+
+            children.map(child =>{
+
+                //if the current index is 0, set transition duration to 0 and then set curIdx to second last index
+                if(currentIdx === 0){
+                    child.style.transitionDuration = "0ms";
+                    setCurIdx(dupData.length -2);
+                } 
+                //if the current index is the last index, set duration to 0 and then set curIdx to second index
+                else if (currentIdx === (dupData.length -1)){
+                    child.style.transitionDuration = "0ms";
+                    setCurIdx(1);
+                }
+                
+            })
+        }; 
+
+        //add the event listener to the dom
+        carouselRef.current.addEventListener("transitionend", transitionEnd);
+
+        //clean up the event listener
+        return () => {
+            carouselRef.current.removeEventListener("transitionend", transitionEnd);
+        }
+
+    }, [currentIdx]);
 
     //function for moving to the next slides
     function nextSlide(){
@@ -60,10 +116,10 @@ export const MultiCarousel = () =>{
 
     return (
         <div>
-            <div className="carousel">
+            <div className="carousel" ref={carouselRef}>
                 {
                     //loop through all indexes in data, create the following elements
-                    data.map((d) => (
+                    dupData.map((d) => (
                         <div className="box" style={{translate: `${-100 * currentIdx}%`}}>
                             
                             <h1 className="title">{d.Title}</h1>
@@ -74,8 +130,8 @@ export const MultiCarousel = () =>{
                     ))
                 }
             </div>
-            <button onClick={prevSlide}>Left</button>
-            <button onClick={nextSlide}>Right</button>
+            <button onClick={() => actionHandler("prev")}>Left</button>
+            <button onClick={() => actionHandler("next")}>Right</button>
         </div>
         
     );
