@@ -1,22 +1,12 @@
-.carousel{
-    display: flex;
-    gap: 0px;
-    overflow: hidden;
-}
-
 .box{
     font-family: "Montserrat", sans-serif;
     color: white; 
     border-style: solid;
+    text-align: center;
     display: flex; 
     flex-direction: column;
-    text-align: center;
     align-items: center;
     justify-content: center;
-    
-    flex-grow: 0;
-    flex-shrink: 0;
-    /*transition: translate 300ms ease-in-out;*/
 }
 
 .box .title{
@@ -26,7 +16,7 @@
 
 .box .desc{
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(5px, 1vw, 50px);
     white-space: pre-line;
 }
 
@@ -67,7 +57,7 @@
     }
 
     .box .desc{
-        font-size: clamp(10px, 1.25vw, 100px);
+        font-size: clamp(10px, 1vw, 100px);
     }
 
 

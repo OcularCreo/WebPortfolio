@@ -106,6 +106,16 @@
     text-decoration: none;
 }
 
+.about-edu{
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+.edu-box-wrapper{
+    display: flex;
+    gap: 1vw;
+}
+
  /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
 
  /* Extra small devices (phones, 600px and down) */     
