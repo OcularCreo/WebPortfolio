@@ -1,0 +1,54 @@
+.knowledge-wrapper{
+    color: white; 
+    font-family: "Montserrat", sans-serif;
+    width: 450px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.icon{
+    font-size: clamp(2rem, 2.5vw + 1rem, 4rem);
+}
+
+.title{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.desc{
+    font-size: 2.25rem;
+}
+
+ /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
+
+ /* Extra small devices (phones, 600px and down) */     
+ @media only screen and (max-width: 600px) {
+
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 601px) {
+    
+
+ }
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+    
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+
+    
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+
+ }

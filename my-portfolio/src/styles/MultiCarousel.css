@@ -1,5 +1,25 @@
 .carousel{
+    width: 10rem;
     display: flex;
     gap: 0px;
     overflow: hidden;
+}
+
+.carousel-btn{
+    color: white; 
+    font-size: 2rem;
+    background: none;
+    border: none;
+}
+
+.carousel-btn:hover{
+    color: rgb(200, 200, 200);
+}
+
+.btn-l{
+    margin-left: 1.5rem;
+}
+
+.btn-r{
+    margin-right: 1.5rem;
 }

@@ -5,13 +5,12 @@
     text-align: center;
     display: flex; 
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .box .title{
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: auto;
 }
 
 .box .desc{
@@ -20,36 +19,98 @@
     white-space: pre-line;
 }
 
+.top {
+    height: 25%;
+    display: flex; 
+    flex-direction: column;
+}
+
+.middle{
+    height: 30%;
+}
+
+.bottom {
+    padding-top: 10%;
+}
+
+
  /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
 
  /* Extra small devices (phones, 600px and down) */     
  @media only screen and (max-width: 600px) {
 
+    .box{
+        width: 10rem;
+        height: 10rem;
+        border-radius: 2rem;
+        border-width: 2px;
+    }
+
+    .box .title{
+        font-size: 1rem;
+    }
+
+    .box .icon{
+        font-size: 1.75rem;
+    }
+
+    .box .desc{
+        font-size: .65rem;
+    }
 
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 601px) {
     
+    .box{
+        width: 27vw;
+        height: 27vw;
+        border-radius: 5vw;
+        border-width: 2px;
+    }
+
+    .box .title{
+        font-size: 3.25cqw;
+    }
+
+    .box .icon{
+        font-size: 5cqw;
+    }
+
+    .box .desc{
+        font-size: 1.7cqw;
+    }
 
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
 
+    
+
  }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
 
+    
+
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
     .box{
         width: 15.89vw;
         height: 15.89vw;
         border-radius: 3vw;
+        border-width: 3px;
     }
 
     .box .title{
         font-size: clamp(10px, 1.875vw, 100px);
+        margin-top: auto;
     }
 
     .box .icon{
@@ -59,11 +120,5 @@
     .box .desc{
         font-size: clamp(10px, 1vw, 100px);
     }
-
-
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
 
  }

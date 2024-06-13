@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/MultiCarousel.css";
 
-export const MultiCarousel = (props) =>{
+export const MultiCarousel = ({className, items}) =>{
 
-    const items = Array.from(props.items);  //extend the items list for the infinite loop
-    const extendedItems = [items[items.length -1], ...items, items[0]];
+    const carouselItems = Array.from(items);  //extend the items list for the infinite loop
+    const extendedItems = [carouselItems[carouselItems.length -1], ...carouselItems, carouselItems[0]];
 
     const [currentIdx, setCurIdx] = useState(1);        //used to track the current slide index
     const carouselRef = useRef();                       //used to keep a reference of the carousel div
@@ -63,7 +64,8 @@ export const MultiCarousel = (props) =>{
     }, [currentIdx]);
 
     return (
-        <div>
+        <div className={`d-flex ${className}`}>
+            <button className="carousel-btn btn-r" onClick={() => actionHandler("prev")}><FontAwesomeIcon icon="fa-solid fa-caret-left" /></button>
             <div className="carousel" ref={carouselRef}>
                 {
                     extendedItems.map((element) => (
@@ -74,8 +76,7 @@ export const MultiCarousel = (props) =>{
                 }
                 
             </div>
-            <button onClick={() => actionHandler("prev")}>Left</button>
-            <button onClick={() => actionHandler("next")}>Right</button>
+            <button className="carousel-btn btn-l" onClick={() => actionHandler("next")}><FontAwesomeIcon icon="fa-solid fa-caret-right" /></button>
         </div>
         
     );

@@ -1,3 +1,15 @@
+h1, h2, p, .about-email-link{
+    color: white !important;
+}
+
+h1, h2 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1{
+    text-transform: uppercase !important;
+}
+
 .img-section{
     position: relative;
     background-size: cover;
@@ -17,90 +29,52 @@
     background-position-y: center;
 }
 
-.about-section{
-    background-image: url(../assets/images/Spiral-cropped-01.png); 
-    background-position-y: center;
-    background-position-x: 23%;
-}
-
 .about-section .section-overlay{
     display: flex;
-    color: white;
+}
+
+.portfolio-section{
+    background: rgb(39,42,51);
+    background: linear-gradient(0deg, rgba(39,42,51,1) 0%, rgba(20,21,22,1) 100%);
+    padding-bottom: 5rem;
 }
 
 .img-section h1, .img-section h2 {
-    color: white;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     z-index: 1;
-}
-
-.name-title{
-    font-weight: 900;
-    text-transform: uppercase;
 }
 
 .descr-title{
     font-weight: 300;
 }
 
-.profile-div{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    width: 40vw;
-
-    flex-shrink: 0;
-}
-
 .profile-img{
     border-radius: 50%;
-    width: 30vw; 
-    height: 30vw; 
     object-fit: cover;
     object-position: 0% 15%;
     opacity: 100%;
 }
 
-.about-title{
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    text-align: left;
-}
-
-.about-title .thick{
+.thick{
     font-weight: 900;
 }
 
-.about-title .thin{
+.thin{
     font-weight: 300;
-}
-
-.about-desc{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-    flex: 1;
-    margin-left: 5vw;
-
-    flex-grow: 0;
-}
-
-.about-links{
-    display: flex; 
-    justify-content: flex-start;
-    align-items: center;
-    gap: 1vw;
 }
 
 .about-icon{
     font-size: 3.5vw;
 }
 
+.about-icons{
+    display: flex;
+    gap: 1vw;
+}
+
 .about-email-link{
     font-size: 1vw;
-    color: white; 
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     text-decoration: none;
@@ -141,8 +115,76 @@
         margin-top: 5.5vh;
     }
 
+    .about-section .section-overlay{
+        flex-direction: column;
+        align-items: center;
+        background: rgb(20,21,22);
+        background: linear-gradient(0deg, rgba(20,21,22,1) 0%, rgba(20,21,22,0) 100%);
+    }
+
+    .profile-img{
+        width: 13.125rem;  
+        height: 13.125rem; 
+    }
+
+    .profile-div{
+        height: 50%;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .about-section{
+        background-image: url(../assets/images/Spiral-center-crop-01.png); 
+        background-position-x: center;
+        background-position-y: 0%;
+    }
+
+    .about-section .section-overlay{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .about-title.t1{
-        font-size: clamp(10px, 1.8vw, 100px);
+        font-size: 2.25rem;
+        margin-top: 2rem;
+    }
+
+    .about-p{
+        font-size: 1rem;
+        text-align: left;
+        padding-left: 12%;
+        padding-right: 8%;
+    }
+
+    .about-title.t2{
+        font-size: 1.5rem;
+    }
+
+    .about-icons{
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .about-icon{
+        font-size: 2.75rem;
+    }
+
+    .about-edu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-links{
+        margin-top: auto;
+        margin-bottom: 8%;
+    }
+
+    .about-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
     }
 
  }
@@ -174,6 +216,85 @@
         font-size: clamp(10px, 3.33vw, 100px);
     }
 
+    .about-section{
+        background-image: url(../assets/images/Spiral-center-crop-01.png); 
+        background-position-x: center;
+    }
+
+    .about-desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-section .section-overlay{
+        flex-direction: column;
+        align-items: center;
+        background: rgb(20,21,22);
+        background: linear-gradient(0deg, rgba(20,21,22,1) 0%, rgba(20,21,22,0) 100%);
+    }
+
+    .profile-img{
+        width: 282px; 
+        height: 282px; 
+    }
+
+    .profile-div{
+        height: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-title.t1{
+        font-size: 8.33vw;
+    }
+
+    .about-p{
+        font-size: 2.9vw;
+        text-align: left;
+        margin-left: 8vw;
+    }
+
+    .about-title.t2{
+        font-size: 2.5rem;
+    }
+
+    .about-icons{
+        justify-content: center;
+        gap: 1.75rem;
+    }
+
+    .about-icon{
+        font-size: 2.5rem;
+    }
+
+    .about-email-link{
+        font-size: 1.5rem;
+    }
+
+    .knowledge-section .items{
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8%;
+    }
+
+    .knowledge-section{
+        padding: 2rem;
+        padding-top: 8rem;
+        padding-bottom: 10rem;
+    }
+
+    .knowledge-tite{
+        margin-bottom: 4rem;
+        font-size: 45px;
+    }
+
+    .portfolio-title{
+        font-size: 4rem;
+    }
+
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
@@ -186,14 +307,6 @@
 
     .btn-container{
         margin-top: 3vw;
-    }
-
-    .about-p{
-        font-size: clamp(10px, 1.66vw, 48px);
-    }
-
-    .about-title.t2{
-        font-size: clamp(10px, 2.1vw, 100px);
     }
 
  }
@@ -216,6 +329,68 @@
 
     .about-title.t1{
         font-size: clamp(10px, 5vw, 200px);
+    }
+
+    .about-section{
+        background-image: url(../assets/images/Spiral-cropped-01.png); 
+        background-position-y: center;
+        background-position-x: 23%;
+    }
+
+    .about-desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: start;
+        flex: 1;
+        margin-left: 5vw;
+    
+        flex-grow: 0;
+    }
+
+    .about-section .section-overlay{
+        flex-direction: row;
+        background: rgb(20,21,22);
+        background: linear-gradient(270deg, rgba(20,21,22,1) 0%, rgba(20,21,22,0) 100%);
+    }
+
+    .profile-img{
+        width: 30vw; 
+        height: 30vw; 
+    }
+
+    .profile-div{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        width: 40vw;
+    
+        flex-shrink: 0;
+    }
+
+    .about-p{
+        font-size: clamp(10px, 1.66vw, 48px);
+        margin: 0;
+    }
+
+    .about-title.t2{
+        font-size: clamp(10px, 2.1vw, 100px);
+    }
+
+    .about-links{
+        display: flex; 
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1vw;
+    }
+
+    .about-icons{
+        gap: 1vw;
+    }
+
+    .about-email-link{
+        font-size: 1vw;
     }
 
  }
