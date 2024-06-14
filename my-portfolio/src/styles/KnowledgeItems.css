@@ -1,22 +1,10 @@
 .knowledge-wrapper{
     color: white; 
     font-family: "Montserrat", sans-serif;
-    width: 450px;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.icon{
-    font-size: clamp(2rem, 2.5vw + 1rem, 4rem);
 }
 
 .title{
     font-weight: 700;
-    font-size: 2.5rem;
-}
-
-.desc{
-    font-size: 2.25rem;
 }
 
  /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
@@ -24,31 +12,89 @@
  /* Extra small devices (phones, 600px and down) */     
  @media only screen and (max-width: 600px) {
 
+    .knowledge-wrapper{
+        width: 16rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        display: flex; 
+        text-align: left;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .title{
+        font-size: 1rem;
+    }
+    
+    .desc{
+        font-size: 1rem;
+    }
+
+    .icon{
+        font-size: 2rem;
+        width: 3rem;
+        text-align: center;
+    }
+
+    .mobile-wrapper{
+        margin-left: 1.25rem;
+        width: 12rem;
+    }
 
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 601px) {
     
+    .knowledge-wrapper{
+        width: 10rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .icon{
+        font-size: 2rem;
+    }
+    
+    .title{
+        font-size: 1rem;
+    }
+    
+    .desc{
+        font-size: 1rem;
+    }
 
  }
 
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
 
-    
-
  }
  
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
-
-    
 
  }
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
  @media only screen and (min-width: 1200px) {
 
+    .knowledge-wrapper{
+        width: clamp(8rem, 22.6vw + 2rem, 28.125rem);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .icon{
+        font-size: clamp(2rem, 2.5vw + 1rem, 4rem);
+    }
+    
+    .title{
+        font-size: clamp(1.25rem, 1vw + 1rem, 2.25rem);
+    }
+    
+    .desc{
+        font-size: clamp(1.25rem, 1vw + 1rem, 2.25rem);
+    }
 
  }

@@ -27,6 +27,8 @@
 
 .middle{
     height: 30%;
+    display: flex;
+    justify-content: center;
 }
 
 .bottom {
@@ -52,6 +54,7 @@
 
     .box .icon{
         font-size: 1.75rem;
+        text-align: center;
     }
 
     .box .desc{
