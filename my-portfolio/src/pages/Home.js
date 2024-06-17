@@ -1,5 +1,5 @@
 import {React, useEffect, useState} from "react";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import { CustomBtn } from "../components/CustomBtn";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Home.css";
@@ -8,9 +8,39 @@ import profileImg from "../assets/images/8.jpg";
 import { MultiCarousel } from "../components/MultiCarousel.js";
 import BorderBox from "../components/BorderBox.js";
 import KnowledgeItems from "../components/KnowledgeItems.js";
+import { PortfolioBtn } from "../components/PortfolioBtn.js";
 
 export const Home = () =>{
 
+    //array of portfolio section data 
+    const portfolioBtnData = [
+        {
+            title: "Game Dev", 
+            icon: <FontAwesomeIcon icon="fa-solid fa-gamepad" />
+        }, 
+        {
+            title: "Web Dev", 
+            icon: <FontAwesomeIcon icon="fa-solid fa-code" />
+        }, 
+        {
+            title: "Photography", 
+            icon: <FontAwesomeIcon icon="fa-solid fa-camera" />
+        }, 
+        {
+            title: "2d", 
+            icon: <FontAwesomeIcon icon="fa-solid fa-square" />
+        },
+        {
+            title: "3d", 
+            icon: <FontAwesomeIcon icon="fa-solid fa-cube" />
+        },
+        {
+            title: "Extras", 
+            icon: <FontAwesomeIcon icon="fa-solid fa-circle-plus" />
+        },
+    ];
+
+    //array of education data
     const educationData = [
         
         //Institutions
@@ -152,6 +182,14 @@ export const Home = () =>{
                 </div>
                 <div className="portfolio-selection">
                     <h1 className="portfolio-title thick">portfolio</h1>
+                    <div className="portfolio-buttons">
+                        {
+                            portfolioBtnData.map(btnData =>(
+                                <PortfolioBtn icon={btnData.icon} title={btnData.title} />
+                            ))
+                        }
+                        
+                    </div>
                 </div>
             </div>
 

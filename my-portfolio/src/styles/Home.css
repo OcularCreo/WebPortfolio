@@ -404,4 +404,17 @@ h1{
         gap: 4%;
     }
 
+    .portfolio-title{
+        margin-bottom: 2rem;
+    }
+
+    .portfolio-buttons{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        justify-content: center;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
  }
