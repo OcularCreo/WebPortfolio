@@ -1,7 +1,6 @@
 .port-btn {
     font-family: "Montserrat", sans-serif;
     border: solid white;
-    border-radius: 3rem;
     color: white; 
     background-color: transparent;
     text-align: center;
@@ -15,12 +14,10 @@
 
 .btn-title{
     font-weight: 500;
-    font-size: 2.25rem;
     transition: font-weight 0.25s ease-in-out, font-size 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
 
 .btn-icon{
-    font-size: 100px;
     margin-top: 25%;
     transition: font-size 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
@@ -48,11 +45,44 @@
  /* Extra small devices (phones, 600px and down) */     
  @media only screen and (max-width: 600px) {
 
+    .port-btn{
+        width: 17.5rem;
+        border-radius: 2.5rem;
+    }
+
+    .btn-title{
+        font-size: 1.5rem;
+    }
+    
+    .btn-icon{
+        font-size: 5rem;
+    }
+
+    .port-btn:hover .btn-icon {
+        font-size: 2.2rem;
+    }
+
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 601px) {
     
+    .port-btn{
+        width: clamp(10.9375rem, 24.6vw + 1rem, 12.8125rem);
+        border-radius: 2.5rem;
+    }
+
+    .btn-title{
+        font-size: clamp(0.25rem, 0.521vw + 1rem, 1.25rem);
+    }
+    
+    .btn-icon{
+        font-size: clamp(2rem, 5.47vw + 1rem, 3.625rem);
+    }
+
+    .port-btn:hover .btn-icon {
+        font-size: clamp(0.88rem ,1.24vw + 1rem, 1.595rem);
+    }
 
  }
  
@@ -64,8 +94,6 @@
  /* Large devices (laptops/desktops, 992px and up) */
  @media only screen and (min-width: 992px) {
 
-    
-
  }
  
  /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -73,6 +101,19 @@
 
     .port-btn{
         width: 380px;
+        border-radius: 3rem;
+    }
+
+    .btn-title{
+        font-size: 2.25rem;
+    }
+    
+    .btn-icon{
+        font-size: 6.25rem;
+    }
+
+    .port-btn:hover .btn-icon {
+        font-size: 2.75rem;
     }
 
  }

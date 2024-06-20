@@ -90,6 +90,13 @@ h1{
     gap: 1vw;
 }
 
+.portfolio-buttons{
+    display: grid;
+    justify-content: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
  /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
 
  /* Extra small devices (phones, 600px and down) */     
@@ -192,6 +199,11 @@ h1{
         flex-direction: column;
         align-items: center;
         padding-top: 4rem;
+    }
+
+    .portfolio-buttons{
+        gap: 10px;
+        grid-template-columns: auto;
     }
 
  }
@@ -302,6 +314,11 @@ h1{
         font-size: 4rem;
     }
 
+    .portfolio-buttons{
+        gap: 8px;
+        grid-template-columns: auto auto auto;
+    }
+
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
@@ -409,12 +426,7 @@ h1{
     }
 
     .portfolio-buttons{
-        display: grid;
-        grid-template-columns: auto auto auto;
         gap: 10px;
-        justify-content: center;
-        padding-left: 5rem;
-        padding-right: 5rem;
     }
 
  }
