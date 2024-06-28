@@ -31,6 +31,24 @@
     align-items: center;
     text-transform: uppercase;
     margin-left: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-page::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.nav-page:hover::after,
+.nav-page.active-underline::after {
+    width: 100%;
 }
 
 .nav-links {

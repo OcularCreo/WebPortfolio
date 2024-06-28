@@ -1,4 +1,4 @@
-import {React, useEffect, useState} from "react";
+import { React, useEffect, useState, useRef } from "react";
 import { Container, Button } from "react-bootstrap";
 import { CustomBtn } from "../components/CustomBtn";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -119,6 +119,14 @@ export const Home = () =>{
 
     }, []);
 
+    const portfolioRef = useRef(null);
+
+    const scrollToPortfolio = () =>{
+        if(portfolioRef !== null){
+            portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+        }
+    }
+
     return(
         <div>
 
@@ -134,15 +142,15 @@ export const Home = () =>{
                         {/* Buttons Container */}
                         <Container className="btn-container">
                             <CustomBtn btnTxt="Resume"/>
-                            <CustomBtn btnTxt="Portfolio"/>
+                            <CustomBtn btnTxt="Portfolio" onClick={scrollToPortfolio}/>
                         </Container>
                     </Container>
                 </div>
             </div>
 
             {/* Section 2: About me */}
-            <div className="img-section about-section">         {/* BG image container */}                                     
-                <div className="section-overlay">               {/* Image overlay container */}
+            <div className="img-section about-section" id="aboutme">{/* BG image container */}                                     
+                <div className="section-overlay">                   {/* Image overlay container */}
                     
                     {/* Profile image div */}
                     <div className="profile-div">
@@ -172,7 +180,7 @@ export const Home = () =>{
                 </div>
             </div>
 
-            {/* Section 3: About me */}
+            {/* Section 3: Portfolio Selection Section */}
             <div className="portfolio-section">
                 <div className="knowledge-section">
                     <h1 className="knowledge-tite"><span className="thin">my</span> <span className="thick">knowledge</span></h1>
@@ -180,7 +188,7 @@ export const Home = () =>{
                         <KnowledgeItems items={skillItems}/>
                     </div>
                 </div>
-                <div className="portfolio-selection">
+                <div className="portfolio-selection" ref={portfolioRef}>
                     <h1 className="portfolio-title thick">portfolio</h1>
                     <div className="portfolio-buttons">
                         {
