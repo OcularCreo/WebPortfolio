@@ -9,7 +9,7 @@
     margin-top: 6rem;
     display: flex;
     gap: 2rem;
-    align-items: center;
+    align-items: center; 
 }
 
 .title-icon{
@@ -25,6 +25,7 @@
     display: flex; 
     flex-direction: column;
     gap: 1rem;
+    flex-grow: 1;
 }
 
 .white-rec {
@@ -33,10 +34,26 @@
 }
 
 .rec-1{
-    width: 8rem;
+    width: 20%;
 }
 
 .rec-2{
-    width: 42rem;
+    width: auto;
 }
 
+.content-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.first-item{
+    grid-column: span 3;
+}
+
+.project-item{
+    width: 526px; 
+    height: 296px;
+    background: white;
+}
