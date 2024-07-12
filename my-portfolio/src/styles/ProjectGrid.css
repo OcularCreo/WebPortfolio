@@ -1,0 +1,155 @@
+.background{
+    background-color: #17181D;
+    width: 100%; 
+    min-height: 100vh;
+    padding-top: 8rem;
+}
+
+.title-container {
+    margin-top: 6rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center; 
+}
+
+.title-icon{
+    font-size: 4rem;
+}
+
+.page-title{
+    font-weight: 900;
+}
+
+.white-rec {
+    background-color: white;
+    height: 0.5rem;
+}
+
+.rec-1{
+    width: 20%;
+}
+
+.rec-2{
+    width: auto;
+}
+
+.content-grid{
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+}
+
+.single-content-grid {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.project-item{
+    width: 526px; 
+    height: 296px;
+    background: white;
+}
+
+/* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
+
+/* Extra small devices (phones, 600px and down) */     
+@media only screen and (max-width: 600px) {
+    .title-icon {
+        display: none;
+    }
+
+    .rec-container{
+        display: none;
+    }
+
+    .title-container {
+        justify-content: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+
+    .page-title {
+        text-align: center; 
+        font-size: clamp(1rem, 4vw + 1rem, 2.5rem);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+    .page-title{
+        font-size: clamp(1rem, 3.75vw + 1rem, 3rem);
+    }
+
+    .title-icon{
+        font-size: clamp(1rem, 3.75vw + 1rem, 3rem);
+    }
+
+    .title-icon {
+        display: block;
+    }
+
+    .rec-container{
+        display: none;
+    }
+
+    .title-container{
+        justify-content: center;
+    }
+
+    .first-item{
+        grid-column: span 2;
+    }
+
+    .content-grid {
+        grid-template-columns: auto auto;
+    }
+
+}
+ 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .page-title{
+        font-size: 4rem;
+    }
+
+    .title-icon{
+        font-size: 4rem;
+    }
+
+    .rec-container{
+        display: flex; 
+        flex-direction: column;
+        gap: 1rem;
+        flex-grow: 1;
+    }
+
+    .title-container{
+        justify-content: flex-start;
+    }
+
+    .first-item{
+        grid-column: span 3;
+    }
+
+    .content-grid {
+        grid-template-columns: auto auto auto;
+    }
+
+}

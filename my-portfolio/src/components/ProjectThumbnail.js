@@ -7,13 +7,12 @@ export const ProjectThumbnail = (props) =>{
     const navigate = useNavigate(); 
 
     const handleClick = () =>{
-        
-        navigate(`${location}/${props.id}`);
+        navigate(`${location.pathname}/proj/${props.id}`);
     }
 
     return(
         
-        <div className="img" 
+        <div className={`img ${props.className}`} 
              style={ props.imgPath ? {backgroundImage: `url(${props.imgPath})`} : {backgroundColor: "blue"}}
              onClick={handleClick}>
             

@@ -1,7 +1,7 @@
-
 const FILE_MAP = {
-    'gamedev': 'data/game_dev_projects.json', 
-    'webdev': 'data/web_dev_projects.json', 
+    '/gamedev': '/data/game/game_projects.json', 
+    '/photography': '/data/photography/photo_projects.json', 
+    '/webdev': '/data/web/web_projects.json', 
 }
 
 //function used to fetch a single project based on section and id

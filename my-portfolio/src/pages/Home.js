@@ -16,7 +16,8 @@ export const Home = () =>{
     const portfolioBtnData = [
         {
             title: "Game Dev", 
-            icon: <FontAwesomeIcon icon="fa-solid fa-gamepad" />
+            icon: <FontAwesomeIcon icon="fa-solid fa-gamepad" />, 
+            page: "/gamedev"
         }, 
         {
             title: "Web Dev", 
@@ -24,7 +25,8 @@ export const Home = () =>{
         }, 
         {
             title: "Photography", 
-            icon: <FontAwesomeIcon icon="fa-solid fa-camera" />
+            icon: <FontAwesomeIcon icon="fa-solid fa-camera" />, 
+            page: "/photography"
         }, 
         {
             title: "2d", 
@@ -193,7 +195,7 @@ export const Home = () =>{
                     <div className="portfolio-buttons">
                         {
                             portfolioBtnData.map(btnData =>(
-                                <PortfolioBtn icon={btnData.icon} title={btnData.title} />
+                                <PortfolioBtn icon={btnData.icon} title={btnData.title} page={btnData.page}/>
                             ))
                         }
                         
