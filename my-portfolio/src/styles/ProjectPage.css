@@ -34,11 +34,9 @@
     width: calc(2 * 550px + 10px);
 }
 
-.gallery-container {
-    display: grid; 
-    grid-template-columns: auto auto;
-    justify-content: center;
-    gap: 10px;
+.content-container {
+    margin: 0 auto; 
+    padding: 1rem;
 }
 
 .gallery-item {
@@ -94,5 +92,8 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
 
+    .content-container {
+        width: clamp(1000px, 67%, 1400px);
+    }
 
 }

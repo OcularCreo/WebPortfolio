@@ -1,6 +1,7 @@
 import { useParams, useLocation } from "react-router-dom";
 import "../styles/ProjectPage.css";
 import { fetchOneProject } from "../services/apiServices";
+import Gallery from "./Gallery";
 import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
 
@@ -9,28 +10,31 @@ export const ProjectPage = (props) =>{
     const params = useParams();         //used to get the project id in url
     const location = useLocation();     //used to get the current page location
 
-    const [project, setProject] = useState(); 
-    const [markdownData, setMarkdownData] = useState("");
+    const [project, setProject] = useState();               //used to store the data of the page's project
+    const [markdownData, setMarkdownData] = useState("");   //used for converting the markdown data to html
 
     useEffect(() => {
 
+        //getting the page's project data
         const getProjectData = async () => {
             
+            //get the id from the page url to identify which project to fetch
             const pageSegments = location.pathname.split('/'); 
             const section = '/' + pageSegments[1];
 
-            const data = await fetchOneProject(section, params.id);
-            setProject(data);
+            const data = await fetchOneProject(section, params.id); //fetch the proj data based on the project section and project id (from url)
+            setProject(data);                                       //store the data that was fetched
 
+            //if the data has a markdown path
             if(data.markdownPath){
-                const response = await fetch(data.markdownPath); 
-                const markdownText = await response.text(); 
-                setMarkdownData(markdownText);
+                const response = await fetch(data.markdownPath);    //fetch the markdown file 
+                const markdownText = await response.text();         //convert the data to text
+                setMarkdownData(markdownText);                      //save the markdown data
             }
 
         }
 
-        getProjectData();
+        getProjectData();   //call the function to get the project data
 
     }, [location]);
 
@@ -40,12 +44,8 @@ export const ProjectPage = (props) =>{
                 <h1 className="proj-title">{project && project.title}</h1>
                 <p className="date">{project && project.date}</p>
             </div>
-            <div className="gallery-container">
-                {project && project.images && project.images.map((image, index) => (
-                    <div className="gallery-item" key={index}>
-                        <img src={`${project.mediaPath}${image}`} alt={`${image}`} className="gallery-image" />
-                    </div>
-                ))}
+            <div className="content-container">
+                {project ? <Gallery imagePath={project.mediaPath} images={project.images} /> : ""}
 
                 <div className="desc-container">
                     <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1>
