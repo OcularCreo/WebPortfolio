@@ -172,9 +172,15 @@ export const Home = () =>{
                         <div className="about-links">
                             {isMobileScreen ? null : <CustomBtn btnTxt="Resume" />}
                             <div className="about-icons">
-                                <a className="about-icon" href=""><FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#ffffff",}} /></a>
-                                <a className="about-icon" href=""><FontAwesomeIcon icon="fa-brands fa-linkedin-in" style={{color: "#ffffff",}} /></a>
-                                <a className="about-icon" href=""><FontAwesomeIcon icon="fa-regular fa-envelope" style={{color: "#ffffff",}} /></a>
+                                <a  className="about-icon" 
+                                    href="https://github.com/OcularCreo" 
+                                    target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#ffffff",}} /></a>
+                                <a  className="about-icon" 
+                                    href="https://linkedin.com/in/jordan-cooligan-pang-1b2a7721b" 
+                                    target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-linkedin-in" style={{color: "#ffffff",}} /></a>
+                                <a  className="about-icon" 
+                                    href="mailto:cooliganpangjordan@gmail.com" 
+                                    target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-regular fa-envelope" style={{color: "#ffffff",}} /></a>
                             </div>
                             {isMobileScreen ? null : <a className="about-email-link" >cooliganpangjordan@gmail.com</a>}
                         </div>

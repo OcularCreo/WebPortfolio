@@ -1,3 +1,98 @@
 .background {
     background: linear-gradient(90deg, rgba(66,71,73,1) 0%, rgba(20,21,22,1) 100%);
 }
+
+.proj-title-container {
+    display: grid;
+    grid-template-columns: auto; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.proj-title {
+    font-size: 4rem;
+    font-weight: 900;
+    margin-top: 6rem;
+}
+
+.date {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.proj-img {
+    width: 10rem;
+    background-size: cover;
+}
+
+.desc-container {
+    margin-top: 1.5rem;
+    grid-column: span 2;
+    width: calc(2 * 550px + 10px);
+}
+
+.gallery-container {
+    display: grid; 
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery-item {
+    border-radius: 0.25rem;
+    overflow: hidden;
+    width: 675px;
+}
+
+.gallery-image {
+    width: 100%;
+    object-fit: contain;
+}
+
+.proj-about-title{
+    font-size: 4rem;
+}
+
+.md-desc p, 
+.md-desc li, 
+.md-desc a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.md-desc h2 {
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+/* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
+
+/* Extra small devices (phones, 600px and down) */     
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+
+
+}
+ 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+ 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+
+}

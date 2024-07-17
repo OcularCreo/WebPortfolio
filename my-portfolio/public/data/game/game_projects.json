@@ -1,15 +1,23 @@
+
+
 [
     {
         "id": "0", 
         "title": "Dam'ed", 
         "date": "April 2024", 
-        "images": "images", 
-        "description": "description"
+        "mediaPath": "/data/game/damed/",
+        "thumbSrc": "damed_mapPreview.png",
+        "images": ["damed_interactionMap.png", "trelloboard.png", "damed_prototype.png", "damed_prototype2.png", "damed_menu.png", 
+                   "damed_teamselect.png", "damed_oldmap.png", "damed_mapPreview.png"], 
+        "markdownPath": "/data/game/damed/damed_description.md", 
+        "videoElement": "<iframe width='560' height='315' src='https://www.youtube.com/embed/Ryp-Y8bvdFw?si=K9netvQS7tBLUWTp' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>"
     }, 
     {
         "id": "1", 
         "title": "RPS: Best of Three", 
         "date": "December 2023", 
+        "mediaPath": "/data/game/rps/",
+        "thumbSrc": "rps_thumbnail.jpg",
         "images": "images", 
         "description": "description"
     }, 
@@ -17,48 +25,7 @@
         "id": "2", 
         "title": "Pastry Peril", 
         "date": "April 2021", 
-        "images": "images", 
-        "description": "description"
-    }, 
-    {
-        "id": "0", 
-        "title": "Dam'ed", 
-        "date": "April 2024", 
-        "images": "images", 
-        "description": "description"
-    }, 
-    {
-        "id": "1", 
-        "title": "RPS: Best of Three", 
-        "date": "December 2023", 
-        "images": "images", 
-        "description": "description"
-    }, 
-    {
-        "id": "2", 
-        "title": "Pastry Peril", 
-        "date": "April 2021", 
-        "images": "images", 
-        "description": "description"
-    }, 
-    {
-        "id": "0", 
-        "title": "Dam'ed", 
-        "date": "April 2024", 
-        "images": "images", 
-        "description": "description"
-    }, 
-    {
-        "id": "1", 
-        "title": "RPS: Best of Three", 
-        "date": "December 2023", 
-        "images": "images", 
-        "description": "description"
-    }, 
-    {
-        "id": "2", 
-        "title": "Pastry Peril", 
-        "date": "April 2021", 
+        "mediaPath": "/data/game//",
         "images": "images", 
         "description": "description"
     }

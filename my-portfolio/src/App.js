@@ -39,6 +39,30 @@ const router = createBrowserRouter([
       {
         path: '/photography/proj/:id', 
         element: <ProjectPage />
+      }, 
+      {
+        path: '/webdev', 
+        element: <ProjectGrid category={"Web Development"} icon={<FontAwesomeIcon icon="fa-solid fa-code"/>} />
+      }, 
+      {
+        path: '/webdev/proj/:id', 
+        element: <ProjectPage />
+      }, 
+      {
+        path: '/2d', 
+        element: <ProjectGrid category={"2D"} icon={<FontAwesomeIcon icon="fa-solid fa-square"/>} />
+      }, 
+      {
+        path: '/2d/proj/:id', 
+        element: <ProjectPage />
+      }, 
+      {
+        path: '/3d', 
+        element: <ProjectGrid category={"3D"} icon={<FontAwesomeIcon icon="fa-solid fa-cube" />} />
+      }, 
+      {
+        path: '/3d/proj/:id', 
+        element: <ProjectPage />
       }
     ]
   }

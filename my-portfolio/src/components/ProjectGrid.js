@@ -16,8 +16,10 @@ export const ProjectGrid = (props) =>{
         const getProjects = async () => {
             const data = await fetchAllProjects(location.pathname);    //using fetchallprojects and sending the file path location to get related projs
             
-            setOverEight(data.length > 8);                             //determining if the number of projects fetched is over 8
-            setProjects(data);                                         //storing fetched project data
+            if(data){
+                setOverEight(data.length > 8);                         //determining if the number of projects fetched is over 8
+                setProjects(data);                                     //storing fetched project data
+            }
         }
 
         getProjects();                                                 //calling get projects for fetching the data
@@ -46,7 +48,8 @@ export const ProjectGrid = (props) =>{
 
                 {/* Project items: Following elements should be thumbnails for projects featured on this page */}
                 {projects && projects.map(project => (
-                    <ProjectThumbnail className={!overEight ? "single" : "multi"} key={project.id} id={project.id} title={project.title} imgPath={project.images} />))}
+                    <ProjectThumbnail className={!overEight ? "single" : "multi"} key={project.id} id={project.id} title={project.title} 
+                    imgPath={`${project.mediaPath}${project.thumbSrc}`} />))}
             </div>
             
         </div>

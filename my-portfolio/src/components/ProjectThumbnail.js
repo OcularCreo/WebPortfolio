@@ -13,7 +13,7 @@ export const ProjectThumbnail = (props) =>{
     return(
         
         <div className={`img ${props.className}`} 
-             style={ props.imgPath ? {backgroundImage: `url(${props.imgPath})`} : {backgroundColor: "blue"}}
+             style={ props.imgPath ? {backgroundImage: `url(${props.imgPath})`} : ""}
              onClick={handleClick}>
             
             {/* follwing html should only show on hover - displays title if given, otherwise inputs place holder text */}

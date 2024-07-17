@@ -49,9 +49,9 @@ export const NavBar = () => {
                 <NavLink className="nav-page" to="/" onClick={navToAbout}>About</NavLink>
                 <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/gamedev">Game Dev</NavLink>
                 <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/photography">Photography</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/">Web Dev</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/">2D</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/">3D</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/webdev">Web Dev</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/2d">2D</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/3d">3D</NavLink>
                 <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/">Extras</NavLink>
                 <button className="nav-btn nav-btn-close" onClick={toggleMenu}> <FaTimes /> </button>
 
