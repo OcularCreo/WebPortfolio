@@ -39,17 +39,6 @@
     padding: 1rem;
 }
 
-.gallery-item {
-    border-radius: 0.25rem;
-    overflow: hidden;
-    width: 675px;
-}
-
-.gallery-image {
-    width: 100%;
-    object-fit: contain;
-}
-
 .proj-about-title{
     font-size: 4rem;
 }
@@ -64,6 +53,11 @@
 .md-desc h2 {
     font-size: 3rem;
     margin-top: 2rem;
+}
+
+.video {
+    width: 100%; 
+    aspect-ratio: 16/9;
 }
 
 /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */

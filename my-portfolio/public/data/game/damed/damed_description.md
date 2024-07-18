@@ -27,7 +27,7 @@
 ## The Process
 Over the course of 8 months, I collaborated with a team of friends to develop a video game for our capstone project. 
 During the initial weeks, we began with several meetings focused on idea generation. Initially, I had proposed a cooperative team
-game where players, playing as beavers, would searching for resources and maintain their dam against a relentless flood. While this idea was well-received, it didn’t fully capture the team’s interest. A member of the group mentioned his enjoyment of disrupting team dynamics in games, which quickly inspired me to modify the concept. Thus, Dam'ed was born: a competitive local multiplayer game, positioning players on opposing teams of beavers with the objective to have the last dam standing.
+game where players, playing as beavers, would search for resources and maintain their dam against a relentless flood. While this idea was well-received, it didn’t fully capture the team’s interest. A member of the group mentioned his enjoyment of disrupting team dynamics in games, which quickly inspired me to modify the concept. Thus, Dam'ed was born: a competitive local multiplayer game, positioning players on opposing teams of beavers with the objective to have the last dam standing.
 
 The team and myself pitched our ideas and regularly presented our progress to a group of proffessors and instrucutors, simulating shareholders of our projects. My contributions to the team involved all code related tasks as I was the only one on the team with the skills. My passions lead to me creating a detailed action map for the team to follow while making our way through development. 
 

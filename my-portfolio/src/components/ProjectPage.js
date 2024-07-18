@@ -45,8 +45,11 @@ export const ProjectPage = (props) =>{
                 <p className="date">{project && project.date}</p>
             </div>
             <div className="content-container">
-                {project ? <Gallery imagePath={project.mediaPath} images={project.images} /> : ""}
-
+                {project ? <Gallery imagePath={project.mediaPath} images={project.images}/> : ""}
+                {(project && project.videos) ? (
+                    project.videos.map((video) => (
+                        <iframe className="video" src={video.vidSrc} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    ))) : ""}
                 <div className="desc-container">
                     <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1>
                     <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>

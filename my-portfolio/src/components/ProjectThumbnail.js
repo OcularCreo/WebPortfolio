@@ -18,7 +18,7 @@ export const ProjectThumbnail = (props) =>{
             
             {/* follwing html should only show on hover - displays title if given, otherwise inputs place holder text */}
             <div className="overlay">
-                <h2 className="title">{props.title ? props.title: "Project Title"}</h2>
+                <h2 className="thumb-title">{props.title ? props.title: "Project Title"}</h2>
             </div>
         </div>
         
