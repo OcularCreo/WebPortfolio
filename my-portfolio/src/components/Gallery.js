@@ -8,11 +8,11 @@ const Gallery = ({imagePath, images}) => {
     const [isPreviewOpen, setIsPreviewOpen] = useState(false);  //helps keep track of if the preview image window is open
     const [numImages, setNumImages] = useState(0);              //keeps track of the number of images that were given to the component
     const [gridColStyle, setGridColStyle] = useState("");       //used for setting the number of for the gallery grid
+    const [touchStart, setTouchStart] = useState(null);         //used for swipping through image previews
 
     useEffect(() => {
 
         setNumImages (images ? images.length : 0); //track the number of images given
-
         
         if(numImages < 3) {
             setGridColStyle("col-grid-1");  //only make the grid have 1 column if there are less than 3 images
@@ -56,6 +56,31 @@ const Gallery = ({imagePath, images}) => {
         }
     }
 
+    //function keep track of initial position of mobile touch
+    const handleTouchStart = (e) => {
+        const touchStartX = e.touches[0].clientX; 
+        setTouchStart(touchStartX);
+    }
+
+    //determines if the user has swiped left or right and changes image based on distance moved
+    const handleTouchMove = (e) => {
+
+        if(!touchStart) return; //if there is no touch start then do not run the code
+
+        const touchEndX = e.touches[0].clientX;     //get the ending position of the touch
+        const distance = touchStart - touchEndX;    //calculate the distance from start to finishs
+
+        console.log(distance);
+
+        if(distance > 8) {
+            nextImg();                              //move to next image if distance is in a positive direct and significant enough
+        } else if(distance < -8){
+            prevImg();                              //move to prev img if the distance is neg direction and significant enough
+        }
+
+        setTouchStart(null);                        //set the touchStart back to null regardless of direction
+    }
+
     return (
         <>
             {/* Gallery Div - Dynamically changes grid style based on num of images given to component */}
@@ -64,6 +89,8 @@ const Gallery = ({imagePath, images}) => {
                     {/* Create a div for each given image & dynamically give it tall or wide class based on json data */}
                     {images.map((image, index) => (
                         <div className={`img ${image.tall ? "tall" : ""} ${image.wide ? "wide" : ""}`} 
+                             title={image.imgTitle}
+                             key={index}
                              style={{backgroundImage: `url(${imagePath}${image.src})`}}
                              onClick={() => openImgPreview(index)}></div>
                     ))}
@@ -71,14 +98,18 @@ const Gallery = ({imagePath, images}) => {
             
             {/* if isPreviewOpen is true then review the following html */}
             {isPreviewOpen && (
-                <div className="preview-overlay" onClick={handleOverlayClick}>
+                <div className="preview-overlay" onClick={handleOverlayClick} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
                     
                     {/* CLOSE BUTTON - allows users to close the preview window */}
                     <button className="close-btn" onClick={closeImgPreview}><b><FontAwesomeIcon icon="fa-solid fa-xmark" /></b></button>
                     
+                    <div className="img-desc-container">
+                            <p className="img-desc-txt">{images[currIdx].imgTitle}</p>
+                    </div>
+
                     {/* Image Preivew Navigation Container - holds the navigation for next, previous, and circle buttons */}
                     <div className="next-prev-container">
-                        
+
                         {/* PREVIOUS BUTTON - allows users to view the image PREVIOUS to the currently displayed */}
                         <button className="previous-btn" onClick={prevImg}><FontAwesomeIcon icon="fa-solid fa-caret-left" /></button>
 
@@ -92,14 +123,15 @@ const Gallery = ({imagePath, images}) => {
                             ))}
                         </div>
                         )}
-                        
+
                         {/* NEXT BUTTON - allows users to view the image NEXT to the currently displayed */}
                         <button className="next-btn" onClick={nextImg}><FontAwesomeIcon icon="fa-solid fa-caret-right" /></button>
+                        
                     </div>
 
                     {/* div and image are used to preview the images in their full ratio */}
                     <div className="preview-content">
-                        <img src={`${imagePath}${images[currIdx].src}`} alt="" className="preview-img"/>
+                        <img src={`${imagePath}${images[currIdx].src}`} alt={images[currIdx].imgTitle} className="preview-img"/>
                     </div>
                 </div>
             )}

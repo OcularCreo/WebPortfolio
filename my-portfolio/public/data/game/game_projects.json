@@ -8,14 +8,14 @@
         "mediaPath": "/data/game/damed/",
         "thumbSrc": "damed_mapPreview.png",
         "images": [
-            {"src": "damed_poster0.png",        "tall": true, "wide": false}, 
-            {"src": "damed_interactionMap.png", "tall": false, "wide": false},
-            {"src": "trelloboard.png",          "tall": false, "wide": false},
-            {"src": "damed_prototype2.png",     "tall": false, "wide": false},
-            {"src": "damed_menu.png",           "tall": false, "wide": false}, 
-            {"src": "damed_teamselect.png",     "tall": false, "wide": false}, 
-            {"src": "damed_oldmap.png",         "tall": false, "wide": false},
-            {"src": "damed_mapPreview.png",     "tall": false, "wide": false}
+            {"src": "damed_poster0.png",        "tall": true,  "wide": false, "imgTitle":"Dam'ed Poster"}, 
+            {"src": "damed_interactionMap.png", "tall": false, "wide": false, "imgTitle":"State Machine Map"},
+            {"src": "trelloboard.png",          "tall": false, "wide": false, "imgTitle":"Trello Board - Filtered with my tasks"},
+            {"src": "damed_prototype2.png",     "tall": false, "wide": false, "imgTitle":"Progress Presentation Slide - Prototype Visuals"},
+            {"src": "damed_menu.png",           "tall": false, "wide": false, "imgTitle":"Dam'ed Main Menu"}, 
+            {"src": "damed_teamselect.png",     "tall": false, "wide": false, "imgTitle":"Dam'ed Team Selection UI"}, 
+            {"src": "damed_oldmap.png",         "tall": false, "wide": false, "imgTitle":"Dam'ed Early Map"},
+            {"src": "damed_mapPreview.png",     "tall": false, "wide": false, "imgTitle":"Dam'ed Final Map"}
         ], 
         "markdownPath": "/data/game/damed/damed_description.md", 
         "videos": [

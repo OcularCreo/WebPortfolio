@@ -30,8 +30,6 @@
 
 .desc-container {
     margin-top: 1.5rem;
-    grid-column: span 2;
-    width: calc(2 * 550px + 10px);
 }
 
 .content-container {
@@ -47,7 +45,6 @@
 .md-desc li, 
 .md-desc a {
     color: white;
-    font-size: 1.5rem;
 }
 
 .md-desc h2 {
@@ -64,12 +61,54 @@
 
 /* Extra small devices (phones, 600px and down) */     
 @media only screen and (max-width: 600px) {
+    .content-container {
+        width: 100vw;
+        margin: 0; 
+        padding: 0;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
 
+    .video {
+        padding-left: 1vw;
+        padding-right: 1vw;
+    }
+
+    .desc-container {
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .md-desc p, 
+    .md-desc li, 
+    .md-desc a {
+        font-size: 1rem;
+    }
+
+    .md-desc h2 {
+        font-size: 2rem;
+        margin-top: 1.25rem;
+    }
+
+    .proj-title {
+        font-size: 3.75rem;
+        margin-top: 2rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
 
+    .content-container {
+        width: clamp(200px, 75.5%, 800px);
+    }
+
+    .md-desc p, 
+    .md-desc li, 
+    .md-desc a {
+        font-size: 1.25rem;
+    }
 
 }
  
@@ -88,6 +127,12 @@
 
     .content-container {
         width: clamp(1000px, 67%, 1400px);
+    }
+
+    .md-desc p, 
+    .md-desc li, 
+    .md-desc a {
+        font-size: 1.5rem;
     }
 
 }
