@@ -143,12 +143,26 @@
         margin-bottom: 0.25rem;
     }
 
+    .close-btn,
+    .next-btn, 
+    .previous-btn {
+        display: none;
+    }
+
     .img-desc-container {
-        bottom: 3rem;
+        bottom: 2rem;
     }
     
     .next-prev-container {
-        bottom: 0.5rem;
+        bottom: 1.25rem;
+    }
+
+    .circle-item {
+        font-size: 0.75rem;
+    }
+
+    .dots-container {
+        gap: 1.25rem;
     }
 
 }
@@ -161,38 +175,92 @@
         grid-auto-rows: 130px;
     }
 
+    .col-grid-2 {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-auto-rows: 18.23vw;
+    }
+
+    .col-grid-1 {
+        grid-template-columns: minmax(300px, 1fr);
+        grid-auto-rows: 25vw;
+    }
+
     .close-btn {
         top: 2rem; 
         right: 2rem; 
     }
 
+    .close-btn,
+    .next-btn, 
+    .previous-btn {
+        display: none;
+    }
+
+    .img-desc-container {
+        bottom: 0.65rem;
+    }
+    
+    .next-prev-container {
+        bottom: 0.5rem;
+    }
+
+    .circle-item {
+        font-size: 0.5rem;
+    }
+
+    .dots-container {
+        gap: 1.75rem;
+    }
+
 }
  
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-height: 400px){
+    .img-desc-container {
+        bottom: 4rem;
+    }
     
+    .next-prev-container {
+        bottom: 1.5rem;
+    }
+
+    .circle-item {
+        font-size: 1rem;
+    }
+
+    .dots-container {
+        gap: 1.25rem;
+    }
 }
  
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    
+    .close-btn,
+    .next-btn, 
+    .previous-btn {
+        display: block;
+    }
+
+    .img-desc-container {
+        bottom: 4.5rem;
+    }
 }
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
     .col-grid-3 {
         grid-template-columns: repeat(3, minmax(300px, 1fr));
-        grid-auto-rows: 250px;
+        grid-auto-rows: 13vw;
     }
     
     .col-grid-2 {
-        grid-template-columns: repeat(2, minmax(600px, 1fr));
-        grid-auto-rows: 350px;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        grid-auto-rows: 18.23vw;
     }
     
     .col-grid-1 {
         grid-template-columns: minmax(300px, 1fr);
-        grid-auto-rows: 200px;
+        grid-auto-rows: 25vw;
     }
 
     .close-btn {

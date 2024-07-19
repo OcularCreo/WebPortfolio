@@ -28,15 +28,33 @@
         "date": "December 2023", 
         "mediaPath": "/data/game/rps/",
         "thumbSrc": "rps_thumbnail.jpg",
-        "images": "images", 
-        "description": "description"
-    }, 
+        "images": [
+            {"src": "rps_thumbnail.jpg", "tall": false,  "wide": false, "imgTitle":"RPS: Splash Screen"}, 
+            {"src": "rps_mainmenu.png", "tall": false,  "wide": false, "imgTitle":"RPS: Best of Three - Main Menu"}, 
+            {"src": "rps_characterIllustrator.png", "tall": false,  "wide": false, "imgTitle":"RPS: Characters - Illustrator"}
+        ], 
+        "markdownPath": "/data/game/rps/rps_desc.md", 
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/Ryp-Y8bvdFw?si=K9netvQS7tBLUWTp"}
+        ]
+    },
     {
         "id": "2", 
         "title": "Pastry Peril", 
-        "date": "April 2021", 
-        "mediaPath": "/data/game//",
-        "images": "images", 
-        "description": "description"
+        "date": "December 2021", 
+        "mediaPath": "/data/game/pastry/",
+        "thumbSrc": "PastryPeril_Thumbnail.png",
+        "images": [
+            {"src": "PastryPeril_Thumbnail.png", "tall": true,  "wide": true, "imgTitle":"Pastry Peril Banner"}, 
+            {"src": "pastry_menu.png", "tall": false,  "wide": false, "imgTitle":"Main Menu"}, 
+            {"src": "pastry_ingred.png", "tall": false,  "wide": false, "imgTitle":"Ingredient Reveal"}, 
+            {"src": "pastry_hint.png", "tall": false,  "wide": false, "imgTitle":"Ingredient Hint"}, 
+            {"src": "pastry_picking.png", "tall": false,  "wide": false, "imgTitle":"Picking Ingredients"}, 
+            {"src": "pastry_cooking.png", "tall": false,  "wide": false, "imgTitle":"Cooking in the Oven"}, 
+            {"src": "pastry_cookingcookie.png", "tall": false,  "wide": false, "imgTitle":"Baking Cookies"}, 
+            {"src": "pastry_rolling.png", "tall": false,  "wide": false, "imgTitle":"Rolling Dough"}, 
+            {"src": "pastry_score.png", "tall": false,  "wide": false, "imgTitle":"Final Score"}
+        ], 
+        "markdownPath": "/data/game/pastry/pastry_desc.md"
     }
 ]
