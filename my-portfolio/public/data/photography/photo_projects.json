@@ -1,9 +1,70 @@
 [
     {
         "id": "0", 
-        "title": "University Photobook", 
-        "date": "April 2022", 
-        "images": "images", 
-        "description": "description"
+        "title": "Captum - Photobook", 
+        "date": "April 2021", 
+        "mediaPath": "/data/photography/uni_book/",
+        "thumbSrc": "uni_thumb.png",
+        "images": [], 
+        "markdownPath": "/data/photography/uni_book/unibook_desc.md", 
+        "pdfs" : [
+            {"pdfSrc": "CooliganPang_Jordan_FinalAssign.pdf", "title": "Captum Photobook"}
+        ]
+    }, 
+    {
+        "id": "1", 
+        "title": "Street Photography", 
+        "date": "March 2021", 
+        "mediaPath": "/data/photography/street/",
+        "thumbSrc": "9.jpg",
+        "images": [
+            {"src": "1.jpg",    "tall": true,  "wide": false, "imgTitle":"Walking downtown"}, 
+            {"src": "2.jpg",    "tall": true,  "wide": false, "imgTitle":"Smoking on the Step"}, 
+            {"src": "9.jpg",    "tall": false,  "wide": false, "imgTitle":"Closed fish market"},
+            {"src": "15.jpg",   "tall": false,  "wide": false, "imgTitle":"Street puddle"},
+            {"src": "3.jpg",    "tall": true,  "wide": false, "imgTitle":"Ottawa Sparks Street"}, 
+            {"src": "12.jpg",   "tall": false,  "wide": false, "imgTitle":"Flipped off"}, 
+            {"src": "4.jpg",    "tall": true,  "wide": false, "imgTitle":"Crossing the street"}, 
+            {"src": "7.jpg",    "tall": true,  "wide": false, "imgTitle":"Sitting on the trash"}, 
+            {"src": "8.jpg",    "tall": true,  "wide": false, "imgTitle":"Hanging out on the street"}, 
+            {"src": "11.jpg",   "tall": false,  "wide": false, "imgTitle":"Street crossing 2"},
+            {"src": "13.jpg",   "tall": true,  "wide": false, "imgTitle":"Lamppost leaning"}, 
+            {"src": "10.jpg",   "tall": true,  "wide": false, "imgTitle":"Walking downtown 2"}, 
+            {"src": "14.jpg",   "tall": false,  "wide": false, "imgTitle":"Walking down the street"} 
+            
+        ],
+        "markdownPath": "/data/photography/street/street_desc.md"
+    }, 
+    {
+        "id": "2", 
+        "title": "Unique Portraits", 
+        "date": "March 2021", 
+        "mediaPath": "/data/photography/uniq_portrait/",
+        "thumbSrc": "2.jpg",
+        "images": [
+            {"src": "1.jpg",        "tall": true,  "wide": false, "imgTitle":"Suprise Portrait"}, 
+            {"src": "2-loop.jpg",   "tall": true,  "wide": false, "imgTitle":"Rembrant - Loop"}, 
+            {"src": "6-split.jpg",  "tall": true,  "wide": false, "imgTitle":"Rembrant - Split"},
+            {"src": "3.jpg",        "tall": false,  "wide": true, "imgTitle":"Artifical Smiles"},
+            {"src": "2.jpg",        "tall": false,  "wide": false, "imgTitle":"Textured Expressions"}
+            
+        ],
+        "markdownPath": "/data/photography/uniq_portrait/uniqport_desc.md"
+    }, 
+    {
+        "id": "3", 
+        "title": "Architecture", 
+        "date": "March 2021", 
+        "mediaPath": "/data/photography/uniq_portrait/",
+        "thumbSrc": "2.jpg",
+        "images": [
+            {"src": "1.jpg",        "tall": true,  "wide": false, "imgTitle":"Suprise Portrait"}, 
+            {"src": "2-loop.jpg",   "tall": true,  "wide": false, "imgTitle":"Rembrant - Loop"}, 
+            {"src": "6-split.jpg",  "tall": true,  "wide": false, "imgTitle":"Rembrant - Split"},
+            {"src": "3.jpg",        "tall": false,  "wide": true, "imgTitle":"Artifical Smiles"},
+            {"src": "2.jpg",        "tall": false,  "wide": false, "imgTitle":"Textured Expressions"}
+            
+        ],
+        "markdownPath": "/data/photography/uniq_portrait/uniqport_desc.md"
     }
 ]

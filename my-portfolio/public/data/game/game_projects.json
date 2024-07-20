@@ -41,19 +41,19 @@
     {
         "id": "2", 
         "title": "Pastry Peril", 
-        "date": "December 2021", 
+        "date": "April 2021", 
         "mediaPath": "/data/game/pastry/",
         "thumbSrc": "PastryPeril_Thumbnail.png",
         "images": [
-            {"src": "PastryPeril_Thumbnail.png", "tall": true,  "wide": true, "imgTitle":"Pastry Peril Banner"}, 
-            {"src": "pastry_menu.png", "tall": false,  "wide": false, "imgTitle":"Main Menu"}, 
-            {"src": "pastry_ingred.png", "tall": false,  "wide": false, "imgTitle":"Ingredient Reveal"}, 
-            {"src": "pastry_hint.png", "tall": false,  "wide": false, "imgTitle":"Ingredient Hint"}, 
-            {"src": "pastry_picking.png", "tall": false,  "wide": false, "imgTitle":"Picking Ingredients"}, 
-            {"src": "pastry_cooking.png", "tall": false,  "wide": false, "imgTitle":"Cooking in the Oven"}, 
-            {"src": "pastry_cookingcookie.png", "tall": false,  "wide": false, "imgTitle":"Baking Cookies"}, 
-            {"src": "pastry_rolling.png", "tall": false,  "wide": false, "imgTitle":"Rolling Dough"}, 
-            {"src": "pastry_score.png", "tall": false,  "wide": false, "imgTitle":"Final Score"}
+            {"src": "PastryPeril_Thumbnail.png",    "tall": false,  "wide": true, "imgTitle":"Pastry Peril Banner"}, 
+            {"src": "pastry_menu.png",              "tall": false,  "wide": false, "imgTitle":"Main Menu"}, 
+            {"src": "pastry_ingred.png",            "tall": true,  "wide": false, "imgTitle":"Ingredient Reveal"}, 
+            {"src": "pastry_hint.png",              "tall": false,  "wide": false, "imgTitle":"Ingredient Hint"}, 
+            {"src": "pastry_picking.png",           "tall": false,  "wide": false, "imgTitle":"Picking Ingredients"}, 
+            {"src": "pastry_cooking.png",           "tall": false,  "wide": false, "imgTitle":"Cooking in the Oven"}, 
+            {"src": "pastry_cookingcookie.png",     "tall": false,  "wide": false, "imgTitle":"Baking Cookies"}, 
+            {"src": "pastry_rolling.png",           "tall": false,  "wide": false, "imgTitle":"Rolling Dough"}, 
+            {"src": "pastry_score.png",             "tall": false,  "wide": true, "imgTitle":"Final Score"}
         ], 
         "markdownPath": "/data/game/pastry/pastry_desc.md"
     }

@@ -1,17 +1,17 @@
 .background {
     background: linear-gradient(90deg, rgba(66,71,73,1) 0%, rgba(20,21,22,1) 100%);
+    width: 100vw;
 }
 
 .proj-title-container {
-    display: grid;
-    grid-template-columns: auto; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
 .proj-title {
-    font-size: 4rem;
     font-weight: 900;
     margin-top: 6rem;
 }
@@ -57,6 +57,17 @@
     aspect-ratio: 16/9;
 }
 
+.pdf-newtab-link:hover {
+    text-decoration: underline;
+}
+
+.pdf-newtab-link {
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
 
 /* Extra small devices (phones, 600px and down) */     
@@ -92,12 +103,26 @@
     }
 
     .proj-title {
-        font-size: 3.75rem;
+        font-size: clamp(1rem, 10vw, 3.75rem);
         margin-top: 2rem;
+        margin-left: 5vw; 
+        margin-right: 5vw;
     }
 
     .proj-about-title {
-        font-size: 2.75rem;
+        font-size: clamp(1rem, 10vw, 2.75rem);
+    }
+
+    .pdf-viewer {
+        width: 100%; 
+        height: clamp(40px, 60vh, 700px);
+    }
+
+    .pdf-newtab-link {
+        font-size: 1rem;
+        margin-left: 8vw;
+        margin-right: 8vw; 
+        margin-top: 1rem;
     }
 }
 
@@ -113,6 +138,8 @@
     .md-desc a {
         font-size: 1.25rem;
     }
+
+    
 
 }
  
@@ -136,6 +163,15 @@
     .md-desc p, 
     .md-desc li, 
     .md-desc a {
+        font-size: 1.5rem;
+    }
+
+    .pdf-viewer {
+        width: 100%; 
+        height: clamp(400px, 80vw, 800px);
+    }
+
+    .pdf-newtab-link {
         font-size: 1.5rem;
     }
 

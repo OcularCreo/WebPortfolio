@@ -58,12 +58,26 @@ export const ProjectPage = (props) =>{
                         ></iframe>
                     ))
                 ) : ""}
+                {project && project.pdfs ? (
+                    project.pdfs.map((pdf, index) => (
+                        <>
+                            <iframe
+                                src={`${project.mediaPath}${pdf.pdfSrc}`}
+                                key={index}
+                                title={`${pdf.title} PDF Viewer`}
+                                className="pdf-viewer"
+                            ></iframe>
+                            <a href={`${project.mediaPath}${pdf.pdfSrc}`} 
+                               target="_blank" rel="noopener noreferrer"
+                               className="pdf-newtab-link">View {pdf.title} on separate tab</a>
+                        </>
+                    ))
+                ) : ""}
                 <div className="desc-container">
                     <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1>
                     <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>
                 </div>
             </div>
-            
         </div>
     );
 }

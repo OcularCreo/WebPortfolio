@@ -14,6 +14,8 @@ const Gallery = ({imagePath, images}) => {
 
         setNumImages (images ? images.length : 0); //track the number of images given
         
+        console.log("useeffect");
+
         if(numImages < 3) {
             setGridColStyle("col-grid-1");  //only make the grid have 1 column if there are less than 3 images
         } else if(numImages < 5) {
@@ -114,7 +116,7 @@ const Gallery = ({imagePath, images}) => {
                         <button className="previous-btn" onClick={prevImg}><FontAwesomeIcon icon="fa-solid fa-caret-left" /></button>
 
                         {/* CIRCLE NAV BTNS - Only render them if the number of images is between 3 and 12 to not overcrowd or just have 2 dots */}
-                        {(numImages > 2 && numImages < 12) && (
+                        {(numImages > 2 && numImages < 21) && (
                         <div className="dots-container">
                             {images && images.map((image, index) => (
                                 <div key={index} onClick={() => openImgPreview(index)} className="circle-item">

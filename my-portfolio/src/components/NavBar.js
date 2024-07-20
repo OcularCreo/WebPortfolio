@@ -15,9 +15,17 @@ export const NavBar = () => {
     const toggleMenu = () =>{
         setIsOpen(!isOpen);
     }
-    
+
+    //used for automatically closing the menu while in mobile mode
+    const handleMenu = () => {
+        if(isOpen) {
+            setIsOpen(false);
+        }
+    }
+
     //function sets scroll to about to true, later utlized in the useEffect below
     const navToAbout = () =>{
+        handleMenu();
         setScrollToAbout(true);
     }
 
@@ -36,7 +44,13 @@ export const NavBar = () => {
             setScrollToAbout(false);                                    //set the scroll to about back to false
         }
 
-    }, [location, scrollToAbout]);
+        if(isOpen){
+            document.documentElement.classList.add("no-scroll");
+        } else {
+            document.documentElement.classList.remove("no-scroll");
+        }
+
+    }, [location, scrollToAbout, isOpen]);
 
     return (
 
@@ -47,12 +61,12 @@ export const NavBar = () => {
                 
                 {/* navigation page links */}
                 <NavLink className="nav-page" to="/" onClick={navToAbout}>About</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/gamedev">Game Dev</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/photography">Photography</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/webdev">Web Dev</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/2d">2D</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/3d">3D</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} to="/">Extras</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/gamedev">Game Dev</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/photography">Photography</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/webdev">Web Dev</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/2d">2D</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/3d">3D</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/">Extras</NavLink>
                 <button className="nav-btn nav-btn-close" onClick={toggleMenu}> <FaTimes /> </button>
 
                 {/* Additional info for mobile menu */}
@@ -66,15 +80,21 @@ export const NavBar = () => {
                         <Row className="justify-content-center px-4">
                             {/* Email Icon */}
                             <Col className="d-flex justify-content-center align-items-center">
-                                <a className="menu-info-icon" href=""><FontAwesomeIcon icon="fa-regular fa-envelope" style={{color: "#ffffff",}} /></a>
+                                <a className="menu-info-icon" 
+                                   href="mailto:cooliganpangjordan@gmail.com" 
+                                   target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-regular fa-envelope" style={{color: "#ffffff",}} /></a>
                             </Col>
                             {/* Github Icon */}
                             <Col className="d-flex justify-content-center align-items-center">
-                                <a className="menu-info-icon" href=""><FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#ffffff",}} /></a>
+                                <a className="menu-info-icon" 
+                                   href="https://github.com/OcularCreo"
+                                   target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-github" style={{color: "#ffffff",}} /></a>
                             </Col>
                             {/* LinkedIn Icon */}
                             <Col className="d-flex justify-content-center align-items-center">
-                                <a className="menu-info-icon" href=""><FontAwesomeIcon icon="fa-brands fa-linkedin-in" style={{color: "#ffffff",}} /></a>
+                                <a className="menu-info-icon" 
+                                   href="https://linkedin.com/in/jordan-cooligan-pang-1b2a7721b"
+                                   target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon="fa-brands fa-linkedin-in" style={{color: "#ffffff",}} /></a>
                             </Col>
                         </Row>
                     </Container>
