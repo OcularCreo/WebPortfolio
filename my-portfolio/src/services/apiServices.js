@@ -2,6 +2,7 @@ const FILE_MAP = {
     '/gamedev': '/data/game/game_projects.json', 
     '/photography': '/data/photography/photo_projects.json', 
     '/webdev': '/data/web/web_projects.json', 
+    '/3d': '/data/3d/3d_projects.json'
 }
 
 //function used to fetch a single project based on section and id

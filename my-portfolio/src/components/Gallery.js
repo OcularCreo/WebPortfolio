@@ -24,7 +24,7 @@ const Gallery = ({imagePath, images}) => {
             setGridColStyle("col-grid-3");  //allow up to 3 columns if there are more than 4 images
         }
 
-    }, [images]);
+    }, [images, numImages]);
 
     //function used to open the image preview window
     const openImgPreview = (index) => {

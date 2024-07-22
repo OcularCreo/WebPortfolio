@@ -1,0 +1,133 @@
+[
+    {
+        "id": "0", 
+        "title": "Arena Environment", 
+        "date": "April 2024", 
+        "mediaPath": "/data/3d/arena/",
+        "thumbSrc": "final-04.jpg",
+        "images": [ 
+            {"src": "final-01.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 1"},
+            {"src": "final-02.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 2"},
+            {"src": "final-03.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 3"},
+            {"src": "final-04.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 4"}, 
+            {"src": "final-05.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 5"}, 
+            {"src": "final-06.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 6"},
+            {"src": "greybox-01.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 1"}, 
+            {"src": "greybox-02.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 2"}, 
+            {"src": "greybox-03.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 3"},
+            {"src": "greybox-04.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 4"}, 
+            {"src": "greybox-05.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 5"}, 
+            {"src": "greybox-06.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 6"}
+        ], 
+        "markdownPath": "/data/3d/arena/arena_desc.md", 
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/C28-COuTPqw?si=NydR-4_I0IRcdm0L"}
+        ]
+    }, 
+    {
+        "id": "1", 
+        "title": "Bunker Environment", 
+        "date": "March 2024", 
+        "mediaPath": "/data/3d/bunker/",
+        "thumbSrc": "A4-1.jpg",
+        "images": [ 
+            {"src": "A4-1.jpg", "tall": false, "wide": true, "imgTitle":"Bunker shot 1"},
+            {"src": "A4-2.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 2"},
+            {"src": "A4-3.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 3"},
+            {"src": "A4-4.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 4"}, 
+            {"src": "A4-5.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 5"}, 
+            {"src": "A4-6.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 6"},
+            {"src": "layer-lit.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 7"},
+            {"src": "A4-smbp.jpg", "tall": false, "wide": false, "imgTitle":"Static Mesh Blueprint"},
+            {"src": "greybox-1.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 1"}, 
+            {"src": "greybox-2.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 2"}, 
+            {"src": "greybox-3.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 3"},
+            {"src": "greybox-4.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 4"}, 
+            {"src": "greybox-5.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 5"}, 
+            {"src": "greybox-6.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 6"}
+        ], 
+        "markdownPath": "/data/3d/bunker/bunker_desc.md"
+    }, 
+    {
+        "id": "2", 
+        "title": "Modular Kit", 
+        "date": "February 2024", 
+        "mediaPath": "/data/3d/modularkit/",
+        "thumbSrc": "blender-models.jpg",
+        "images": [ 
+            {"src": "blender-models.jpg", "tall": true, "wide": true, "imgTitle":"Blender Models"},    
+            
+            {"src": "A1-02.jpg", "tall": true, "wide": false, "imgTitle":"Saloon shot 2"},
+            {"src": "A1-03.jpg", "tall": false, "wide": false, "imgTitle":"Saloon shot 3"},
+            {"src": "A1-04.jpg", "tall": true, "wide": false, "imgTitle":"Saloon shot 4"}, 
+            {"src": "A1-05.jpg", "tall": false, "wide": false, "imgTitle":"Saloon shot 5"}, 
+            {"src": "A1-01.jpg", "tall": false, "wide": false, "imgTitle":"Saloon shot 1"},
+            {"src": "lightingonly.jpg", "tall": false, "wide": false, "imgTitle":"Lighting Only"}
+        ], 
+        "markdownPath": "/data/3d/modularkit/modular_desc.md"
+    }, 
+    {
+        "id": "3", 
+        "title": "Facial Animation", 
+        "date": "October 2023", 
+        "mediaPath": "/data/3d/facial/",
+        "thumbSrc": "thumb.jpg",
+        "images": [ 
+            {"src": "expressions.png", "tall": false, "wide": false, "imgTitle":"Expressions"}, 
+            {"src": "Visemes.png", "tall": false, "wide": false, "imgTitle":"Visemes"}       
+        ], 
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/zT47od99QHc?si=Yef-Ay9QM_6MuJhn"}, 
+            {"vidSrc": "https://www.youtube.com/embed/5wNeP5_vZUM?si=4mYOu-jskjmeuTrR"}
+        ],
+        "markdownPath": "/data/3d/facial/facial_desc.md"
+    }, 
+    {
+        "id": "4", 
+        "title": "Parkour", 
+        "date": "October 2023", 
+        "mediaPath": "/data/3d/parkour/",
+        "thumbSrc": "thumb.jpg",
+        "images": [ 
+            {"src": "sketch_01.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 1"}, 
+            {"src": "sketch_02.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 2"}, 
+            {"src": "sketch_03.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 3"}, 
+            {"src": "sketch_04.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 4"}       
+        ], 
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/uOXk_NSpyIE?si=gKCj1NGI1st40gZO"}
+        ],
+        "markdownPath": "/data/3d/parkour/parkour_desc.md"
+    }, 
+    {
+        "id": "5", 
+        "title": "Flour Bag", 
+        "date": "October 2023", 
+        "mediaPath": "/data/3d/flourbag/",
+        "thumbSrc": "test.png",
+        "images": [ 
+            {"src": "sketch.jpg", "tall": true, "wide": false, "imgTitle":"Animation Sketch"}      
+        ], 
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/bnTbU30BSrI?si=yc5191Ff4OXR1LZ0"}, 
+            {"vidSrc": "https://www.youtube.com/embed/esajBs_ny0I?si=VUy9tcDz6wdEc37H"}
+        ],
+        "markdownPath": "/data/3d/flourbag/flour_desc.md"
+    }, 
+    {
+        "id": "6", 
+        "title": "Texture Maps", 
+        "date": "April 2023", 
+        "mediaPath": "/data/3d/texturemap/",
+        "thumbSrc": "Render_01.jpg",
+        "images": [ 
+            {"src": "Render_01.jpg", "tall": false, "wide": false, "imgTitle":"Animation Sketch"}, 
+            {"src": "Render_02.jpg", "tall": false, "wide": false, "imgTitle":"Animation Sketch"}, 
+            {"src": "Render_03.jpg", "tall": true, "wide": true, "imgTitle":"Animation Sketch"}      
+        ], 
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/L2nPBDMkxj8?si=9sXKLlF2PUsBlP6B"}
+        ],
+        "markdownPath": "/data/3d/texturemap/texture_desc.md"
+    }
+]
