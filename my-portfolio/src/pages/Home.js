@@ -21,7 +21,8 @@ export const Home = () =>{
         }, 
         {
             title: "Web Dev", 
-            icon: <FontAwesomeIcon icon="fa-solid fa-code" />
+            icon: <FontAwesomeIcon icon="fa-solid fa-code" />, 
+            page: "/webdev"
         }, 
         {
             title: "Photography", 
@@ -30,15 +31,18 @@ export const Home = () =>{
         }, 
         {
             title: "2d", 
-            icon: <FontAwesomeIcon icon="fa-solid fa-square" />
+            icon: <FontAwesomeIcon icon="fa-solid fa-square" />,
+            page: "/2d"
         },
         {
             title: "3d", 
-            icon: <FontAwesomeIcon icon="fa-solid fa-cube" />
+            icon: <FontAwesomeIcon icon="fa-solid fa-cube" />, 
+            page: "/3d"
         },
         {
             title: "Extras", 
-            icon: <FontAwesomeIcon icon="fa-solid fa-circle-plus" />
+            icon: <FontAwesomeIcon icon="fa-solid fa-circle-plus" />, 
+            page: "/extras"
         },
     ];
 
@@ -47,7 +51,7 @@ export const Home = () =>{
         
         //Institutions
         {
-            Title: "Instituions", 
+            Title: "institutions", 
             icon: <FontAwesomeIcon icon="fa-solid fa-building-columns" style={{color: "#ffffff",}} />, 
             description: "Carleton University\nAlgonquin College"
         }, 

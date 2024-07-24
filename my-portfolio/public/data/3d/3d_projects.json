@@ -73,8 +73,8 @@
         "mediaPath": "/data/3d/facial/",
         "thumbSrc": "thumb.jpg",
         "images": [ 
-            {"src": "expressions.png", "tall": false, "wide": false, "imgTitle":"Expressions"}, 
-            {"src": "Visemes.png", "tall": false, "wide": false, "imgTitle":"Visemes"}       
+            {"src": "expressions.png",  "tall": false, "wide": false, "imgTitle":"Expressions"}, 
+            {"src": "Visemes.png",      "tall": false, "wide": false, "imgTitle":"Visemes"}       
         ], 
         "videos": [
             {"vidSrc": "https://www.youtube.com/embed/zT47od99QHc?si=Yef-Ay9QM_6MuJhn"}, 
@@ -121,13 +121,30 @@
         "mediaPath": "/data/3d/texturemap/",
         "thumbSrc": "Render_01.jpg",
         "images": [ 
-            {"src": "Render_01.jpg", "tall": false, "wide": false, "imgTitle":"Animation Sketch"}, 
-            {"src": "Render_02.jpg", "tall": false, "wide": false, "imgTitle":"Animation Sketch"}, 
-            {"src": "Render_03.jpg", "tall": true, "wide": true, "imgTitle":"Animation Sketch"}      
+            {"src": "Render_01.jpg", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 1"}, 
+            {"src": "Render_02.jpg", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 2"}, 
+            {"src": "Render_03.jpg", "tall": true, "wide": true, "imgTitle":"Cylix Room Angle 3"}      
         ], 
         "videos": [
             {"vidSrc": "https://www.youtube.com/embed/L2nPBDMkxj8?si=9sXKLlF2PUsBlP6B"}
         ],
         "markdownPath": "/data/3d/texturemap/texture_desc.md"
+    }, 
+    {
+        "id": "7", 
+        "title": "Walk Cycle", 
+        "date": "November 2020", 
+        "mediaPath": "/data/3d/walk/",
+        "thumbSrc": "thumb.jpg",
+        "images": [ 
+            {"src": "Contact.jpg",   "tall": false, "wide": false, "imgTitle":"Contact"}, 
+            {"src": "Recoil.jpg",    "tall": false, "wide": false, "imgTitle":"Recoil"}, 
+            {"src": "Passing.jpg",   "tall": false, "wide": false, "imgTitle":"Passing"}, 
+            {"src": "HighPoint.jpg", "tall": false, "wide": false, "imgTitle":"High Point"}     
+        ], 
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/asbBtTNnxCA?si=RLJhNkNXefvmKxUW"}
+        ],
+        "markdownPath": "/data/3d/walk/walk_desc.md"
     }
 ]

@@ -6,7 +6,7 @@
 During the time of ancient Rome, a cruel emperor gained great satisfaction from action packed and intense gladiator 
 trials. These brutal spectacles featured extravagant arenas, designed and constructed by the orders of the emperor. The 
 complexities of the arenas encouraged gladiators to consider their environment during combat for either their own advantage
-or vigilance, while also including elements to immitate real life environment in Rome. Fighters who survive the 
+or vigilance, while also including elements to immitate real life environments in Rome. Fighters who survive the 
 trails against other gladiators would be crowned the emperor's champion. This champion emerged from the emperor's grand 
 chambers, and is provided with many advantages to dominate and execute all other fighters who entered the 
 arena via small grim tunnels. This arena includes hazards such as a water mote with no means of escape and a spike pit,

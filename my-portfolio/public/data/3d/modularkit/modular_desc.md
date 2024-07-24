@@ -9,7 +9,7 @@ with some exceptions. It includes wood plank tiled standard walls, saloon ending
 windows, standard door size, and wide door size. Similar to typical saloon design, porch and 
 balcony floors are included and accompanied by support beams of different varients. Modular
 railings and railing posts were also created for them to be used on any surface but most
-notabiliy the porches or balconies.To lead up to the balconies or other levels of the saloon, 
+notabiliy the porches or balconies. To lead up to the balconies or other levels of the saloon, 
 stairs have been modularized along with their own set of support beams and variants, while 
 porches have a small set of steps to make it easier to walk onto. 3 different modularized 
 roofs of angles 45, 26, and 18 degrees have been modularized along with left, right, and end 
