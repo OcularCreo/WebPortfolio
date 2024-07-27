@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import { NavBar } from './components/NavBar';
+import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { ProjectGrid } from './components/ProjectGrid';
 import { ProjectPage } from './components/ProjectPage';
@@ -12,6 +13,7 @@ const MainLayout = () => (
   <>
     <NavBar />
     <Outlet />
+    <Footer />
   </>
 );
 
@@ -62,6 +64,14 @@ const router = createBrowserRouter([
       }, 
       {
         path: '/3d/proj/:id', 
+        element: <ProjectPage />
+      }, 
+      {
+        path: '/extras', 
+        element: <ProjectGrid category={"Extras"} icon={<FontAwesomeIcon icon="fa-solid fa-circle-plus" />} />
+      }, 
+      {
+        path: '/extras/proj/:id', 
         element: <ProjectPage />
       }
     ]

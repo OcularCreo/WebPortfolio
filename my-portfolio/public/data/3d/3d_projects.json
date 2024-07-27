@@ -132,6 +132,24 @@
     }, 
     {
         "id": "7", 
+        "title": "2D to 3D", 
+        "date": "", 
+        "mediaPath": "/data/3d/model/",
+        "thumbSrc": "thumb.jpg",
+        "images": [ 
+            {"src": "sketch_front.jpg", "tall": false, "wide": false, "imgTitle":"Reference front"}, 
+            {"src": "sketch_side.jpg",  "tall": false, "wide": false, "imgTitle":"Reference side"}, 
+            {"src": "sketch_back.jpg",  "tall": false, "wide": false, "imgTitle":"Reference back"}, 
+            {"src": "front.jpg",        "tall": false, "wide": false, "imgTitle":"Model front"}, 
+            {"src": "quartfront.jpg",   "tall": true, "wide": false, "imgTitle":"Model quarter front"}, 
+            {"src": "side.jpg",         "tall": false, "wide": false, "imgTitle":"Model side"}, 
+            {"src": "quartback.jpg",    "tall": false, "wide": false, "imgTitle":"Model quarter back"}, 
+            {"src": "back.jpg",         "tall": false, "wide": false, "imgTitle":"Model back"}                 
+        ],
+        "markdownPath": "/data/3d/model/model_desc.md"
+    },
+    {
+        "id": "8", 
         "title": "Walk Cycle", 
         "date": "November 2020", 
         "mediaPath": "/data/3d/walk/",

@@ -1,0 +1,46 @@
+[
+    {
+        "id": "1", 
+        "title": "Logo Competition", 
+        "date": "July 2024", 
+        "mediaPath": "/data/2d/logocomp/",
+        "thumbSrc": "concept_7.jpg",
+        "images": [
+            {"src": "concept_1.jpg",    "tall": false, "wide": false, "imgTitle":"Concept 1 - Pink Background"}, 
+            {"src": "concept_1neg.jpg", "tall": false, "wide": false, "imgTitle":"Concept 1 - White Background"}, 
+            {"src": "concept_2.jpg",    "tall": false, "wide": false, "imgTitle":"Concept 2"}, 
+            {"src": "concept_3.jpg",    "tall": false, "wide": false, "imgTitle":"Concept 3"}, 
+            {"src": "concept_4.jpg",    "tall": false, "wide": false, "imgTitle":"Concept 4"}, 
+            {"src": "concept_5.jpg",    "tall": true, "wide": false, "imgTitle":"Concept 5"}, 
+            {"src": "concept_6.jpg",    "tall": false, "wide": false, "imgTitle":"Concept 6"}, 
+            {"src": "concept_7.jpg",    "tall": false, "wide": false, "imgTitle":"Concept 7"}, 
+            {"src": "concept_8.jpg",    "tall": false, "wide": false, "imgTitle":"Concept 8"}, 
+            {"src": "workspace_screenshot.jpg", "tall": false, "wide": true, "imgTitle":"Adobe Illustrator Workspace"} 
+        ], 
+        "markdownPath": "/data/2d/logocomp/logocomp_desc.md"
+    },
+    {
+        "id": "2", 
+        "title": "Illustration", 
+        "date": "August 2023", 
+        "mediaPath": "/data/2d/illustration/",
+        "thumbSrc": "thumb.jpg",
+        "images": [
+            {"src": "Illustrator_ramen.jpg", "tall": true, "wide": false, "imgTitle":"Final Illustration"}, 
+            {"src": "sketch_ramen.jpg", "tall": false, "wide": false, "imgTitle":"Sketch & Concept"}, 
+            {"src": "workspace_ss.jpg", "tall": false, "wide": false, "imgTitle":"Adobe Illustrator Workspace"}
+        ], 
+        "markdownPath": "/data/2d/illustration/illus_desc.md"
+    },
+    {
+        "id": "3", 
+        "title": "Ontario Skills Competition", 
+        "date": "May 2019", 
+        "mediaPath": "/data/2d/skillscomp/",
+        "thumbSrc": "thumb.jpg",
+        "images": [
+            {"src": "SkillsComp.jpg", "tall": true, "wide": false, "imgTitle":"Competition Submission Poster"}
+        ], 
+        "markdownPath": "/data/2d/skillscomp/skillscomp_desc.md"
+    }
+]

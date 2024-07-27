@@ -1,4 +1,4 @@
-## Role: Programmer & Grpahic Artist
+## Role: Programmer & Graphic Artist
 
 ## Software Used 
 - Unity, C#

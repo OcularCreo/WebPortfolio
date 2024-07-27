@@ -27,13 +27,17 @@
         "mediaPath": "/data/game/rps/",
         "thumbSrc": "rps_thumbnail.jpg",
         "images": [
-            {"src": "rps_thumbnail.jpg", "tall": false,  "wide": false, "imgTitle":"RPS: Splash Screen"}, 
-            {"src": "rps_mainmenu.png", "tall": false,  "wide": false, "imgTitle":"RPS: Best of Three - Main Menu"}, 
-            {"src": "rps_characterIllustrator.png", "tall": false,  "wide": false, "imgTitle":"RPS: Characters - Illustrator"}
+            {"src": "rps_mainmenu.jpg",             "tall": true,  "wide": false, "imgTitle":"RPS: Best of Three - Main Menu"}, 
+            {"src": "rps_characterIllustrator.jpg", "tall": false,  "wide": false, "imgTitle":"RPS: Characters - Illustrator"},
+            {"src": "tut_jump.jpg",                 "tall": false,  "wide": false, "imgTitle":"Tutorial Jumping Section"},
+            {"src": "tut_swap.jpg",                 "tall": false,  "wide": false, "imgTitle":"Tutorial Switching Characters"},
+            {"src": "collage_battle.jpg",           "tall": false,  "wide": false, "imgTitle":"Fight in Collage Map"},
+            {"src": "math_battle.jpg",              "tall": false,  "wide": true, "imgTitle":"Fight in Math Map"},
+            {"src": "rpstime.jpg",                  "tall": false,  "wide": false, "imgTitle":"Rock, Paper, Scissors Time"}
         ], 
         "markdownPath": "/data/game/rps/rps_desc.md", 
         "videos": [
-            {"vidSrc": "https://www.youtube.com/embed/Ryp-Y8bvdFw?si=K9netvQS7tBLUWTp"}
+            {"vidSrc": "https://www.youtube.com/embed/sZ-Zc4CqTsc?si=JNGnHVrRYlOn8uwE"}
         ]
     },
     {

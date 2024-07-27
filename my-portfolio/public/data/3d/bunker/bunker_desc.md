@@ -16,7 +16,7 @@ why you carry a gun everytime you leave to explore. But, some days while holding
 the radio on, hoping to hear a friendly voice. A second bed has been set up for a while, as you hope to find a companion to
 make survival more manageable.    
 
-## Intensions
+## Intentions
 The environment I created is meant to invoke the feeling of a fortified and structurally sound bunker, with minimal regard
 for comforting features like carpets, pillows, and other home-like items. The natural sunlight coming in
 is meant to be strong to communicate or suggest to the viewer extreme weather, and effectively lead the eye towards the 

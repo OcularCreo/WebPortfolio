@@ -66,7 +66,7 @@ export const NavBar = () => {
                 <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/webdev">Web Dev</NavLink>
                 <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/2d">2D</NavLink>
                 <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/3d">3D</NavLink>
-                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/">Extras</NavLink>
+                <NavLink className={({ isActive }) => isActive ? 'active-underline nav-page' : 'nav-page'} onClick={handleMenu} to="/extras">Extras</NavLink>
                 <button className="nav-btn nav-btn-close" onClick={toggleMenu}> <FaTimes /> </button>
 
                 {/* Additional info for mobile menu */}

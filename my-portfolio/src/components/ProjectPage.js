@@ -26,7 +26,7 @@ export const ProjectPage = (props) =>{
             setProject(data);                                       //store the data that was fetched
 
             //if the data has a markdown path
-            if(data.markdownPath){
+            if(data && data.markdownPath){
                 const response = await fetch(data.markdownPath);    //fetch the markdown file 
                 const markdownText = await response.text();         //convert the data to text
                 setMarkdownData(markdownText);                      //save the markdown data

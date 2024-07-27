@@ -57,6 +57,10 @@
         width: clamp(16.8rem, 39.5833vw + 1rem, 20rem); 
         aspect-ratio: 16/9;
     }
+
+    .content-grid .thumb-title {
+        font-size: clamp(0.5rem, 0.75vw + 1rem, 2rem);
+    }
 }
  
 /* Medium devices (landscape tablets, 768px and up) */
@@ -83,5 +87,9 @@
 
     .thumb-title {
         font-size: 4rem;
+    }
+
+    .content-grid .thumb-title {
+        font-size: clamp(2rem, 1vw + 1rem, 3.5rem);
     }
 }

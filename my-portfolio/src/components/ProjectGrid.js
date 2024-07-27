@@ -19,6 +19,8 @@ export const ProjectGrid = (props) =>{
             if(data){
                 setOverEight(data.length > 8);                         //determining if the number of projects fetched is over 8
                 setProjects(data);                                     //storing fetched project data
+            } else {
+                setProjects(null);
             }
         }
 

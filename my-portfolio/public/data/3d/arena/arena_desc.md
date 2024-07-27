@@ -13,7 +13,7 @@ arena via small grim tunnels. This arena includes hazards such as a water mote w
 accompanied by ruins and gardens designed to serve as both cover or obstacles. the remains of many fallen gladiators are 
 scattered across the arena, inspiring more fear to those striving to be a champion of the emperor. 
 
-## Intensions
+## Intentions
 The primary focal point of the environment is the central fighting arena. Supporting focal points include the traps or 
 decorations within the arena along with the emperor's chambers located at the top of the towering structure inside. 
 The mote within the environment will be filled with water, being the dynamic blueprint of the project. Many braziers 
