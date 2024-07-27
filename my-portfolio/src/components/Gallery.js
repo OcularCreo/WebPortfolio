@@ -13,8 +13,6 @@ const Gallery = ({imagePath, images}) => {
     useEffect(() => {
 
         setNumImages (images ? images.length : 0); //track the number of images given
-        
-        console.log("useeffect");
 
         if(numImages < 3) {
             setGridColStyle("col-grid-1");  //only make the grid have 1 column if there are less than 3 images

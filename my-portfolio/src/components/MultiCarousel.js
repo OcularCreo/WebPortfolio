@@ -63,13 +63,24 @@ export const MultiCarousel = ({className, items}) =>{
 
     }, [currentIdx]);
 
+    //automatically scroll through items in carousel
+    useEffect(() => {
+
+        const interval = setInterval(() => {
+            actionHandler("next");
+        }, 10000);
+
+        return () => clearInterval(interval);
+
+    }, [currentIdx]);
+
     return (
         <div className={`d-flex ${className}`}>
             <button className="carousel-btn btn-r" onClick={() => actionHandler("prev")}><FontAwesomeIcon icon="fa-solid fa-caret-left" /></button>
             <div className="carousel" ref={carouselRef}>
                 {
-                    extendedItems.map((element) => (
-                        <div style={{translate: `${-100 * currentIdx}%`}}>
+                    extendedItems.map((element, index) => (
+                        <div key={index} style={{translate: `${-100 * currentIdx}%`}}>
                             {element}
                         </div>
                     ))

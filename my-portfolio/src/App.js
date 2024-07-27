@@ -9,8 +9,11 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 
+import { ScrollToTop } from './components/ScrollToTop';
+
 const MainLayout = () => (
   <>
+    <ScrollToTop />
     <NavBar />
     <Outlet />
     <Footer />

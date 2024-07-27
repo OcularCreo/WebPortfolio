@@ -23,7 +23,7 @@ const KnowledgeItems = (props) =>{
     const items = props.items; 
 
     return items.map((item) => (
-        <div className="knowledge-wrapper">
+        <div className="knowledge-wrapper" key={item.id}>
             <p className="icon">{item.icon}</p>
             {isMobileScreen ? 
             <>

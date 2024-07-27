@@ -6,7 +6,7 @@ const BorderBox = (props) =>{
     const items = props.items; 
 
     return items.map((item) => (
-        <div className="box">
+        <div className="box" key={item.id}>
             
             <div className="top">
                 <h1 className="title">{item.Title}</h1>

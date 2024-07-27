@@ -15,31 +15,37 @@ export const Home = () =>{
     //array of portfolio section data 
     const portfolioBtnData = [
         {
+            id: 0,
             title: "Game Dev", 
             icon: <FontAwesomeIcon icon="fa-solid fa-gamepad" />, 
             page: "/gamedev"
         }, 
         {
+            id: 1,
             title: "Web Dev", 
             icon: <FontAwesomeIcon icon="fa-solid fa-code" />, 
             page: "/webdev"
         }, 
         {
+            id: 2,
             title: "Photography", 
             icon: <FontAwesomeIcon icon="fa-solid fa-camera" />, 
             page: "/photography"
         }, 
         {
+            id: 3,
             title: "2d", 
             icon: <FontAwesomeIcon icon="fa-solid fa-square" />,
             page: "/2d"
         },
         {
+            id: 4,
             title: "3d", 
             icon: <FontAwesomeIcon icon="fa-solid fa-cube" />, 
             page: "/3d"
         },
         {
+            id: 5,
             title: "Extras", 
             icon: <FontAwesomeIcon icon="fa-solid fa-circle-plus" />, 
             page: "/extras"
@@ -51,6 +57,7 @@ export const Home = () =>{
         
         //Institutions
         {
+            id: "0",
             Title: "institutions", 
             icon: <FontAwesomeIcon icon="fa-solid fa-building-columns" style={{color: "#ffffff",}} />, 
             description: "Carleton University\nAlgonquin College"
@@ -58,6 +65,7 @@ export const Home = () =>{
         
         //Degrees
         {
+            id: "1",
             Title: "Degrees", 
             icon: <FontAwesomeIcon icon="fa-solid fa-graduation-cap" style={{color: "#ffffff",}} />, 
             description: "BIT & Adv. Dip. A. Arts\nInteractive Multimedia & Design"
@@ -65,6 +73,7 @@ export const Home = () =>{
         
         //Grades
         {
+            id: "2",
             Title: "Grades", 
             icon: <FontAwesomeIcon icon="fa-solid fa-scroll" style={{color: "#ffffff",}} />, 
             description: "3.9 GPA\n10.8 CGPA"
@@ -75,31 +84,37 @@ export const Home = () =>{
     const skillItems = [
         
         {
+            id: "0",
             icon: <FontAwesomeIcon icon="fa-solid fa-gamepad" />, 
             title: "Game Engines", 
             description: "Unity & Unreal Engine"
         },       
         {
+            id: "1",
             icon: <FontAwesomeIcon icon="fa-solid fa-code" />, 
             title: "Coding Languages", 
             description: "C, C++, C#, Python, Java, HTML, CSS, JavaScript"
         }, 
         {
+            id: "2",
             icon: <FontAwesomeIcon icon="fa-solid fa-code-branch" />, 
             title: "Version Control", 
             description: "Git, GitHub, GitBash"
         }, 
         {
+            id: "3",
             icon: <FontAwesomeIcon icon="fa-solid fa-layer-group" />, 
             title: "Front & Backend", 
             description: "React & Django"
         },
         {
+            id: "4",
             icon: <FontAwesomeIcon icon="fa-solid fa-brush" />, 
             title: "Adobe Suite", 
             description: "Ps, Ai, Lr, Id, Pr, Ae"
         },
         {
+            id: "5",
             icon: <FontAwesomeIcon icon="fa-solid fa-microscope" />, 
             title: "Testing", 
             description: "Test Automation & Quality Assurance"
@@ -110,8 +125,6 @@ export const Home = () =>{
     const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth <= 600); //check if the current width is mobile width
 
     useEffect(() =>{
-
-        console.log("useeffect");
 
         const handleMobileResize = () =>{
             setIsMobileScreen(window.innerWidth <= 600);
@@ -160,7 +173,7 @@ export const Home = () =>{
                     
                     {/* Profile image div */}
                     <div className="profile-div">
-                        <img src={profileImg} className="profile-img"></img>
+                        <img src={profileImg} className="profile-img" alt="Jordan Cooligan Pang Headshot"></img>
                     </div>
 
                     {/* Description and links div */}
@@ -205,7 +218,7 @@ export const Home = () =>{
                     <div className="portfolio-buttons">
                         {
                             portfolioBtnData.map(btnData =>(
-                                <PortfolioBtn icon={btnData.icon} title={btnData.title} page={btnData.page}/>
+                                <PortfolioBtn key={btnData.id} icon={btnData.icon} title={btnData.title} page={btnData.page}/>
                             ))
                         }
                         
