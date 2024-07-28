@@ -65,3 +65,22 @@ export async function fetchAllProjects(section) {
         })
 
 }
+
+//function used to fetch resumes for the resume button
+export async function fetchResumes() {
+    
+    return fetch("/data/resume/resumes.json")
+        .then(response => {
+            //verify that the repsonse is okay hehe
+            if(!response.ok){
+                throw new Error("Fetching the RESUMES response was NOT OKAY");
+            }
+
+            return response.json();
+        })
+        //send consoel error when any errors occur during the fetch operation sir 
+        .catch(error => {
+            console.error("fetch operation error: ", error);
+        })
+
+}

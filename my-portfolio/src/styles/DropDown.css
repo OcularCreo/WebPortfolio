@@ -1,0 +1,147 @@
+.cust-btn {
+    border-radius: 50px;
+    border: 2px solid #ffffff;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cust-btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.cust-btn:hover .btn-txt {
+    color: black !important;
+}
+
+.cust-btn .btn-txt {
+    color: white;
+}
+
+.cust-btn.open {
+    background-color: #ffffff;
+    color: #000000;
+    border-width: 0;
+}
+
+.cust-btn.open .btn-txt {
+    color: #000000 !important;
+}
+
+.drop-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    border-top: none;
+    z-index: 1000;
+}
+
+.cust-btn.open .drop-items {
+    display: block;
+}
+
+.drop-item-link {
+    background-color: transparent;
+    text-decoration: none;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    display: block;
+    transition: color 0.3s;
+}
+
+.drop-item-link:hover {
+    font-weight: 600;
+}
+
+.btn-txt {
+    margin: 0;
+    user-select: none;
+}
+
+/* Responsive Styles */
+
+/* Extra small devices (phones, 600px and down) */     
+@media only screen and (max-width: 600px) {
+    .btn-txt {
+        font-size: 5.5vw;
+    }
+
+    .cust-btn {
+        width: 45vw;
+        margin-top: 2vh;
+    }
+
+    .drop-item-link {
+        font-size: 5.3vw;
+    }
+
+    .drop-items {
+        border-radius: 0 0 8vw 8vw;
+    }
+
+    .cust-btn.open {
+        border-radius: 8vw 8vw 0 0;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+    .btn-txt {
+        font-size: 2.5vw;
+    }
+
+    .cust-btn {
+        width: 20vw;
+    }
+
+    .drop-item-link {
+        font-size: 2vw;
+        padding: 8px;
+    }
+
+    .drop-items {
+        border-radius: 0 0 3vw 3vw;
+    }
+
+    .cust-btn.open {
+        border-radius: 3vw 3vw 0 0;
+    }
+}
+
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .btn-txt {
+        font-size: 1.8vw;
+    }
+
+    .cust-btn {
+        width: 14vw;
+    }
+    
+    .drop-item-link {
+        font-size: 1.4vw;
+        padding: 10px 20px;
+    }
+
+    .drop-items {
+        border-radius: 0 0 35px 35px;
+    }
+
+    .cust-btn.open {
+        border-radius: 35px 35px 0 0;
+    }
+}

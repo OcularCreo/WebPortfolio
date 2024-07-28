@@ -1,14 +1,15 @@
 import { React, useEffect, useState, useRef } from "react";
-import { Container} from "react-bootstrap";
+import { Container, Dropdown} from "react-bootstrap";
 import { CustomBtn } from "../components/CustomBtn";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Home.css";
-
 import profileImg from "../assets/images/8.jpg";
 import { MultiCarousel } from "../components/MultiCarousel.js";
 import BorderBox from "../components/BorderBox.js";
 import KnowledgeItems from "../components/KnowledgeItems.js";
 import { PortfolioBtn } from "../components/PortfolioBtn.js";
+import { CustomDropDown } from "../components/CustomDropDown.js";
+import { fetchResumes } from "../services/apiServices.js";
 
 export const Home = () =>{
 
@@ -124,13 +125,23 @@ export const Home = () =>{
     const educationElements = BorderBox({items: educationData});    //create the elements based on the array of data above
     const [isMobileScreen, setIsMobileScreen] = useState(window.innerWidth <= 600); //check if the current width is mobile width
 
+    const [resumeData, setResumeData] = useState(null); //variable used for the resume data given to the home page
+
     useEffect(() =>{
 
         const handleMobileResize = () =>{
             setIsMobileScreen(window.innerWidth <= 600);
         }
 
-        window.addEventListener("resize", handleMobileResize); 
+        //fetching resume data asyncronously
+        const getResumes = async () => {
+            const data = await fetchResumes();  //using fetchresumes and sending the file path location to get related projs
+            setResumeData(data ? data : null);  //set the resume data to what was fetch, if there's nothing make it nulls
+        }
+
+        getResumes(); //calling get projects for fetching the data
+
+        window.addEventListener("resize", handleMobileResize);
 
         return () =>{
             window.removeEventListener("resize", handleMobileResize);
@@ -160,8 +171,8 @@ export const Home = () =>{
                         
                         {/* Buttons Container */}
                         <Container className="btn-container">
-                            <CustomBtn btnTxt="Resume"/>
                             <CustomBtn btnTxt="Portfolio" onClick={scrollToPortfolio}/>
+                            <CustomDropDown btnTxt="Resume" items={resumeData}></CustomDropDown>
                         </Container>
                     </Container>
                 </div>
@@ -187,7 +198,7 @@ export const Home = () =>{
                             {isMobileScreen ? <MultiCarousel className="mt-3" items={educationElements}/> : <div className="edu-box-wrapper">{educationElements}</div>}
                         </div>
                         <div className="about-links">
-                            {isMobileScreen ? null : <CustomBtn btnTxt="Resume" />}
+                            {isMobileScreen ? null : <CustomDropDown btnTxt="Resume" items={resumeData}></CustomDropDown>}
                             <div className="about-icons">
                                 <a  className="about-icon" 
                                     href="https://github.com/OcularCreo" 

@@ -132,6 +132,22 @@
     }, 
     {
         "id": "7", 
+        "title": "Procedural Lego", 
+        "date": "March 2023", 
+        "mediaPath": "/data/3d/lego/",
+        "thumbSrc": "render.jpg",
+        "images": [ 
+            {"src": "lego_UI.png", "tall": false, "wide": false, "imgTitle":"Generative UI Controls"}, 
+            {"src": "overview.jpg", "tall": false, "wide": false, "imgTitle":"Maya Environment With Generated Lego"}, 
+            {"src": "render.jpg", "tall": true, "wide": true, "imgTitle":"Rendered Lego Build"}      
+        ], 
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/eRN_dRfjA24?si=atN7kWdMzpb3ww0T"}
+        ],
+        "markdownPath": "/data/3d/lego/lego_desc.md"
+    }, 
+    {
+        "id": "8", 
         "title": "2D to 3D", 
         "date": "", 
         "mediaPath": "/data/3d/model/",
@@ -149,7 +165,7 @@
         "markdownPath": "/data/3d/model/model_desc.md"
     },
     {
-        "id": "8", 
+        "id": "9", 
         "title": "Walk Cycle", 
         "date": "November 2020", 
         "mediaPath": "/data/3d/walk/",

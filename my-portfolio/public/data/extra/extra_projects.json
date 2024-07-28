@@ -1,6 +1,15 @@
 [
     {
         "id": "0", 
+        "title": "Adv. Intersection Mapping", 
+        "date": "February 2023", 
+        "mediaPath": "/data/extra/vector/",
+        "thumbSrc": "thumb.jpg",
+        "images": [{"src": "demo.jpg", "tall": false, "wide": false, "imgTitle":"Mapping Interactions Example"}], 
+        "markdownPath": "/data/extra/vector/vector_desc.md"
+    },
+    {
+        "id": "1", 
         "title": "GAC Reels", 
         "date": "July 2022", 
         "mediaPath": "/data/extra/gac_reels/",
@@ -13,7 +22,7 @@
         ]
     }, 
     {
-        "id": "1", 
+        "id": "2", 
         "title": "Ghost Patrol - Arduino", 
         "date": "December 2021", 
         "mediaPath": "/data/extra/arduino/",
