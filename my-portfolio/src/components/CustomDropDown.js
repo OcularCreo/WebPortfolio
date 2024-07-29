@@ -17,7 +17,7 @@ export const CustomDropDown = (props) => {
             </p>
             <ul className="drop-items">
                 {props.items && props.items.map((item, index) => (
-                    <li><a className="drop-item-link" key={index} target="_blank" href={item.docPath ? item.docPath : ""}>{item.type}</a></li>
+                    <li><a className="drop-item-link" key={index} target={item.docPath ? "_blank" : ""} href={item.docPath ? item.docPath : ""}>{item.type}</a></li>
                 ))}
             </ul>
         </div>
