@@ -91,8 +91,11 @@ const Gallery = ({imagePath, images}) => {
                         <div className={`img ${image.tall ? "tall" : ""} ${image.wide ? "wide" : ""}`} 
                              title={image.imgTitle}
                              key={index}
-                             style={{backgroundImage: `url(${imagePath}${image.src})`}}
-                             onClick={() => openImgPreview(index)}></div>
+                             onClick={() => openImgPreview(index)}>
+
+                            <img src={`${imagePath}${image.src}`} loading="lazy" className="img-el"/>
+
+                        </div>
                     ))}
             </div>
             

@@ -13,9 +13,9 @@ export const ProjectThumbnail = (props) =>{
     return(
         
         <div className={`img ${props.className}`} 
-             style={ props.imgPath ? {backgroundImage: `url(${props.imgPath})`} : ""}
              onClick={handleClick}>
-            
+
+            <img src={ props.imgPath ? `${props.imgPath}` : ""} className="img-el" alt={props.title ? props.title : "Jordan Cooligan Pang"} loading="lazy"/>
             {/* follwing html should only show on hover - displays title if given, otherwise inputs place holder text */}
             <div className="overlay">
                 <h2 className="thumb-title">{props.title ? props.title: "Project Title"}</h2>
