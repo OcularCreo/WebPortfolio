@@ -133,12 +133,12 @@ h1{
     }
 
     .profile-img{
-        width: 13.125rem;  
-        height: 13.125rem; 
+        width: 58.3333vw; 
+        aspect-ratio: 1/1;
     }
 
     .profile-div{
-        height: 50%;
+        margin-top: 20vw;
         display: flex;
         align-items: flex-end;
     }
@@ -245,7 +245,7 @@ h1{
     }
 
     .about-section{
-        background-image: url(../assets/images/Spiral-center-crop-01.jpg); 
+        background-image: url(../assets/images/resize-Spiral-center-crop-01.jpg); 
         background-position-x: center;
     }
 
@@ -268,7 +268,8 @@ h1{
     }
 
     .profile-div{
-        height: 35%;
+        margin-top: 8vw;
+        margin-bottom: 5vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -365,7 +366,7 @@ h1{
     }
 
     .about-section{
-        background-image: url(../assets/images/Spiral-cropped-01.jpg); 
+        background-image: url(../assets/images/resize-Spiral-cropped-01.jpg); 
         background-position-y: center;
         background-position-x: 23%;
     }

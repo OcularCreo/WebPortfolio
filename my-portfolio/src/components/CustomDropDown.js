@@ -18,10 +18,10 @@ export const CustomDropDown = (props) => {
     }
 
     useEffect(() => {
-        document.addEventListener('touchstart', handleOutsideClick); 
+        document.documentElement.addEventListener('touchstart', handleOutsideClick); 
 
         return () => {
-            document.removeEventListener('touchstart', handleOutsideClick);
+            document.documentElement.removeEventListener('touchstart', handleOutsideClick);
         }
     }, []);
 
