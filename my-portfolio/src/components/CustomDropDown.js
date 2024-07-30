@@ -21,12 +21,10 @@ export const CustomDropDown = (props) => {
     useEffect(() => {
         document.addEventListener('touchstart', handleOutsideClick); 
         document.addEventListener('mousedown', handleOutsideClick);
-        document.addEventListener('scroll', handleOutsideClick);
 
         return () => {
             document.removeEventListener('touchstart', handleOutsideClick);
             document.removeEventListener('mousedown', handleOutsideClick);
-            document.removeEventListener('scroll', handleOutsideClick);
         }
     }, []);
 

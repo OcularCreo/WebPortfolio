@@ -12,13 +12,20 @@
     user-select: none;
 }
 
-.cust-btn:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
+@media (hover: hover){
 
-.cust-btn:hover .btn-txt {
-    color: black !important;
+    .cust-btn:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    
+    .cust-btn:hover .btn-txt {
+        color: black !important;
+    }
+
+    .drop-item-link:hover {
+        font-weight: 600;
+    }
 }
 
 .cust-btn .btn-txt {
@@ -62,10 +69,6 @@
     color: black;
     display: block;
     transition: color 0.3s;
-}
-
-.drop-item-link:hover {
-    font-weight: 600;
 }
 
 .btn-txt {

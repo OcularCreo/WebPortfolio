@@ -133,12 +133,12 @@ h1{
     }
 
     .profile-img{
-        width: 58.3333vw; 
+        width: 50vw; 
         aspect-ratio: 1/1;
     }
 
     .profile-div{
-        margin-top: 12.75vw;
+        margin-top: 20vw;
         display: flex;
         align-items: flex-end;
     }

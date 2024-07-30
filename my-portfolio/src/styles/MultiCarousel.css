@@ -12,9 +12,11 @@
     border: none;
 }
 
-.carousel-btn:hover{
-    color: rgb(200, 200, 200);
-    user-select: none;
+@media (hover:hover) {
+    .carousel-btn:hover{
+        color: rgb(200, 200, 200);
+        user-select: none;
+    }
 }
 
 .btn-l{
