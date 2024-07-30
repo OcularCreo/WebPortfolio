@@ -184,7 +184,7 @@ export const Home = () =>{
                     
                     {/* Profile image div */}
                     <div className="profile-div">
-                        <img src={profileImg} className="profile-img" alt="Jordan Cooligan Pang Headshot"></img>
+                        <img src={profileImg} loading="lazy" className="profile-img" alt="Jordan Cooligan Pang Headshot"></img>
                     </div>
 
                     {/* Description and links div */}

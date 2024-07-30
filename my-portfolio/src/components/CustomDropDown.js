@@ -7,8 +7,9 @@ export const CustomDropDown = (props) => {
     const [isDropOpen, setIsDropOpen] = useState(false);
     const dropdownRef = useRef(null);
 
-    const toggleDrop = () => {     
-        setIsDropOpen(!isDropOpen);    
+    const toggleDrop = (e) => {     
+        e.stopPropagation();
+        setIsDropOpen((prevState) => !prevState);
     }
 
     const handleOutsideClick = (e) => {
@@ -18,21 +19,25 @@ export const CustomDropDown = (props) => {
     }
 
     useEffect(() => {
-        document.documentElement.addEventListener('touchstart', handleOutsideClick); 
+        document.addEventListener('touchstart', handleOutsideClick); 
+        document.addEventListener('mousedown', handleOutsideClick);
+        document.addEventListener('scroll', handleOutsideClick);
 
         return () => {
-            document.documentElement.removeEventListener('touchstart', handleOutsideClick);
+            document.removeEventListener('touchstart', handleOutsideClick);
+            document.removeEventListener('mousedown', handleOutsideClick);
+            document.removeEventListener('scroll', handleOutsideClick);
         }
     }, []);
 
     return (
-        <div useRef={dropdownRef} className={`cust-btn ${isDropOpen ? 'open' : ''}`} onTouchEnd={toggleDrop} onMouseEnter={toggleDrop} onMouseLeave={toggleDrop}>
+        <div ref={dropdownRef} className={`cust-btn ${isDropOpen ? 'open' : ''}`} onClick={toggleDrop}>
             <p className="btn-txt">
                 {props.btnTxt ? props.btnTxt : ""} {isDropOpen ? <FontAwesomeIcon icon="fa-solid fa-caret-up" /> : <FontAwesomeIcon icon="fa-solid fa-caret-down" />}
             </p>
             <ul className="drop-items">
                 {props.items && props.items.map((item, index) => (
-                    <li><a className="drop-item-link" key={index} target={item.docPath ? "_blank" : ""} href={item.docPath ? item.docPath : ""}>{item.type}</a></li>
+                    <li><a onClick={(e) => e.stopPropagation()} className="drop-item-link" key={index} target={item.docPath ? "_blank" : ""} href={item.docPath ? item.docPath : ""}>{item.type}</a></li>
                 ))}
             </ul>
         </div>
