@@ -131,7 +131,7 @@ const Gallery = ({imagePath, images}) => {
 
                     {/* div and image are used to preview the images in their full ratio */}
                     <div className="preview-content">
-                        <img src={`${imagePath}${images[currIdx].src}`} alt={images[currIdx].imgTitle} className="preview-img"/>
+                        <img src={`${imagePath}${images[currIdx].src}`} alt={images[currIdx].imgTitle} className="preview-img" loading="lazy"/>
                     </div>
                 </div>
             )}

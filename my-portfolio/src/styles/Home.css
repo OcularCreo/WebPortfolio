@@ -143,8 +143,14 @@ h1{
         align-items: flex-end;
     }
 
+    .portfolio-title {
+        margin-top: 4rem;
+        font-size: 11vw;
+        margin-bottom: 1rem;
+    }
+
     .about-section{
-        background-image: url(../assets/images/Spiral-center-crop-01.jpg); 
+        background-image: url(../assets/images/Maskgroup.jpg); 
         background-position-x: center;
         background-position-y: 0%;
     }

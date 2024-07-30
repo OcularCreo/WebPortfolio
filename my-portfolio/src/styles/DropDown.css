@@ -86,7 +86,8 @@
     }
 
     .drop-item-link {
-        font-size: 5.3vw;
+        font-size: 4vw;
+        padding: 4px;
     }
 
     .drop-items {

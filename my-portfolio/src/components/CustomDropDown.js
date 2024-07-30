@@ -1,17 +1,32 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../styles/DropDown.css';
 
 export const CustomDropDown = (props) => {
 
     const [isDropOpen, setIsDropOpen] = useState(false);
+    const dropdownRef = useRef(null);
 
-    const toggleDrop = () => {
-        setIsDropOpen(!isDropOpen);
+    const toggleDrop = () => {     
+        setIsDropOpen(!isDropOpen);    
     }
 
+    const handleOutsideClick = (e) => {
+        if(dropdownRef.current && !dropdownRef.current.contains(e.target)){
+            setIsDropOpen(false);
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener('touchstart', handleOutsideClick); 
+
+        return () => {
+            document.removeEventListener('touchstart', handleOutsideClick);
+        }
+    }, []);
+
     return (
-        <div className={`cust-btn ${isDropOpen ? 'open' : ''}`} onTouchEnd={toggleDrop} onMouseEnter={toggleDrop} onMouseLeave={toggleDrop}>
+        <div useRef={dropdownRef} className={`cust-btn ${isDropOpen ? 'open' : ''}`} onTouchEnd={toggleDrop} onMouseEnter={toggleDrop} onMouseLeave={toggleDrop}>
             <p className="btn-txt">
                 {props.btnTxt ? props.btnTxt : ""} {isDropOpen ? <FontAwesomeIcon icon="fa-solid fa-caret-up" /> : <FontAwesomeIcon icon="fa-solid fa-caret-down" />}
             </p>
