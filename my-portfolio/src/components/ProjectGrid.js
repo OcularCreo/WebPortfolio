@@ -14,6 +14,9 @@ export const ProjectGrid = (props) =>{
 
         //fetching project data asyncronously
         const getProjects = async () => {
+            
+            setProjects(null); //clear the projects when getting new projects
+           
             const data = await fetchAllProjects(location.pathname);    //using fetchallprojects and sending the file path location to get related projs
             
             if(data){

@@ -4,7 +4,7 @@
         "title": "Dam'ed", 
         "date": "April 2024", 
         "mediaPath": "/data/game/damed/",
-        "thumbSrc": "damed_mapPreview.png",
+        "thumbSrc": "damed_mapPreview.webp",
         "images": [
             {"src": "damed_poster0.png",        "tall": true,  "wide": false, "imgTitle":"Dam'ed Poster"}, 
             {"src": "damed_interactionMap.png", "tall": false, "wide": false, "imgTitle":"State Machine Map"},
@@ -25,7 +25,7 @@
         "title": "RPS: Best of Three", 
         "date": "December 2023", 
         "mediaPath": "/data/game/rps/",
-        "thumbSrc": "rps_thumbnail.jpg",
+        "thumbSrc": "rps_thumbnail.webp",
         "images": [
             {"src": "rps_mainmenu.jpg",             "tall": true,  "wide": false, "imgTitle":"RPS: Best of Three - Main Menu"}, 
             {"src": "rps_characterIllustrator.jpg", "tall": false,  "wide": false, "imgTitle":"RPS: Characters - Illustrator"},

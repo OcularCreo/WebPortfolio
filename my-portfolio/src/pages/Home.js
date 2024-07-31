@@ -3,7 +3,7 @@ import { Container, Dropdown} from "react-bootstrap";
 import { CustomBtn } from "../components/CustomBtn";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Home.css";
-import profileImg from "../assets/images/8.jpg";
+import profileImg from "../assets/images/8.webp";
 import { MultiCarousel } from "../components/MultiCarousel.js";
 import BorderBox from "../components/BorderBox.js";
 import KnowledgeItems from "../components/KnowledgeItems.js";

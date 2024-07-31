@@ -17,7 +17,7 @@ export const ProjectPage = (props) =>{
 
         //getting the page's project data
         const getProjectData = async () => {
-            
+
             //get the id from the page url to identify which project to fetch
             const pageSegments = location.pathname.split('/'); 
             const section = '/' + pageSegments[1];

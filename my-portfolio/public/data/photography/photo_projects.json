@@ -4,11 +4,11 @@
         "title": "Captum - Photobook", 
         "date": "April 2021", 
         "mediaPath": "/data/photography/uni_book/",
-        "thumbSrc": "uni_thumb.png",
+        "thumbSrc": "uni_thumb.webp",
         "images": [], 
         "markdownPath": "/data/photography/uni_book/unibook_desc.md", 
         "pdfs" : [
-            {"pdfSrc": "CooliganPang_Jordan_FinalAssign.pdf", "title": "Captum Photobook"}
+            {"pdfSrc": "CooliganPang_Jordan_FinalAssign-compressed.pdf", "title": "Captum Photobook"}
         ]
     }, 
     {
@@ -16,7 +16,7 @@
         "title": "Street Photography", 
         "date": "March 2021", 
         "mediaPath": "/data/photography/street/",
-        "thumbSrc": "9.jpg",
+        "thumbSrc": "9.webp",
         "images": [
             {"src": "1.jpg",    "tall": true,  "wide": false, "imgTitle":"Walking downtown"}, 
             {"src": "2.jpg",    "tall": true,  "wide": false, "imgTitle":"Smoking on the Step"}, 
@@ -40,7 +40,7 @@
         "title": "Unique Portraits", 
         "date": "March 2021", 
         "mediaPath": "/data/photography/uniq_portrait/",
-        "thumbSrc": "2.jpg",
+        "thumbSrc": "2.webp",
         "images": [
             {"src": "1.jpg",        "tall": true,  "wide": false, "imgTitle":"Suprise Portrait"}, 
             {"src": "2-loop.jpg",   "tall": true,  "wide": false, "imgTitle":"Rembrant - Loop"}, 
@@ -56,7 +56,7 @@
         "title": "Architecture", 
         "date": "March 2021", 
         "mediaPath": "/data/photography/architecture/",
-        "thumbSrc": "1.jpg",
+        "thumbSrc": "1.webp",
         "images": [
             {"src": "4.jpg", "tall": true, "wide": false, "imgTitle": "Old Times vs Modernization"},
             {"src": "1.jpg", "tall": false, "wide": false, "imgTitle": "Greenhouse"},
@@ -76,7 +76,7 @@
         "title": "Night & Long Exposure", 
         "date": "March 2021", 
         "mediaPath": "/data/photography/night/",
-        "thumbSrc": "3.jpg",
+        "thumbSrc": "3.webp",
         "images": [
             {"src": "4.jpg", "tall": false, "wide": false, "imgTitle": "Night Sky"},
             {"src": "1.jpg", "tall": false, "wide": false, "imgTitle": "Road Lights"},
@@ -94,7 +94,7 @@
         "title": "Nature", 
         "date": "February 2021", 
         "mediaPath": "/data/photography/nature/",
-        "thumbSrc": "1.jpg",
+        "thumbSrc": "1.webp",
         "images": [
             {"src": "1.jpg", "tall": false, "wide": false, "imgTitle": "Standing infront of a frozen desert"},
             {"src": "4.jpg", "tall": false, "wide": false, "imgTitle": "Snow covered bog"},
@@ -112,7 +112,7 @@
         "title": "High & Low Key", 
         "date": "February 2021", 
         "mediaPath": "/data/photography/highkey/",
-        "thumbSrc": "IMG_6214-2.jpg",
+        "thumbSrc": "IMG_6214-2.webp",
         "images": [
             {"src": "IMG_6040.jpg",     "tall": true, "wide": false, "imgTitle": "Tie"},    
             {"src": "IMG_6108.jpg",     "tall": false, "wide": false, "imgTitle": "Woman Looking Left"},
@@ -129,7 +129,7 @@
         "title": "Invisibilia - Photobook", 
         "date": "June 2019", 
         "mediaPath": "/data/photography/cpt/",
-        "thumbSrc": "cpt_thumb.png",
+        "thumbSrc": "cpt_thumb.webp",
         "images": [
         ],
         "markdownPath": "/data/photography/cpt/cpt_desc.md", 
