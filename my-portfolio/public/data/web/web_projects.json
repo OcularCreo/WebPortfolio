@@ -4,7 +4,7 @@
         "title": "Web Portfolio", 
         "date": "July 2024", 
         "mediaPath": "/data/web/port/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [
             {"src": "desktop_lay.jpg",  "tall": false,  "wide": false, "imgTitle":"Desktop layout"},
             {"src": "mobile_lay.jpg",   "tall": true,  "wide": false, "imgTitle":"Mobile layout"},
@@ -17,7 +17,7 @@
         "title": "Full Stack", 
         "date": "December 2023", 
         "mediaPath": "/data/web/fullstack/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [
             {"src": "loginproto.jpg",       "tall": false,  "wide": false, "imgTitle":"Login Prototype"},
             {"src": "recipeproto.jpg",      "tall": false,  "wide": false, "imgTitle":"Recipe Prototype"},
@@ -40,7 +40,7 @@
         "title": "Mars Museum", 
         "date": "April 2023", 
         "mediaPath": "/data/web/mars/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [
         ], 
         "markdownPath": "/data/web/mars/mars_desc.md", 
@@ -53,7 +53,7 @@
         "title": "Wack-a-Mole", 
         "date": "March 2023", 
         "mediaPath": "/data/web/wack/",
-        "thumbSrc": "lobby.jpg",
+        "thumbSrc": "lobby.webp",
         "images": [
             {"src": "lobby.jpg",        "tall": true,  "wide": false, "imgTitle":"Lobby Area"}, 
             {"src": "coopgameplay.jpg", "tall": false,  "wide": false, "imgTitle":"Co-op - Gameplay Snapshot"}, 
@@ -71,7 +71,7 @@
         "title": "Education Website", 
         "date": "April 2020", 
         "mediaPath": "/data/web/edu/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [
         ], 
         "markdownPath": "/data/web/edu/edu_desc.md", 

@@ -4,7 +4,7 @@
         "title": "Arena Environment", 
         "date": "April 2024", 
         "mediaPath": "/data/3d/arena/",
-        "thumbSrc": "final-04.jpg",
+        "thumbSrc": "final-04.webp",
         "images": [ 
             {"src": "final-01.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 1"},
             {"src": "final-02.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 2"},
@@ -29,7 +29,7 @@
         "title": "Bunker Environment", 
         "date": "March 2024", 
         "mediaPath": "/data/3d/bunker/",
-        "thumbSrc": "A4-1.jpg",
+        "thumbSrc": "A4-1.webp",
         "images": [ 
             {"src": "A4-1.jpg", "tall": false, "wide": true, "imgTitle":"Bunker shot 1"},
             {"src": "A4-2.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 2"},
@@ -53,7 +53,7 @@
         "title": "Modular Kit", 
         "date": "February 2024", 
         "mediaPath": "/data/3d/modularkit/",
-        "thumbSrc": "blender-models.jpg",
+        "thumbSrc": "blender-models.webp",
         "images": [ 
             {"src": "blender-models.jpg", "tall": true, "wide": true, "imgTitle":"Blender Models"},    
             
@@ -71,7 +71,7 @@
         "title": "Facial Animation", 
         "date": "October 2023", 
         "mediaPath": "/data/3d/facial/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [ 
             {"src": "expressions.png",  "tall": false, "wide": false, "imgTitle":"Expressions"}, 
             {"src": "Visemes.png",      "tall": false, "wide": false, "imgTitle":"Visemes"}       
@@ -87,7 +87,7 @@
         "title": "Parkour", 
         "date": "October 2023", 
         "mediaPath": "/data/3d/parkour/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [ 
             {"src": "sketch_01.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 1"}, 
             {"src": "sketch_02.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 2"}, 
@@ -104,7 +104,7 @@
         "title": "Flour Bag", 
         "date": "October 2023", 
         "mediaPath": "/data/3d/flourbag/",
-        "thumbSrc": "test.png",
+        "thumbSrc": "test.webp",
         "images": [ 
             {"src": "sketch.jpg", "tall": true, "wide": false, "imgTitle":"Animation Sketch"}      
         ], 
@@ -119,7 +119,7 @@
         "title": "Texture Maps", 
         "date": "April 2023", 
         "mediaPath": "/data/3d/texturemap/",
-        "thumbSrc": "Render_01.jpg",
+        "thumbSrc": "Render_01.webp",
         "images": [ 
             {"src": "Render_01.jpg", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 1"}, 
             {"src": "Render_02.jpg", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 2"}, 
@@ -169,7 +169,7 @@
         "title": "Walk Cycle", 
         "date": "November 2020", 
         "mediaPath": "/data/3d/walk/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [ 
             {"src": "Contact.jpg",   "tall": false, "wide": false, "imgTitle":"Contact"}, 
             {"src": "Recoil.jpg",    "tall": false, "wide": false, "imgTitle":"Recoil"}, 
