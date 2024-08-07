@@ -6,9 +6,9 @@
         "mediaPath": "/data/web/port/",
         "thumbSrc": "thumb.webp",
         "images": [
-            {"src": "desktop_lay.jpg",  "tall": false,  "wide": false, "imgTitle":"Desktop layout"},
-            {"src": "mobile_lay.jpg",   "tall": true,  "wide": false, "imgTitle":"Mobile layout"},
-            {"src": "tablet_lay.jpg",   "tall": false,  "wide": false, "imgTitle":"Tablet layout"}
+            {"src": "desktop_lay.webp",  "tall": false,  "wide": false, "imgTitle":"Desktop layout"},
+            {"src": "mobile_lay.webp",   "tall": true,  "wide": false, "imgTitle":"Mobile layout"},
+            {"src": "tablet_lay.webp",   "tall": false,  "wide": false, "imgTitle":"Tablet layout"}
         ], 
         "markdownPath": "/data/web/port/port_desc.md"
     },
@@ -19,16 +19,16 @@
         "mediaPath": "/data/web/fullstack/",
         "thumbSrc": "thumb.webp",
         "images": [
-            {"src": "loginproto.jpg",       "tall": false,  "wide": false, "imgTitle":"Login Prototype"},
-            {"src": "recipeproto.jpg",      "tall": false,  "wide": false, "imgTitle":"Recipe Prototype"},
-            {"src": "searchproto.jpg",      "tall": false,  "wide": false, "imgTitle":"Search Prototype"},
-            {"src": "colors.jpg",           "tall": false,  "wide": true, "imgTitle":"Colour Palette"},
-            {"src": "responsivepage.jpg",   "tall": true,  "wide": false, "imgTitle":"Responsive Example"},
-            {"src": "search.jpg",           "tall": false,  "wide": false, "imgTitle":"Search Page"},
-            {"src": "books.jpg",            "tall": false,  "wide": false, "imgTitle":"Library - Books"}, 
-            {"src": "books2.jpg",           "tall": false,  "wide": false, "imgTitle":"Library - Books Continued"}, 
-            {"src": "favs.jpg",             "tall": false,  "wide": false, "imgTitle":"Library - Favourites"}, 
-            {"src": "recipepage.jpg",       "tall": false,  "wide": false, "imgTitle":"Recipe Page"}
+            {"src": "loginproto.webp",       "tall": false,  "wide": false, "imgTitle":"Login Prototype"},
+            {"src": "recipeproto.webp",      "tall": false,  "wide": false, "imgTitle":"Recipe Prototype"},
+            {"src": "searchproto.webp",      "tall": false,  "wide": false, "imgTitle":"Search Prototype"},
+            {"src": "colors.webp",           "tall": false,  "wide": true, "imgTitle":"Colour Palette"},
+            {"src": "responsivepage.webp",   "tall": true,  "wide": false, "imgTitle":"Responsive Example"},
+            {"src": "search.webp",           "tall": false,  "wide": false, "imgTitle":"Search Page"},
+            {"src": "books.webp",            "tall": false,  "wide": false, "imgTitle":"Library - Books"}, 
+            {"src": "books2.webp",           "tall": false,  "wide": false, "imgTitle":"Library - Books Continued"}, 
+            {"src": "favs.webp",             "tall": false,  "wide": false, "imgTitle":"Library - Favourites"}, 
+            {"src": "recipepage.webp",       "tall": false,  "wide": false, "imgTitle":"Recipe Page"}
         ], 
         "markdownPath": "/data/web/fullstack/fullstack_desc.md", 
         "videos": [
@@ -55,11 +55,11 @@
         "mediaPath": "/data/web/wack/",
         "thumbSrc": "lobby.webp",
         "images": [
-            {"src": "lobby.jpg",        "tall": true,  "wide": false, "imgTitle":"Lobby Area"}, 
-            {"src": "coopgameplay.jpg", "tall": false,  "wide": false, "imgTitle":"Co-op - Gameplay Snapshot"}, 
-            {"src": "coopstarting.jpg", "tall": false,  "wide": false, "imgTitle":"Co-op - Staring Controls"},
-            {"src": "versuscork.jpg",   "tall": false,  "wide": false, "imgTitle":"Versus - Player holding a cork"},
-            {"src": "versusteam.jpg",   "tall": false,  "wide": false, "imgTitle":"Versus - Team Selection"}
+            {"src": "lobby.webp",        "tall": true,  "wide": false, "imgTitle":"Lobby Area"}, 
+            {"src": "coopgameplay.webp", "tall": false,  "wide": false, "imgTitle":"Co-op - Gameplay Snapshot"}, 
+            {"src": "coopstarting.webp", "tall": false,  "wide": false, "imgTitle":"Co-op - Staring Controls"},
+            {"src": "versuscork.webp",   "tall": false,  "wide": false, "imgTitle":"Versus - Player holding a cork"},
+            {"src": "versusteam.webp",   "tall": false,  "wide": false, "imgTitle":"Versus - Team Selection"}
         ], 
         "markdownPath": "/data/web/wack/wack_desc.md", 
         "videos": [

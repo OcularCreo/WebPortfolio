@@ -18,19 +18,19 @@
         "mediaPath": "/data/photography/street/",
         "thumbSrc": "9.webp",
         "images": [
-            {"src": "1.jpg",    "tall": true,  "wide": false, "imgTitle":"Walking downtown"}, 
-            {"src": "2.jpg",    "tall": true,  "wide": false, "imgTitle":"Smoking on the Step"}, 
-            {"src": "9.jpg",    "tall": false,  "wide": false, "imgTitle":"Closed fish market"},
-            {"src": "15.jpg",   "tall": false,  "wide": false, "imgTitle":"Street puddle"},
-            {"src": "3.jpg",    "tall": true,  "wide": false, "imgTitle":"Ottawa Sparks Street"}, 
-            {"src": "12.jpg",   "tall": false,  "wide": false, "imgTitle":"Flipped off"}, 
-            {"src": "4.jpg",    "tall": true,  "wide": false, "imgTitle":"Crossing the street"}, 
-            {"src": "7.jpg",    "tall": true,  "wide": false, "imgTitle":"Sitting on the trash"}, 
-            {"src": "8.jpg",    "tall": true,  "wide": false, "imgTitle":"Hanging out on the street"}, 
-            {"src": "11.jpg",   "tall": false,  "wide": false, "imgTitle":"Street crossing 2"},
-            {"src": "13.jpg",   "tall": true,  "wide": false, "imgTitle":"Lamppost leaning"}, 
-            {"src": "10.jpg",   "tall": true,  "wide": false, "imgTitle":"Walking downtown 2"}, 
-            {"src": "14.jpg",   "tall": false,  "wide": false, "imgTitle":"Walking down the street"} 
+            {"src": "1.webp",    "tall": true,  "wide": false, "imgTitle":"Walking downtown"}, 
+            {"src": "2.webp",    "tall": true,  "wide": false, "imgTitle":"Smoking on the Step"}, 
+            {"src": "9.webp",    "tall": false,  "wide": false, "imgTitle":"Closed fish market"},
+            {"src": "15.webp",   "tall": false,  "wide": false, "imgTitle":"Street puddle"},
+            {"src": "3.webp",    "tall": true,  "wide": false, "imgTitle":"Ottawa Sparks Street"}, 
+            {"src": "12.webp",   "tall": false,  "wide": false, "imgTitle":"Flipped off"}, 
+            {"src": "4.webp",    "tall": true,  "wide": false, "imgTitle":"Crossing the street"}, 
+            {"src": "7.webp",    "tall": true,  "wide": false, "imgTitle":"Sitting on the trash"}, 
+            {"src": "8.webp",    "tall": true,  "wide": false, "imgTitle":"Hanging out on the street"}, 
+            {"src": "11.webp",   "tall": false,  "wide": false, "imgTitle":"Street crossing 2"},
+            {"src": "13.webp",   "tall": true,  "wide": false, "imgTitle":"Lamppost leaning"}, 
+            {"src": "10.webp",   "tall": true,  "wide": false, "imgTitle":"Walking downtown 2"}, 
+            {"src": "14.webp",   "tall": false,  "wide": false, "imgTitle":"Walking down the street"} 
             
         ],
         "markdownPath": "/data/photography/street/street_desc.md"
@@ -42,11 +42,11 @@
         "mediaPath": "/data/photography/uniq_portrait/",
         "thumbSrc": "2.webp",
         "images": [
-            {"src": "1.jpg",        "tall": true,  "wide": false, "imgTitle":"Suprise Portrait"}, 
-            {"src": "2-loop.jpg",   "tall": true,  "wide": false, "imgTitle":"Rembrant - Loop"}, 
-            {"src": "6-split.jpg",  "tall": true,  "wide": false, "imgTitle":"Rembrant - Split"},
-            {"src": "3.jpg",        "tall": false,  "wide": true, "imgTitle":"Artifical Smiles"},
-            {"src": "2.jpg",        "tall": false,  "wide": false, "imgTitle":"Textured Expressions"}
+            {"src": "1.webp",        "tall": true,  "wide": false, "imgTitle":"Suprise Portrait"}, 
+            {"src": "2-loop.webp",   "tall": true,  "wide": false, "imgTitle":"Rembrant - Loop"}, 
+            {"src": "6-split.webp",  "tall": true,  "wide": false, "imgTitle":"Rembrant - Split"},
+            {"src": "3.webp",        "tall": false,  "wide": true, "imgTitle":"Artifical Smiles"},
+            {"src": "2.webp",        "tall": false,  "wide": false, "imgTitle":"Textured Expressions"}
             
         ],
         "markdownPath": "/data/photography/uniq_portrait/uniqport_desc.md"
@@ -58,16 +58,16 @@
         "mediaPath": "/data/photography/architecture/",
         "thumbSrc": "1.webp",
         "images": [
-            {"src": "4.jpg", "tall": true, "wide": false, "imgTitle": "Old Times vs Modernization"},
-            {"src": "1.jpg", "tall": false, "wide": false, "imgTitle": "Greenhouse"},
-            {"src": "2.jpg", "tall": true, "wide": false, "imgTitle": "Ottawa Holocaust Memorial"},
-            {"src": "3.jpg", "tall": true, "wide": false, "imgTitle": "Parliament Building"},  
-            {"src": "5.jpg", "tall": false, "wide": false, "imgTitle": "Ottawa Skyscraper"},
-            {"src": "6.jpg", "tall": false, "wide": false, "imgTitle": "Science and Tech Museum"},
-            {"src": "7.jpg", "tall": true, "wide": false, "imgTitle": "Museum of Natural History"},
-            {"src": "8.jpg", "tall": true, "wide": false, "imgTitle": "Art Piece"},
-            {"src": "9.jpg", "tall": false, "wide": false, "imgTitle": "Ottawa Notre Dame"},
-            {"src": "10.jpg", "tall": false, "wide": false, "imgTitle": "National Art Gallery"} 
+            {"src": "4.webp", "tall": true, "wide": false, "imgTitle": "Old Times vs Modernization"},
+            {"src": "1.webp", "tall": false, "wide": false, "imgTitle": "Greenhouse"},
+            {"src": "2.webp", "tall": true, "wide": false, "imgTitle": "Ottawa Holocaust Memorial"},
+            {"src": "3.webp", "tall": true, "wide": false, "imgTitle": "Parliament Building"},  
+            {"src": "5.webp", "tall": false, "wide": false, "imgTitle": "Ottawa Skyscraper"},
+            {"src": "6.webp", "tall": false, "wide": false, "imgTitle": "Science and Tech Museum"},
+            {"src": "7.webp", "tall": true, "wide": false, "imgTitle": "Museum of Natural History"},
+            {"src": "8.webp", "tall": true, "wide": false, "imgTitle": "Art Piece"},
+            {"src": "9.webp", "tall": false, "wide": false, "imgTitle": "Ottawa Notre Dame"},
+            {"src": "10.webp", "tall": false, "wide": false, "imgTitle": "National Art Gallery"} 
         ],
         "markdownPath": "/data/photography/architecture/archit_desc.md"
     }, 
@@ -78,14 +78,14 @@
         "mediaPath": "/data/photography/night/",
         "thumbSrc": "3.webp",
         "images": [
-            {"src": "4.jpg", "tall": false, "wide": false, "imgTitle": "Night Sky"},
-            {"src": "1.jpg", "tall": false, "wide": false, "imgTitle": "Road Lights"},
-            {"src": "2.jpg", "tall": false, "wide": false, "imgTitle": "Night Ride"},
-            {"src": "3.jpg", "tall": false, "wide": false, "imgTitle": "Steel Wool"},      
-            {"src": "5.jpg", "tall": false, "wide": false, "imgTitle": "Rotating Stars"},
-            {"src": "7.jpg", "tall": true, "wide": false, "imgTitle": "Being"},
-            {"src": "6.jpg", "tall": false, "wide": false, "imgTitle": "Stars and Car"},
-            {"src": "8.jpg", "tall": false, "wide": false, "imgTitle": "Car Tracking Long Exposure"}
+            {"src": "4.webp", "tall": false, "wide": false, "imgTitle": "Night Sky"},
+            {"src": "1.webp", "tall": false, "wide": false, "imgTitle": "Road Lights"},
+            {"src": "2.webp", "tall": false, "wide": false, "imgTitle": "Night Ride"},
+            {"src": "3.webp", "tall": false, "wide": false, "imgTitle": "Steel Wool"},      
+            {"src": "5.webp", "tall": false, "wide": false, "imgTitle": "Rotating Stars"},
+            {"src": "7.webp", "tall": true, "wide": false, "imgTitle": "Being"},
+            {"src": "6.webp", "tall": false, "wide": false, "imgTitle": "Stars and Car"},
+            {"src": "8.webp", "tall": false, "wide": false, "imgTitle": "Car Tracking Long Exposure"}
         ],
         "markdownPath": "/data/photography/night/night_desc.md"
     }, 
@@ -96,14 +96,14 @@
         "mediaPath": "/data/photography/nature/",
         "thumbSrc": "1.webp",
         "images": [
-            {"src": "1.jpg", "tall": false, "wide": false, "imgTitle": "Standing infront of a frozen desert"},
-            {"src": "4.jpg", "tall": false, "wide": false, "imgTitle": "Snow covered bog"},
-            {"src": "2.jpg", "tall": false, "wide": false, "imgTitle": "Textured tree trunk"},
-            {"src": "3.jpg", "tall": true, "wide": false, "imgTitle": "Two lonely pine trees"},      
-            {"src": "5.jpg", "tall": false, "wide": false, "imgTitle": "Contrasting red berries"},
-            {"src": "7.jpg", "tall": false, "wide": false, "imgTitle": "Winter Wilderness"},
-            {"src": "6.jpg", "tall": false, "wide": false, "imgTitle": "Chickadee on a branch"},
-            {"src": "8.jpg", "tall": false, "wide": false, "imgTitle": "Running winter water"}
+            {"src": "1.webp", "tall": false, "wide": false, "imgTitle": "Standing infront of a frozen desert"},
+            {"src": "4.webp", "tall": false, "wide": false, "imgTitle": "Snow covered bog"},
+            {"src": "2.webp", "tall": false, "wide": false, "imgTitle": "Textured tree trunk"},
+            {"src": "3.webp", "tall": true, "wide": false, "imgTitle": "Two lonely pine trees"},      
+            {"src": "5.webp", "tall": false, "wide": false, "imgTitle": "Contrasting red berries"},
+            {"src": "7.webp", "tall": false, "wide": false, "imgTitle": "Winter Wilderness"},
+            {"src": "6.webp", "tall": false, "wide": false, "imgTitle": "Chickadee on a branch"},
+            {"src": "8.webp", "tall": false, "wide": false, "imgTitle": "Running winter water"}
         ],
         "markdownPath": "/data/photography/nature/nature_desc.md"
     }, 
@@ -114,13 +114,13 @@
         "mediaPath": "/data/photography/highkey/",
         "thumbSrc": "IMG_6214-2.webp",
         "images": [
-            {"src": "IMG_6040.jpg",     "tall": true, "wide": false, "imgTitle": "Tie"},    
-            {"src": "IMG_6108.jpg",     "tall": false, "wide": false, "imgTitle": "Woman Looking Left"},
-            {"src": "IMG_6351.jpg",     "tall": false, "wide": false, "imgTitle": ""},
-            {"src": "IMG_6373.jpg",     "tall": true, "wide": false, "imgTitle": ""},
-            {"src": "IMG_6141-2.jpg",   "tall": false, "wide": false, "imgTitle": "Woman Posing"},
-            {"src": "IMG_6214.jpg",     "tall": false, "wide": false, "imgTitle": ""},
-            {"src": "IMG_6214-2.jpg",   "tall": false, "wide": false, "imgTitle": ""}
+            {"src": "IMG_6040.webp",     "tall": true, "wide": false, "imgTitle": "Tie"},    
+            {"src": "IMG_6108.webp",     "tall": false, "wide": false, "imgTitle": "Woman Looking Left"},
+            {"src": "IMG_6351.webp",     "tall": false, "wide": false, "imgTitle": ""},
+            {"src": "IMG_6373.webp",     "tall": true, "wide": false, "imgTitle": ""},
+            {"src": "IMG_6141-2.webp",   "tall": false, "wide": false, "imgTitle": "Woman Posing"},
+            {"src": "IMG_6214.webp",     "tall": false, "wide": false, "imgTitle": ""},
+            {"src": "IMG_6214-2.webp",   "tall": false, "wide": false, "imgTitle": ""}
         ],
         "markdownPath": "/data/photography/highkey/highkey_desc.md"
     }, 

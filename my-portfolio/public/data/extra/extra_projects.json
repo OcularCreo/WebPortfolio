@@ -4,8 +4,8 @@
         "title": "Adv. Intersection Mapping", 
         "date": "February 2023", 
         "mediaPath": "/data/extra/vector/",
-        "thumbSrc": "thumb.jpg",
-        "images": [{"src": "demo.jpg", "tall": false, "wide": false, "imgTitle":"Mapping Interactions Example"}], 
+        "thumbSrc": "thumb.webp",
+        "images": [{"src": "demo.webp", "tall": false, "wide": false, "imgTitle":"Mapping Interactions Example"}], 
         "markdownPath": "/data/extra/vector/vector_desc.md"
     },
     {
@@ -13,7 +13,7 @@
         "title": "GAC Reels", 
         "date": "July 2022", 
         "mediaPath": "/data/extra/gac_reels/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [], 
         "markdownPath": "/data/extra/gac_reels/gac_reels_desc.md", 
         "videos": [
@@ -26,16 +26,16 @@
         "title": "Ghost Patrol - Arduino", 
         "date": "December 2021", 
         "mediaPath": "/data/extra/arduino/",
-        "thumbSrc": "gp_overview.jpg",
+        "thumbSrc": "gp_overview.webp",
         "images": [
-            {"src": "prototype.jpg",        "tall": false, "wide": false, "imgTitle":"Ghost Patrol Prototype"},
-            {"src": "proto_cntrl.jpg",      "tall": false, "wide": false, "imgTitle":"Controller Prototype"},
-            {"src": "proto_sensor.jpg",     "tall": false, "wide": false, "imgTitle":"LED Sensor"}, 
-            {"src": "gp_overview.jpg",      "tall": true, "wide": false, "imgTitle":"Ghost Patrol Setup"},
-            {"src": "back_wires.jpg",       "tall": false, "wide": false, "imgTitle":"Ghost Patrol LED Wiring"},
-            {"src": "controller_lable.jpg", "tall": false, "wide": false, "imgTitle":"Controller"}, 
-            {"src": "bps.jpg",              "tall": false, "wide": false, "imgTitle":"Arduino Blue Pills"},
-            {"src": "lcd.jpg",              "tall": false, "wide": false, "imgTitle":"LCD Display"}
+            {"src": "prototype.webp",        "tall": false, "wide": false, "imgTitle":"Ghost Patrol Prototype"},
+            {"src": "proto_cntrl.webp",      "tall": false, "wide": false, "imgTitle":"Controller Prototype"},
+            {"src": "proto_sensor.webp",     "tall": false, "wide": false, "imgTitle":"LED Sensor"}, 
+            {"src": "gp_overview.webp",      "tall": true, "wide": false, "imgTitle":"Ghost Patrol Setup"},
+            {"src": "back_wires.webp",       "tall": false, "wide": false, "imgTitle":"Ghost Patrol LED Wiring"},
+            {"src": "controller_lable.webp", "tall": false, "wide": false, "imgTitle":"Controller"}, 
+            {"src": "bps.webp",              "tall": false, "wide": false, "imgTitle":"Arduino Blue Pills"},
+            {"src": "lcd.webp",              "tall": false, "wide": false, "imgTitle":"LCD Display"}
         ], 
         "markdownPath": "/data/extra/arduino/arduino_desc.md", 
         "videos": [

@@ -24,11 +24,11 @@
         "title": "Illustration", 
         "date": "August 2023", 
         "mediaPath": "/data/2d/illustration/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [
-            {"src": "Illustrator_ramen.jpg", "tall": true, "wide": false, "imgTitle":"Final Illustration"}, 
-            {"src": "sketch_ramen.jpg", "tall": false, "wide": false, "imgTitle":"Sketch & Concept"}, 
-            {"src": "workspace_ss.jpg", "tall": false, "wide": false, "imgTitle":"Adobe Illustrator Workspace"}
+            {"src": "Illustrator_ramen.webp", "tall": true, "wide": false, "imgTitle":"Final Illustration"}, 
+            {"src": "sketch_ramen.webp", "tall": false, "wide": false, "imgTitle":"Sketch & Concept"}, 
+            {"src": "workspace_ss.webp", "tall": false, "wide": false, "imgTitle":"Adobe Illustrator Workspace"}
         ], 
         "markdownPath": "/data/2d/illustration/illus_desc.md"
     },

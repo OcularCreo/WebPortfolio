@@ -6,14 +6,14 @@
         "mediaPath": "/data/game/damed/",
         "thumbSrc": "damed_mapPreview.webp",
         "images": [
-            {"src": "damed_poster0.png",        "tall": true,  "wide": false, "imgTitle":"Dam'ed Poster"}, 
-            {"src": "damed_interactionMap.png", "tall": false, "wide": false, "imgTitle":"State Machine Map"},
-            {"src": "trelloboard.png",          "tall": false, "wide": false, "imgTitle":"Trello Board - Filtered with my tasks"},
-            {"src": "damed_prototype2.png",     "tall": false, "wide": false, "imgTitle":"Progress Presentation Slide - Prototype Visuals"},
-            {"src": "damed_menu.png",           "tall": false, "wide": false, "imgTitle":"Dam'ed Main Menu"}, 
-            {"src": "damed_teamselect.png",     "tall": false, "wide": false, "imgTitle":"Dam'ed Team Selection UI"}, 
-            {"src": "damed_oldmap.png",         "tall": false, "wide": false, "imgTitle":"Dam'ed Early Map"},
-            {"src": "damed_mapPreview.png",     "tall": false, "wide": false, "imgTitle":"Dam'ed Final Map"}
+            {"src": "damed_poster0.webp",        "tall": true,  "wide": false, "imgTitle":"Dam'ed Poster"}, 
+            {"src": "damed_interactionMap.webp", "tall": false, "wide": false, "imgTitle":"State Machine Map"},
+            {"src": "trelloboard.webp",          "tall": false, "wide": false, "imgTitle":"Trello Board - Filtered with my tasks"},
+            {"src": "damed_prototype2.webp",     "tall": false, "wide": false, "imgTitle":"Progress Presentation Slide - Prototype Visuals"},
+            {"src": "damed_menu.webp",           "tall": false, "wide": false, "imgTitle":"Dam'ed Main Menu"}, 
+            {"src": "damed_teamselect.webp",     "tall": false, "wide": false, "imgTitle":"Dam'ed Team Selection UI"}, 
+            {"src": "damed_oldmap.webp",         "tall": false, "wide": false, "imgTitle":"Dam'ed Early Map"},
+            {"src": "damed_mapPreview.webp",     "tall": false, "wide": false, "imgTitle":"Dam'ed Final Map"}
         ], 
         "markdownPath": "/data/game/damed/damed_description.md", 
         "videos": [
@@ -27,13 +27,13 @@
         "mediaPath": "/data/game/rps/",
         "thumbSrc": "rps_thumbnail.webp",
         "images": [
-            {"src": "rps_mainmenu.jpg",             "tall": true,  "wide": false, "imgTitle":"RPS: Best of Three - Main Menu"}, 
-            {"src": "rps_characterIllustrator.jpg", "tall": false,  "wide": false, "imgTitle":"RPS: Characters - Illustrator"},
-            {"src": "tut_jump.jpg",                 "tall": false,  "wide": false, "imgTitle":"Tutorial Jumping Section"},
-            {"src": "tut_swap.jpg",                 "tall": false,  "wide": false, "imgTitle":"Tutorial Switching Characters"},
-            {"src": "collage_battle.jpg",           "tall": false,  "wide": false, "imgTitle":"Fight in Collage Map"},
-            {"src": "math_battle.jpg",              "tall": false,  "wide": true, "imgTitle":"Fight in Math Map"},
-            {"src": "rpstime.jpg",                  "tall": false,  "wide": false, "imgTitle":"Rock, Paper, Scissors Time"}
+            {"src": "rps_mainmenu.webp",             "tall": true,  "wide": false, "imgTitle":"RPS: Best of Three - Main Menu"}, 
+            {"src": "rps_characterIllustrator.webp", "tall": false,  "wide": false, "imgTitle":"RPS: Characters - Illustrator"},
+            {"src": "tut_jump.webp",                 "tall": false,  "wide": false, "imgTitle":"Tutorial Jumping Section"},
+            {"src": "tut_swap.webp",                 "tall": false,  "wide": false, "imgTitle":"Tutorial Switching Characters"},
+            {"src": "collage_battle.webp",           "tall": false,  "wide": false, "imgTitle":"Fight in Collage Map"},
+            {"src": "math_battle.webp",              "tall": false,  "wide": true, "imgTitle":"Fight in Math Map"},
+            {"src": "rpstime.webp",                  "tall": false,  "wide": false, "imgTitle":"Rock, Paper, Scissors Time"}
         ], 
         "markdownPath": "/data/game/rps/rps_desc.md", 
         "videos": [
@@ -45,17 +45,17 @@
         "title": "Pastry Peril", 
         "date": "April 2021", 
         "mediaPath": "/data/game/pastry/",
-        "thumbSrc": "PastryPeril_Thumbnail.png",
+        "thumbSrc": "PastryPeril_Thumbnail.webp",
         "images": [
-            {"src": "PastryPeril_Thumbnail.png",    "tall": false,  "wide": true, "imgTitle":"Pastry Peril Banner"}, 
-            {"src": "pastry_menu.png",              "tall": false,  "wide": false, "imgTitle":"Main Menu"}, 
-            {"src": "pastry_ingred.png",            "tall": true,  "wide": false, "imgTitle":"Ingredient Reveal"}, 
-            {"src": "pastry_hint.png",              "tall": false,  "wide": false, "imgTitle":"Ingredient Hint"}, 
-            {"src": "pastry_picking.png",           "tall": false,  "wide": false, "imgTitle":"Picking Ingredients"}, 
-            {"src": "pastry_cooking.png",           "tall": false,  "wide": false, "imgTitle":"Cooking in the Oven"}, 
-            {"src": "pastry_cookingcookie.png",     "tall": false,  "wide": false, "imgTitle":"Baking Cookies"}, 
-            {"src": "pastry_rolling.png",           "tall": false,  "wide": false, "imgTitle":"Rolling Dough"}, 
-            {"src": "pastry_score.png",             "tall": false,  "wide": true, "imgTitle":"Final Score"}
+            {"src": "PastryPeril_Thumbnail.webp",    "tall": false,  "wide": true, "imgTitle":"Pastry Peril Banner"}, 
+            {"src": "pastry_menu.webp",              "tall": false,  "wide": false, "imgTitle":"Main Menu"}, 
+            {"src": "pastry_ingred.webp",            "tall": true,  "wide": false, "imgTitle":"Ingredient Reveal"}, 
+            {"src": "pastry_hint.webp",              "tall": false,  "wide": false, "imgTitle":"Ingredient Hint"}, 
+            {"src": "pastry_picking.webp",           "tall": false,  "wide": false, "imgTitle":"Picking Ingredients"}, 
+            {"src": "pastry_cooking.webp",           "tall": false,  "wide": false, "imgTitle":"Cooking in the Oven"}, 
+            {"src": "pastry_cookingcookie.webp",     "tall": false,  "wide": false, "imgTitle":"Baking Cookies"}, 
+            {"src": "pastry_rolling.webp",           "tall": false,  "wide": false, "imgTitle":"Rolling Dough"}, 
+            {"src": "pastry_score.webp",             "tall": false,  "wide": true, "imgTitle":"Final Score"}
         ], 
         "markdownPath": "/data/game/pastry/pastry_desc.md"
     }

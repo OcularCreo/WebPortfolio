@@ -6,18 +6,18 @@
         "mediaPath": "/data/3d/arena/",
         "thumbSrc": "final-04.webp",
         "images": [ 
-            {"src": "final-01.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 1"},
-            {"src": "final-02.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 2"},
-            {"src": "final-03.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 3"},
-            {"src": "final-04.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 4"}, 
-            {"src": "final-05.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 5"}, 
-            {"src": "final-06.jpg", "tall": false, "wide": false, "imgTitle":"Arena shot 6"},
-            {"src": "greybox-01.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 1"}, 
-            {"src": "greybox-02.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 2"}, 
-            {"src": "greybox-03.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 3"},
-            {"src": "greybox-04.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 4"}, 
-            {"src": "greybox-05.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 5"}, 
-            {"src": "greybox-06.jpg", "tall": false, "wide": false, "imgTitle":"Arena greybox 6"}
+            {"src": "final-01.webp", "tall": false, "wide": false, "imgTitle":"Arena shot 1"},
+            {"src": "final-02.webp", "tall": false, "wide": false, "imgTitle":"Arena shot 2"},
+            {"src": "final-03.webp", "tall": false, "wide": false, "imgTitle":"Arena shot 3"},
+            {"src": "final-04.webp", "tall": false, "wide": false, "imgTitle":"Arena shot 4"}, 
+            {"src": "final-05.webp", "tall": false, "wide": false, "imgTitle":"Arena shot 5"}, 
+            {"src": "final-06.webp", "tall": false, "wide": false, "imgTitle":"Arena shot 6"},
+            {"src": "greybox-01.webp", "tall": false, "wide": false, "imgTitle":"Arena greybox 1"}, 
+            {"src": "greybox-02.webp", "tall": false, "wide": false, "imgTitle":"Arena greybox 2"}, 
+            {"src": "greybox-03.webp", "tall": false, "wide": false, "imgTitle":"Arena greybox 3"},
+            {"src": "greybox-04.webp", "tall": false, "wide": false, "imgTitle":"Arena greybox 4"}, 
+            {"src": "greybox-05.webp", "tall": false, "wide": false, "imgTitle":"Arena greybox 5"}, 
+            {"src": "greybox-06.webp", "tall": false, "wide": false, "imgTitle":"Arena greybox 6"}
         ], 
         "markdownPath": "/data/3d/arena/arena_desc.md", 
         "videos": [
@@ -31,20 +31,20 @@
         "mediaPath": "/data/3d/bunker/",
         "thumbSrc": "A4-1.webp",
         "images": [ 
-            {"src": "A4-1.jpg", "tall": false, "wide": true, "imgTitle":"Bunker shot 1"},
-            {"src": "A4-2.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 2"},
-            {"src": "A4-3.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 3"},
-            {"src": "A4-4.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 4"}, 
-            {"src": "A4-5.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 5"}, 
-            {"src": "A4-6.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 6"},
-            {"src": "layer-lit.jpg", "tall": false, "wide": false, "imgTitle":"Bunker shot 7"},
-            {"src": "A4-smbp.jpg", "tall": false, "wide": false, "imgTitle":"Static Mesh Blueprint"},
-            {"src": "greybox-1.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 1"}, 
-            {"src": "greybox-2.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 2"}, 
-            {"src": "greybox-3.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 3"},
-            {"src": "greybox-4.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 4"}, 
-            {"src": "greybox-5.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 5"}, 
-            {"src": "greybox-6.jpg", "tall": false, "wide": false, "imgTitle":"Bunker greybox 6"}
+            {"src": "A4-1.webp", "tall": false, "wide": true, "imgTitle":"Bunker shot 1"},
+            {"src": "A4-2.webp", "tall": false, "wide": false, "imgTitle":"Bunker shot 2"},
+            {"src": "A4-3.webp", "tall": false, "wide": false, "imgTitle":"Bunker shot 3"},
+            {"src": "A4-4.webp", "tall": false, "wide": false, "imgTitle":"Bunker shot 4"}, 
+            {"src": "A4-5.webp", "tall": false, "wide": false, "imgTitle":"Bunker shot 5"}, 
+            {"src": "A4-6.webp", "tall": false, "wide": false, "imgTitle":"Bunker shot 6"},
+            {"src": "layer-lit.webp", "tall": false, "wide": false, "imgTitle":"Bunker shot 7"},
+            {"src": "A4-smbp.webp", "tall": false, "wide": false, "imgTitle":"Static Mesh Blueprint"},
+            {"src": "greybox-1.webp", "tall": false, "wide": false, "imgTitle":"Bunker greybox 1"}, 
+            {"src": "greybox-2.webp", "tall": false, "wide": false, "imgTitle":"Bunker greybox 2"}, 
+            {"src": "greybox-3.webp", "tall": false, "wide": false, "imgTitle":"Bunker greybox 3"},
+            {"src": "greybox-4.webp", "tall": false, "wide": false, "imgTitle":"Bunker greybox 4"}, 
+            {"src": "greybox-5.webp", "tall": false, "wide": false, "imgTitle":"Bunker greybox 5"}, 
+            {"src": "greybox-6.webp", "tall": false, "wide": false, "imgTitle":"Bunker greybox 6"}
         ], 
         "markdownPath": "/data/3d/bunker/bunker_desc.md"
     }, 
@@ -55,14 +55,13 @@
         "mediaPath": "/data/3d/modularkit/",
         "thumbSrc": "blender-models.webp",
         "images": [ 
-            {"src": "blender-models.jpg", "tall": true, "wide": true, "imgTitle":"Blender Models"},    
-            
-            {"src": "A1-02.jpg", "tall": true, "wide": false, "imgTitle":"Saloon shot 2"},
-            {"src": "A1-03.jpg", "tall": false, "wide": false, "imgTitle":"Saloon shot 3"},
-            {"src": "A1-04.jpg", "tall": true, "wide": false, "imgTitle":"Saloon shot 4"}, 
-            {"src": "A1-05.jpg", "tall": false, "wide": false, "imgTitle":"Saloon shot 5"}, 
-            {"src": "A1-01.jpg", "tall": false, "wide": false, "imgTitle":"Saloon shot 1"},
-            {"src": "lightingonly.jpg", "tall": false, "wide": false, "imgTitle":"Lighting Only"}
+            {"src": "blender-models.webp", "tall": true, "wide": true, "imgTitle":"Blender Models"},    
+            {"src": "A1-02.webp", "tall": true, "wide": false, "imgTitle":"Saloon shot 2"},
+            {"src": "A1-03.webp", "tall": false, "wide": false, "imgTitle":"Saloon shot 3"},
+            {"src": "A1-04.webp", "tall": true, "wide": false, "imgTitle":"Saloon shot 4"}, 
+            {"src": "A1-05.webp", "tall": false, "wide": false, "imgTitle":"Saloon shot 5"}, 
+            {"src": "A1-01.webp", "tall": false, "wide": false, "imgTitle":"Saloon shot 1"},
+            {"src": "lightingonly.webp", "tall": false, "wide": false, "imgTitle":"Lighting Only"}
         ], 
         "markdownPath": "/data/3d/modularkit/modular_desc.md"
     }, 
@@ -73,8 +72,8 @@
         "mediaPath": "/data/3d/facial/",
         "thumbSrc": "thumb.webp",
         "images": [ 
-            {"src": "expressions.png",  "tall": false, "wide": false, "imgTitle":"Expressions"}, 
-            {"src": "Visemes.png",      "tall": false, "wide": false, "imgTitle":"Visemes"}       
+            {"src": "expressions.webp",  "tall": false, "wide": false, "imgTitle":"Expressions"}, 
+            {"src": "Visemes.webp",      "tall": false, "wide": false, "imgTitle":"Visemes"}       
         ], 
         "videos": [
             {"vidSrc": "https://www.youtube.com/embed/zT47od99QHc?si=Yef-Ay9QM_6MuJhn"}, 
@@ -89,10 +88,10 @@
         "mediaPath": "/data/3d/parkour/",
         "thumbSrc": "thumb.webp",
         "images": [ 
-            {"src": "sketch_01.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 1"}, 
-            {"src": "sketch_02.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 2"}, 
-            {"src": "sketch_03.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 3"}, 
-            {"src": "sketch_04.jpg", "tall": false, "wide": false, "imgTitle":"Example Sketch 4"}       
+            {"src": "sketch_01.webp", "tall": false, "wide": false, "imgTitle":"Example Sketch 1"}, 
+            {"src": "sketch_02.webp", "tall": false, "wide": false, "imgTitle":"Example Sketch 2"}, 
+            {"src": "sketch_03.webp", "tall": false, "wide": false, "imgTitle":"Example Sketch 3"}, 
+            {"src": "sketch_04.webp", "tall": false, "wide": false, "imgTitle":"Example Sketch 4"}       
         ], 
         "videos": [
             {"vidSrc": "https://www.youtube.com/embed/uOXk_NSpyIE?si=gKCj1NGI1st40gZO"}
@@ -106,7 +105,7 @@
         "mediaPath": "/data/3d/flourbag/",
         "thumbSrc": "test.webp",
         "images": [ 
-            {"src": "sketch.jpg", "tall": true, "wide": false, "imgTitle":"Animation Sketch"}      
+            {"src": "sketch.webp", "tall": true, "wide": false, "imgTitle":"Animation Sketch"}      
         ], 
         "videos": [
             {"vidSrc": "https://www.youtube.com/embed/bnTbU30BSrI?si=yc5191Ff4OXR1LZ0"}, 
@@ -121,9 +120,9 @@
         "mediaPath": "/data/3d/texturemap/",
         "thumbSrc": "Render_01.webp",
         "images": [ 
-            {"src": "Render_01.jpg", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 1"}, 
-            {"src": "Render_02.jpg", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 2"}, 
-            {"src": "Render_03.jpg", "tall": true, "wide": true, "imgTitle":"Cylix Room Angle 3"}      
+            {"src": "Render_01.webp", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 1"}, 
+            {"src": "Render_02.webp", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 2"}, 
+            {"src": "Render_03.webp", "tall": true, "wide": true, "imgTitle":"Cylix Room Angle 3"}      
         ], 
         "videos": [
             {"vidSrc": "https://www.youtube.com/embed/L2nPBDMkxj8?si=9sXKLlF2PUsBlP6B"}
@@ -135,11 +134,11 @@
         "title": "Procedural Lego", 
         "date": "March 2023", 
         "mediaPath": "/data/3d/lego/",
-        "thumbSrc": "render.jpg",
+        "thumbSrc": "render.webp",
         "images": [ 
-            {"src": "lego_UI.png", "tall": false, "wide": false, "imgTitle":"Generative UI Controls"}, 
-            {"src": "overview.jpg", "tall": false, "wide": false, "imgTitle":"Maya Environment With Generated Lego"}, 
-            {"src": "render.jpg", "tall": true, "wide": true, "imgTitle":"Rendered Lego Build"}      
+            {"src": "lego_UI.webp", "tall": false, "wide": false, "imgTitle":"Generative UI Controls"}, 
+            {"src": "overview.webp", "tall": false, "wide": false, "imgTitle":"Maya Environment With Generated Lego"}, 
+            {"src": "render.webp", "tall": true, "wide": true, "imgTitle":"Rendered Lego Build"}      
         ], 
         "videos": [
             {"vidSrc": "https://www.youtube.com/embed/eRN_dRfjA24?si=atN7kWdMzpb3ww0T"}
@@ -151,16 +150,16 @@
         "title": "2D to 3D", 
         "date": "", 
         "mediaPath": "/data/3d/model/",
-        "thumbSrc": "thumb.jpg",
+        "thumbSrc": "thumb.webp",
         "images": [ 
-            {"src": "sketch_front.jpg", "tall": false, "wide": false, "imgTitle":"Reference front"}, 
-            {"src": "sketch_side.jpg",  "tall": false, "wide": false, "imgTitle":"Reference side"}, 
-            {"src": "sketch_back.jpg",  "tall": false, "wide": false, "imgTitle":"Reference back"}, 
-            {"src": "front.jpg",        "tall": false, "wide": false, "imgTitle":"Model front"}, 
-            {"src": "quartfront.jpg",   "tall": true, "wide": false, "imgTitle":"Model quarter front"}, 
-            {"src": "side.jpg",         "tall": false, "wide": false, "imgTitle":"Model side"}, 
-            {"src": "quartback.jpg",    "tall": false, "wide": false, "imgTitle":"Model quarter back"}, 
-            {"src": "back.jpg",         "tall": false, "wide": false, "imgTitle":"Model back"}                 
+            {"src": "sketch_front.webp", "tall": false, "wide": false, "imgTitle":"Reference front"}, 
+            {"src": "sketch_side.webp",  "tall": false, "wide": false, "imgTitle":"Reference side"}, 
+            {"src": "sketch_back.webp",  "tall": false, "wide": false, "imgTitle":"Reference back"}, 
+            {"src": "front.webp",        "tall": false, "wide": false, "imgTitle":"Model front"}, 
+            {"src": "quartfront.webp",   "tall": true, "wide": false, "imgTitle":"Model quarter front"}, 
+            {"src": "side.webp",         "tall": false, "wide": false, "imgTitle":"Model side"}, 
+            {"src": "quartback.webp",    "tall": false, "wide": false, "imgTitle":"Model quarter back"}, 
+            {"src": "back.webp",         "tall": false, "wide": false, "imgTitle":"Model back"}                 
         ],
         "markdownPath": "/data/3d/model/model_desc.md"
     },
@@ -171,10 +170,10 @@
         "mediaPath": "/data/3d/walk/",
         "thumbSrc": "thumb.webp",
         "images": [ 
-            {"src": "Contact.jpg",   "tall": false, "wide": false, "imgTitle":"Contact"}, 
-            {"src": "Recoil.jpg",    "tall": false, "wide": false, "imgTitle":"Recoil"}, 
-            {"src": "Passing.jpg",   "tall": false, "wide": false, "imgTitle":"Passing"}, 
-            {"src": "HighPoint.jpg", "tall": false, "wide": false, "imgTitle":"High Point"}     
+            {"src": "Contact.webp",   "tall": false, "wide": false, "imgTitle":"Contact"}, 
+            {"src": "Recoil.webp",    "tall": false, "wide": false, "imgTitle":"Recoil"}, 
+            {"src": "Passing.webp",   "tall": false, "wide": false, "imgTitle":"Passing"}, 
+            {"src": "HighPoint.webp", "tall": false, "wide": false, "imgTitle":"High Point"}     
         ], 
         "videos": [
             {"vidSrc": "https://www.youtube.com/embed/asbBtTNnxCA?si=RLJhNkNXefvmKxUW"}
