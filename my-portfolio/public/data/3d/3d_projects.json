@@ -72,7 +72,7 @@
         "mediaPath": "/data/3d/facial/",
         "thumbSrc": "thumb.webp",
         "images": [ 
-            {"src": "expressions.webp",  "tall": false, "wide": false, "imgTitle":"Expressions"}, 
+            {"src": "Expressions.webp",  "tall": false, "wide": false, "imgTitle":"Expressions"}, 
             {"src": "Visemes.webp",      "tall": false, "wide": false, "imgTitle":"Visemes"}       
         ], 
         "videos": [
