@@ -153,6 +153,7 @@ h1{
         background-image: url(../assets/images/Spiral-center-crop-01.webp); 
         background-position-x: center;
         background-position-y: 0%;
+        min-height: 780px;
     }
 
     .about-section .section-overlay{
