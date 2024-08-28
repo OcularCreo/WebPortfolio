@@ -27,6 +27,11 @@ export const ProjectGrid = (props) =>{
             }
         }
 
+        const scrollToTop = () => {
+            window.scrollTo(0, 0);
+        }
+
+        scrollToTop();
         getProjects();                                                 //calling get projects for fetching the data
 
     }, [location]);
