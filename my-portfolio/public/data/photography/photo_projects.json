@@ -8,7 +8,8 @@
         "images": [], 
         "markdownPath": "/data/photography/uni_book/unibook_desc.md", 
         "pdfs" : [
-            {"pdfSrc": "CooliganPang_Jordan_FinalAssign-compressed.pdf", "title": "Captum Photobook"}
+            {"pdfSrc": "CooliganPang_Jordan_FinalAssign-compressed.pdf", 
+            "driveLink": "https://drive.google.com/file/d/1qWTLAfhvlvJZwrmrz5er5KBVoxQ2vtcz/preview?usp=sharing", "title": "Captum Photobook"}
         ]
     }, 
     {
@@ -134,7 +135,8 @@
         ],
         "markdownPath": "/data/photography/cpt/cpt_desc.md", 
         "pdfs" : [
-            {"pdfSrc": "Photography CPT.pdf", "title": "Invisibilia Photobook"}
+            {"pdfSrc": "Photography CPT.pdf", 
+            "driveLink": "https://drive.google.com/file/d/1ieyFJ4jzFhb9BSjIPGvouCSiZWXULw0m/preview?usp=sharing", "title": "Invisibilia Photobook"}
         ]
     }
 ]

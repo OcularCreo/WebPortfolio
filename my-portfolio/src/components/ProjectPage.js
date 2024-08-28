@@ -61,13 +61,14 @@ export const ProjectPage = (props) =>{
                 {project && project.pdfs ? (
                     project.pdfs.map((pdf, index) => (
                         <>
-                            <embed
-                                src={`${project.mediaPath}${pdf.pdfSrc}`}
+                            <iframe
+                                src={`${pdf.driveLink}`}
                                 key={index}
                                 title={`${pdf.title} PDF Viewer`}
                                 className="pdf-viewer"
                                 type="application/pdf"
-                            ></embed>
+                                loading="lazy"
+                            ></iframe>
                             <a href={`${project.mediaPath}${pdf.pdfSrc}`} 
                                target="_blank" rel="noopener noreferrer"
                                className="pdf-newtab-link">View {pdf.title} on separate tab</a>
