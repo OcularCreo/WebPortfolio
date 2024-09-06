@@ -2,10 +2,10 @@
 
 .nav-bar {
 
-    background: rgba( 255, 255, 255, 0.15 );
+    background: rgba( 255, 255, 255, 0.08 );
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
-    border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
     
     width: 100%;
     height: 8rem;
@@ -121,7 +121,7 @@
         left: 0;
         height: 100%;
         width: 100%;
-        background-color: rgba(23, 24, 29, 1);
+        background-color: #141516;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -130,19 +130,25 @@
         transition: opacity 0.3s ease;
     }
 
-    .nav-links.active{
+    .nav-links.active-menu{
         display: flex; 
         opacity: 1;
+        border-bottom: none;
+    }
+
+    .nav-bar:has(.active-menu) {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    .nav-bar {
+        height: 5rem;
     }
 
     .nav-page{
         font-weight: 700;
         font-size: clamp(20px, 2.75vh, 28px);
         margin: 0;
-    }
-
-    .nav-bar {
-        height: 5rem;
     }
  }
 
@@ -182,7 +188,7 @@
  @media only screen and (min-width: 1200px) {
     .nav-bar {
         width: 100%;
-        height: 8rem;
+        height: 6rem;
         display: flex;
         text-align: left;
         justify-content: center;

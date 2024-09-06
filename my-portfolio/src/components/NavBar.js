@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -29,12 +29,21 @@ export const NavBar = () => {
         triggerScroll("aboutme");
     }
 
+    //toggle scroll ability depending on if the mobile menu is open or not
+    useEffect(() => {
+        if(isOpen){
+            document.documentElement.classList.add("no-scroll");
+        } else {
+            document.documentElement.classList.remove("no-scroll");
+        }
+    }, [isOpen]);
+
     return (
 
         <nav className="nav-bar">
             <NavLink className="nav-title" to="/">JCP.</NavLink>
 
-            <div className={`nav-links ${isOpen ? "active": ""}`}>
+            <div className={`nav-links ${isOpen ? "active-menu": ""}`}>
                 
                 {/* navigation page links */}
                 <NavLink className="nav-page" to="/" onClick={navToAbout}>About</NavLink>

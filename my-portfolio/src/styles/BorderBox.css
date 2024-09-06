@@ -125,7 +125,7 @@
     }
 
     .box .desc{
-        font-size: clamp(1rem, 0.85vw, 100px);
+        font-size: clamp(0.5rem, 0.85vw, 6rem);
     }
 
  }

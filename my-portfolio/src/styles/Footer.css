@@ -173,6 +173,10 @@
         margin-top: 2.25rem;
     }
 
+    .site-map-links {
+        gap: 2.5rem;
+    }
+
 }
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
