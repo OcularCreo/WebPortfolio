@@ -35,7 +35,7 @@ export const CustomDropDown = (props) => {
             </p>
             <ul className="drop-items">
                 {props.items && props.items.map((item, index) => (
-                    <li><a onClick={(e) => e.stopPropagation()} className="drop-item-link" key={index} target={item.docPath ? "_blank" : ""} href={item.docPath ? item.docPath : ""}>{item.type}</a></li>
+                    <li key={index}><a onClick={(e) => e.stopPropagation()} className="drop-item-link" target={item.docPath ? "_blank" : ""} rel={item.docPath ? "noopener noreferrer" : ""} href={item.docPath ? item.docPath : ""}>{item.type}</a></li>
                 ))}
             </ul>
         </div>

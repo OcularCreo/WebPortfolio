@@ -9,7 +9,7 @@ import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
 
-import { ScrollToTop } from './components/ScrollToTop';
+import {ScrollToTop} from "./helpers/ScrollToTop";
 
 const MainLayout = () => (
   <>

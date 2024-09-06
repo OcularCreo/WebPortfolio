@@ -80,7 +80,7 @@
  @media only screen and (min-width: 1200px) {
 
     .knowledge-wrapper{
-        width: clamp(8rem, 22.6vw + 2rem, 28.125rem);
+        width: clamp(8rem, 20.83vw + 1rem, 26rem);
         margin-top: 2rem;
         margin-bottom: 2rem;
     }
@@ -90,11 +90,12 @@
     }
     
     .title{
-        font-size: clamp(1.25rem, 1vw + 1rem, 2.25rem);
+        font-size: 2rem;
     }
     
     .desc{
-        font-size: clamp(1.25rem, 1vw + 1rem, 2.25rem);
+        font-size: 2rem;
+        margin-top: 1.5rem;
     }
 
  }

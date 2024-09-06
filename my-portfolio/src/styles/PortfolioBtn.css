@@ -1,6 +1,5 @@
 .port-btn {
     font-family: "Montserrat", sans-serif;
-    border: solid white;
     color: white; 
     background-color: transparent;
     text-align: center;
@@ -11,34 +10,32 @@
     text-transform: uppercase;
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     user-select: none;
+
+    background-color: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border: none;
 }
 
 .btn-title{
     font-weight: 500;
+    margin-top: 10%;
     transition: font-weight 0.25s ease-in-out, font-size 0.25s ease-in-out, transform 0.25s ease-in-out;
 }
 
 .btn-icon{
     margin-top: 25%;
-    transition: font-size 0.25s ease-in-out, transform 0.25s ease-in-out;
+    transition: transform 0.25s ease-in-out;
 }
 
 .port-btn:hover{
-    background-color: rgba(255, 255, 255, 0.85);
-    border-color: transparent;
-    color: black;
+    background: linear-gradient(0deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.1) 100%);
 }
 
 .port-btn:hover .btn-title {
     transition: ease-in-out 0.25s;
     font-weight: 900;
-    transform: translateY(40%);
-}
-
-.port-btn:hover .btn-icon {
-    transition: ease-in-out 0.25s;
-    font-size: 2.75rem;
-    transform: translateY(40%);
+    transform: translateY(-80%);
 }
 
  /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
@@ -47,20 +44,25 @@
  @media only screen and (max-width: 600px) {
 
     .port-btn{
+        aspect-ratio: 2.75/1;
         width: 17.5rem;
-        border-radius: 2.5rem;
+        border-radius: 10px;
     }
 
     .btn-title{
-        font-size: 1.5rem;
+        font-size: 1rem;
+        margin-top: 0;
     }
     
     .btn-icon{
-        font-size: 5rem;
+        font-size: 1.75rem;
+        margin-top: 5%;
     }
 
-    .port-btn:hover .btn-icon {
-        font-size: 2.2rem;
+    .port-btn:hover .btn-title {
+        transition: ease-in-out 0.25s;
+        font-weight: 900;
+        transform: translateY(0%);
     }
 
  }
@@ -70,7 +72,7 @@
     
     .port-btn{
         width: clamp(10.9375rem, 24.6vw + 1rem, 12.8125rem);
-        border-radius: 2.5rem;
+        border-radius: 40px;
     }
 
     .btn-title{
@@ -79,10 +81,6 @@
     
     .btn-icon{
         font-size: clamp(2rem, 5.47vw + 1rem, 3.625rem);
-    }
-
-    .port-btn:hover .btn-icon {
-        font-size: clamp(0.88rem ,1.24vw + 1rem, 1.595rem);
     }
 
  }
@@ -102,7 +100,7 @@
 
     .port-btn{
         width: 380px;
-        border-radius: 3rem;
+        border-radius: 58px;
     }
 
     .btn-title{
@@ -110,11 +108,7 @@
     }
     
     .btn-icon{
-        font-size: 6.25rem;
-    }
-
-    .port-btn:hover .btn-icon {
-        font-size: 2.75rem;
+        font-size: 6rem;
     }
 
  }

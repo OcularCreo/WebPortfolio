@@ -10,6 +10,10 @@ h1{
     text-transform: uppercase !important;
 }
 
+body {
+    background-color: #141516 !important;
+}
+
 .img-section{
     position: relative;
     background-size: cover;
@@ -36,8 +40,6 @@ h1{
 }
 
 .portfolio-section{
-    background: rgb(39,42,51);
-    background: linear-gradient(0deg, rgba(39,42,51,1) 0%, rgba(20,21,22,1) 100%);
     padding-bottom: 5rem;
     text-align: center;
 }
@@ -221,6 +223,10 @@ h1{
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 601px) {
     
+    .img-section {
+        min-height: 920px;
+    }
+
     .name-title{
         font-size: clamp(10px, 4.9vw, 55px);
         margin-bottom: 1.25vh;
@@ -411,6 +417,7 @@ h1{
 
     .about-title.t2{
         font-size: clamp(10px, 2.1vw, 100px);
+        margin-bottom: 1rem;
     }
 
     .about-links{
@@ -438,6 +445,7 @@ h1{
 
     .portfolio-buttons{
         gap: 10px;
+        margin-bottom: 6rem;
     }
 
  }

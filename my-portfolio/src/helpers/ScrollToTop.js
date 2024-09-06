@@ -14,9 +14,5 @@ export const ScrollToTop = () => {
         document.documentElement.scrollTo(0, 0);                //scroll to top of the page
     }, [pathname]);
     
-    return () => {
-        if(window.history.scrollRestoration) {
-            window.history.scrollRestoration = "auto";
-        }
-    };    //nothing to return lol
+    return null;    //nothing to return lol
 }

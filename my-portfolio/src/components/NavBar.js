@@ -1,15 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useScrollToElement } from "../helpers/scrollToElement";
 import "../styles/Navbar.css";
 
 export const NavBar = () => {
 
     const [isOpen, setIsOpen] = useState(false);               //defaluting isOpen to false
-    const [scrollToAbout, setScrollToAbout] = useState(false); //defaulting scrollToAbout to false
-    const location = useLocation();
+    const triggerScroll = useScrollToElement();
 
     //this funciton should flip the current boolean value of the is open variable
     const toggleMenu = () =>{
@@ -26,31 +26,8 @@ export const NavBar = () => {
     //function sets scroll to about to true, later utlized in the useEffect below
     const navToAbout = () =>{
         handleMenu();
-        setScrollToAbout(true);
+        triggerScroll("aboutme");
     }
-
-    //use effect for scrolling to the about me section on the home page
-    //dependencies are on location and scrollToAbout to ensure code runs when the home page is reached and loaded
-    useEffect(() => {
-
-        //make sure that scrollToAbout is true and the user is on the home page
-        if(scrollToAbout && location.pathname === '/'){
-
-            const aboutElement = document.getElementById("aboutme");    //search for the about section by its id
-            
-            if(aboutElement !== null){                                  //make sure the element was found
-                aboutElement.scrollIntoView({ behavior: "smooth" });    //smoothly scroll to the element when found
-            }
-            setScrollToAbout(false);                                    //set the scroll to about back to false
-        }
-
-        if(isOpen){
-            document.documentElement.classList.add("no-scroll");
-        } else {
-            document.documentElement.classList.remove("no-scroll");
-        }
-
-    }, [location, scrollToAbout, isOpen]);
 
     return (
 
