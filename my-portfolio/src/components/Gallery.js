@@ -24,6 +24,34 @@ const Gallery = ({imagePath, images}) => {
 
     }, [images, numImages]);
 
+    useEffect(() => {
+        
+        const handleKeyDown = (event) => {
+
+            console.log("key down");
+
+            switch(event.key) {
+                case "Escape": 
+                    closeImgPreview();
+                    break; 
+                case "ArrowRight": 
+                    nextImg();
+                    break; 
+                case "ArrowLeft": 
+                    prevImg();
+                    break;
+                default: 
+                    break;
+            }
+
+        }
+
+        document.addEventListener("keydown", handleKeyDown);
+
+        return () => document.removeEventListener("keydown", handleKeyDown);
+
+    }, [isPreviewOpen]);
+
     //function used to open the image preview window
     const openImgPreview = (index) => {
 
@@ -93,7 +121,7 @@ const Gallery = ({imagePath, images}) => {
                              key={index}
                              onClick={() => openImgPreview(index)}>
 
-                            <img src={`${imagePath}${image.src}`} loading="lazy" className="img-el"/>
+                            <img src={`${imagePath}${image.src}`} alt="" loading="lazy" className="img-el"/>
 
                         </div>
                     ))}
@@ -118,10 +146,11 @@ const Gallery = ({imagePath, images}) => {
 
                         {/* CIRCLE NAV BTNS - Only render them if the number of images is between 3 and 12 to not overcrowd or just have 2 dots */}
                         {(numImages > 2 && numImages < 21) && (
-                        <div className="dots-container">
+                        <div className="img-btn-container">
                             {images && images.map((image, index) => (
-                                <div key={index} onClick={() => openImgPreview(index)} className="circle-item">
-                                    {index === currIdx ? <FontAwesomeIcon icon="fa-solid fa-circle" /> : <FontAwesomeIcon icon="fa-regular fa-circle" />}
+                                <div key={index} 
+                                     onClick={() => openImgPreview(index)} 
+                                     className={`img-btn-item ${index === currIdx ? "img-btn-cur" : ""}`}>
                                 </div>
                             ))}
                         </div>
