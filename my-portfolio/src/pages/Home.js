@@ -11,6 +11,8 @@ import { PortfolioBtn } from "../components/PortfolioBtn.js";
 import { CustomDropDown } from "../components/CustomDropDown.js";
 import { fetchResumes } from "../services/apiServices.js";
 
+import { ScrollPrompt } from "../components/ScrollPrompt.js";
+
 export const Home = () =>{
 
     //array of portfolio section data 
@@ -174,7 +176,9 @@ export const Home = () =>{
                             <CustomBtn btnTxt="Portfolio" onClick={scrollToPortfolio}/>
                             <CustomDropDown btnTxt="Resume" items={resumeData}></CustomDropDown>
                         </Container>
+                        
                     </Container>
+                    <ScrollPrompt />
                 </div>
             </div>
 

@@ -1,0 +1,39 @@
+.prompt-bg{
+    color: white; 
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+    height: 20%;
+    width: 100%;
+    position: absolute; 
+    bottom: 0;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.5rem;
+}
+
+#scroll-txt {
+    margin: 0;
+    margin-right: 0.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.fade-transition {
+    transition: opacity 1.25s ease;
+}
+
+ /* Extra small devices (phones, 600px and down) */     
+ @media only screen and (max-width: 600px) {
+
+    .prompt-container{
+        font-size: 1rem;
+    }
+
+ }
