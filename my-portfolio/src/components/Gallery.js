@@ -145,7 +145,7 @@ const Gallery = ({imagePath, images}) => {
                         <button className="previous-btn" onClick={prevImg}><FontAwesomeIcon icon="fa-solid fa-caret-left" /></button>
 
                         {/* CIRCLE NAV BTNS - Only render them if the number of images is between 3 and 12 to not overcrowd or just have 2 dots */}
-                        {(numImages > 2 && numImages < 21) && (
+                        {(numImages > 1 && numImages < 21) && (
                         <div className="img-btn-container">
                             {images && images.map((image, index) => (
                                 <div key={index} 

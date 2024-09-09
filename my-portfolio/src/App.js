@@ -5,6 +5,7 @@ import { Home } from './pages/Home';
 import { ProjectGrid } from './components/ProjectGrid';
 import { ProjectPage } from './components/ProjectPage';
 import NotFoundPage from "./pages/NotFoundPage";
+import { Resumes } from './pages/Resumes';
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './App.css';
@@ -76,6 +77,10 @@ const router = createBrowserRouter([
       {
         path: '/extras/proj/:id', 
         element: <ProjectPage />
+      }, 
+      {
+        path: '/resumes', 
+        element: <Resumes />
       }
     ]
   }
