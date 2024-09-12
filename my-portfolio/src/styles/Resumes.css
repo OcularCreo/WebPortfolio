@@ -1,32 +1,306 @@
-body {
+.resume-bg {
     background-image: url("../assets/images/resume-bg.webp");
     background-size: cover;
+    background-position: top center;
+    font-family: "Montserrat", sans-serif;
 }
 
 .content-div {
-    padding-top: 6rem;
-    height: 100vh;
     display: flex; 
     justify-content: center;
     align-items: center;
 }
 
+.content-div{
+    height: 100vh;
+}
+
+.resume-prev {
+    background: rgba( 0, 0, 0, 0.75 );
+    width:100vw;
+ }
+
 .resume-list-container {
     background: rgba( 255, 255, 255, 0.1 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-
-    height: 70vh;
-    width: 30vw;
-    max-width: 40rem;
-    max-height: 48rem;
-
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
 }
 
 #resumes-title {
-    font-weight: 900;
-    font-size: 4rem;
+    font-weight: 800;
     text-align: center;
-    margin-top: 5%;
 }
+
+.resume-link-txt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.resume-link-txt p {
+    margin: 0;
+    font-weight: 500;
+    transition: 0.3s font-weight ease;
+}
+
+.resume-items-container hr {
+    border-top: solid 2px;
+    border-color: white;
+}
+
+.resume-link-txt:hover p{
+    font-weight: 700;
+}
+
+.download-btn {
+    background: none;
+    border: white solid 1px;
+    border-radius: 2rem;
+    color: white;
+    transition: 0.4s background ease;
+}
+
+.download-btn:hover {
+    background: white; 
+    color: black;
+}
+
+.preview-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.res-prev-title {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.close-title-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.res-close-icon{
+    cursor: pointer;
+}
+
+@keyframes dot  {
+    0% {
+        content: '';
+    }
+    33% {
+        content: '.';
+    }
+    66% {
+        content: '..';
+    }
+    100% {
+        content: '';
+    }
+}
+
+.loading-container {
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-dots {
+    margin-left: 1rem;
+}
+
+.loading-dots::after {
+    content: '.';
+    animation: dot 1s steps(4, end) infinite;
+}
+
+.loading-txt {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.resume-prev {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.close-title-container p {
+    margin: 0;
+}
+
+ /* Extra small devices (phones, 600px and down) */     
+ @media only screen and (max-width: 600px) {
+
+    .content-div {
+        min-height: 540px;
+        padding-top: 5rem;
+    }
+
+    .resume-prev {
+        height: calc(100vh - 5rem);
+        min-height: calc(540px - 5rem);
+    }
+
+    .resume-list-container {
+        width: 20rem;
+        padding: 1.75rem;
+        border-radius: 0.75rem;
+    }
+
+    #resumes-title {
+        font-size: 2.25rem;
+        margin-bottom: 4rem;
+    }
+
+    .preview-controls {
+        margin: 1rem 14px 2px 14px;
+    }
+
+    .close-title-container {
+        gap: 1rem;
+        font-size: 14px;
+    }
+
+    .resume-doc {
+        height: 92%;
+    }
+
+    .cross, .download-btn {
+        display: none;
+    }
+
+    .mobile-dl-btn{
+        border: none;
+        background: none;
+        color: white;
+    }
+
+ }
+
+ /* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 601px) {
+
+    .arrow, .mobile-dl-btn{
+        display: none;
+    }
+
+    .content-div {
+        min-height: 675px;
+        padding-top: 6rem;
+    }
+
+    .resume-prev {
+        height: calc(100vh - 6rem);
+        min-height: calc(675px - 6rem);
+    }
+
+    .resume-list-container {
+        width: 30rem;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+
+    #resumes-title {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+
+    .resume-items-container {
+        font-size: 1.5rem;
+    }
+
+    .resume-prev {
+        height: calc(100vh - 6rem);
+    }
+
+    .preview-controls {
+        margin: 1.75rem 2.5rem 1rem 2.5rem;
+    }
+
+    .download-btn {
+        font-size: 1rem;
+        padding: 0.25rem 1rem 0.25rem 1rem;
+    }
+
+    .close-title-container {
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .resume-doc {
+        width: clamp(35rem, 65svw, 50rem);
+        height: 85%;
+        align-self: center;
+    }
+
+ }
+ 
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+
+    .content-div {
+        min-height: 830px;
+        padding-top: 7.5rem;
+    }
+
+    .resume-list-container {
+        width: 35rem;
+        padding: 4rem;
+    }
+
+    #resumes-title {
+        font-size: 5.25rem;
+        margin-bottom: 6rem;
+    }
+
+    .resume-prev {
+        height: calc(100vh - 7.5rem);
+        min-height: calc(830px - 7.5rem);
+    }
+
+    .preview-controls {
+        margin: 2.5rem 4rem 1rem 4rem;
+    }
+
+    .download-btn {
+        font-size: 1.5rem;
+        padding: 0.5rem 1.25rem 0.5rem 1.25rem;
+    }
+
+    .close-title-container {
+        gap: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .loading-txt {
+        font-size: 2rem;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+
+    .resume-doc {
+        width: 55rem;
+        height: 85%;
+        align-self: center;
+    }
+
+ } 

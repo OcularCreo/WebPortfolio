@@ -1,14 +1,22 @@
 [
     {
-        "type": "Game Dev",
-        "docPath": "/data/resume/JordanCooliganPang_GameDev_Resume.pdf"
+        "type": "Game Development",
+        "googleSrc" : "https://drive.google.com/file/d/12pQoKlgUuQASX1gMLNljIzZfEim29vss/preview?usp=sharing",
+        "docPath": "/data/resume/GameDev_JordanCooliganPang_Resume.pdf"
     }, 
     {
-        "type": "Web Dev", 
-        "docPath": ""
+        "type": "Quality Assurance", 
+        "googleSrc" : "https://drive.google.com/file/d/1XirNkDqPOdaKwipq2moSeakGz-Y_D4TH/preview?usp=sharing",
+        "docPath": "/data/resume/QA_JordanCooliganPang_Resume.pdf"
     }, 
     {
-        "type": "Photography", 
-        "docPath": ""
-    }   
+        "type": "Web Development", 
+        "googleSrc" : "https://drive.google.com/file/d/1zR_hUHK-qf07fbFMUZEYJ6SWTKr7bhx0/preview?usp=sharing",
+        "docPath": "/data/resume/WebDev_JordanCooliganPang_Resume.pdf"
+    }, 
+    {
+        "type": "Graphic Design", 
+        "googleSrc" : "https://drive.google.com/file/d/1bd9adE1_YZUDH9kjYA1zfEy9XOfm5til/preview?usp=sharing",
+        "docPath": "/data/resume/GraphicDesign_JordanCooliganPang_Resume.pdf"
+    }  
 ]
