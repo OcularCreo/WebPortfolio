@@ -309,11 +309,11 @@ body {
         font-size: 1.5rem;
     }
 
-    .knowledge-section .items{
-        display: flex; 
-        flex-wrap: wrap;
+    .knowledge-section .knowledge-items-container{
+        display: grid; 
+        grid-template-columns: auto auto auto;
         justify-content: center;
-        gap: 10%;
+        gap: 7%;
     }
 
     .knowledge-section{
@@ -358,6 +358,10 @@ body {
 
     .img-section {
         min-height: 1200px;
+    }
+
+    .knowledge-section .knowledge-items-container{
+        gap: 10%;
     }
 
  }
@@ -449,7 +453,7 @@ body {
         font-size: 1vw;
     }
 
-    .knowledge-section .items{
+    .knowledge-section .knowledge-items-container{
         gap: 4%;
     }
 

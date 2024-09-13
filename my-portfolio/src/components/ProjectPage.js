@@ -1,16 +1,18 @@
 import { useParams, useLocation } from "react-router-dom";
 import "../styles/ProjectPage.css";
+import "../styles/Loading.css";
 import { fetchOneProject } from "../services/apiServices";
 import Gallery from "./Gallery";
 import React, { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";
+import { Loading } from "./Loading.js";
 
 export const ProjectPage = (props) =>{
     
     const params = useParams();         //used to get the project id in url
     const location = useLocation();     //used to get the current page location
 
-    const [project, setProject] = useState();               //used to store the data of the page's project
+    const [project, setProject] = useState(null);           //used to store the data of the page's project
     const [markdownData, setMarkdownData] = useState("");   //used for converting the markdown data to html
 
     useEffect(() => {
@@ -41,8 +43,16 @@ export const ProjectPage = (props) =>{
     return (
         <div className="background">
             <div className="proj-title-container">
-                <h1 className="proj-title">{project && project.title}</h1>
-                <p className="date">{project && project.date}</p>
+                {project ? 
+                <>
+                    <h1 className="proj-title">{project && project.title}</h1>
+                    <p className="date">{project && project.date}</p>
+                </> 
+                : 
+                <>
+                    <div className="skeleton skeleton-proj-title"></div>
+                    <div className="skeleton skeleton-proj-date"></div>
+                </>}
             </div>
             <div className="content-container">
                 {project ? <Gallery imagePath={project.mediaPath} images={project.images}/> : ""}
@@ -76,8 +86,24 @@ export const ProjectPage = (props) =>{
                     ))
                 ) : ""}
                 <div className="desc-container">
-                    <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1>
-                    <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>
+                    {project ? <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1> : 
+                    <div className="skeleton skel-about-title"></div>}
+                    {markdownData ? <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>: 
+
+                        <div className="skeleton-md-container">
+                            {Array.apply(null, {length: 3}).map((i) => (
+                                <div className="skel-res-exp" key={i}>
+                                    <div className="skeleton skel-title"></div>
+                                    <div className="skeleton skel-txt"></div>
+                                    <div className="skeleton skel-txt"></div>
+                                    <div className="skeleton skel-txt"></div>
+                                    <div className="skeleton skel-txt"></div>
+                                </div>
+                            ))}
+                        </div>
+
+                    }
+                    
                 </div>
             </div>
         </div>

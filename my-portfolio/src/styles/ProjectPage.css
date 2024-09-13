@@ -68,6 +68,45 @@
     text-decoration: none;
 }
 
+.skeleton-proj-date, .skeleton-proj-title, .skel-about-title, .skel-title, .skel-txt {
+    border-radius: 0.25rem;
+    border: rgba(255, 255, 255, 0.2) solid 1px;
+}
+
+.skeleton-proj-title {
+    height: 4rem;
+    width: 20rem;
+    margin-top: 2rem;
+}
+
+.skeleton-proj-date {
+    height: 2rem;
+    width: 10rem;
+    margin-top: 1rem;
+}
+
+.skel-about-title {
+    height: 5rem;
+    width: 40rem;
+}
+
+.skel-title {
+    height: 3.5rem;
+    width: 10rem; 
+    margin-top: 1.75rem;
+}
+
+.skel-txt {
+    height: 1.25rem;
+    width: 100%;
+}
+
+.skeleton-md-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
 
 /* Extra small devices (phones, 600px and down) */     
@@ -145,6 +184,11 @@
 
     .background{
         padding-bottom: 6rem;
+    }
+
+    .pdf-viewer {
+        width: 100%; 
+        height: clamp(400px, 50vw, 800px);
     }
 
 }

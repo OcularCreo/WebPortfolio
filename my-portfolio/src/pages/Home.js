@@ -220,7 +220,7 @@ export const Home = () =>{
             <div className="portfolio-section">
                 <div className="knowledge-section">
                     <h1 className="knowledge-tite"><span className="thin">my</span> <span className="thick">knowledge</span></h1>
-                    <div className="items">
+                    <div className="knowledge-items-container">
                         <KnowledgeItems items={skillItems}/>
                     </div>
                 </div>

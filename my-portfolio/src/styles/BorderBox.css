@@ -8,7 +8,7 @@
     box-shadow: 0 4px 8px 0 rgba(3, 6, 46, 0.37);
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 5px );
-    border-top: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .box .title{
@@ -49,7 +49,6 @@
         width: 10rem;
         height: 10rem;
         border-radius: 2rem;
-        border-width: 2px;
     }
 
     .box .title{
@@ -74,7 +73,6 @@
         width: 27vw;
         height: 27vw;
         border-radius: 5vw;
-        border-width: 2px;
     }
 
     .box .title{
@@ -112,7 +110,6 @@
         width: 15.89vw;
         height: 15.89vw;
         border-radius: 3vw;
-        border-width: 3px;
     }
 
     .box .title{

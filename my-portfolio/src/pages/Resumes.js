@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fetchResumes } from "../services/apiServices.js";
 import "../styles/Resumes.css";
+import "../styles/Loading.css";
 
 export const Resumes = () => {
     
@@ -102,8 +103,28 @@ export const Resumes = () => {
                         <button onClick={() => onPDFDownload(resume ? resume.docPath : null)} className="mobile-dl-btn"><FontAwesomeIcon icon="fa-solid fa-file-arrow-down" /></button>
                     </div>
                     {isLoading && (
-                        <div className="loading-container"> <p className="loading-txt">Loading <span className="loading-dots">.</span></p> </div>)}
-                    <iframe title="resume-preview-window" className="resume-doc" src={resume ? resume.googleSrc : ""} onLoad={handleIframeLoad}></iframe>
+                        <div className="skeleton-resume">
+                            <div className="skel-res-head">
+                                <div className="skeleton skel-res-txt"></div>
+                                <div className="skeleton skel-res-txt"></div>
+                                <div className="skeleton skel-res-txt"></div>
+                            </div>
+                            <div className="skel-res-skills">
+                                <div className="skeleton skel-res-txt"></div>
+                                <div className="skeleton skel-res-txt"></div>
+                            </div>
+                            {Array.apply(null, {length: 3}).map((i) => (
+                                <div className="skel-res-exp" key={i}>
+                                    <div className="skeleton skel-res-txt"></div>
+                                    <div className="skeleton skel-res-txt"></div>
+                                    <div className="skeleton skel-res-txt"></div>
+                                    <div className="skeleton skel-res-txt"></div>
+                                    <div className="skeleton skel-res-txt"></div>
+                                </div>
+                            ))}
+                        </div>
+                    )}
+                    <iframe style={{display: isLoading ? "none": ""}} title="resume-preview-window" className="resume-doc" src={resume ? resume.googleSrc : ""} onLoad={() => handleIframeLoad()}></iframe>
                 </div>
             ) : (
                 <div className="resume-list-container">
