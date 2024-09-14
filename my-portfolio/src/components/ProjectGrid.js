@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 export const ProjectGrid = (props) =>{
 
     const location = useLocation();                     //used to keep track of url locaiton
-    const [projects, setProjects] = useState();         //variable stores data on the projects related to the page
+    const [projects, setProjects] = useState(null);         //variable stores data on the projects related to the page
     const [overEight, setOverEight] = useState(false);  //boolean to determine if num proj is over 8 (used for grid styling purposes)
 
     useEffect (() => {
@@ -52,9 +52,14 @@ export const ProjectGrid = (props) =>{
                 </div>
 
                 {/* Project items: Following elements should be thumbnails for projects featured on this page */}
-                {projects && projects.map(project => (
+                {projects ? projects.map(project => (
                     <ProjectThumbnail className={!overEight ? "single" : "multi"} key={project.id} id={project.id} title={project.title} 
-                    imgPath={`${project.mediaPath}${project.thumbSrc}`} />))}
+                    imgPath={`${project.mediaPath}${project.thumbSrc}`} />)) : 
+                    <>
+                        <div className="skeleton skel-proj-thumb"></div>
+                        <div className="skeleton skel-proj-thumb"></div>
+                        <div className="skeleton skel-proj-thumb"></div>
+                    </>}
             </div>
             
         </div>

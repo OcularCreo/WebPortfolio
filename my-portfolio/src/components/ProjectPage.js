@@ -86,9 +86,9 @@ export const ProjectPage = (props) =>{
                     ))
                 ) : ""}
                 <div className="desc-container">
-                    {project ? <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1> : 
+                    {!project ? <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1> : 
                     <div className="skeleton skel-about-title"></div>}
-                    {markdownData ? <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>: 
+                    {!markdownData ? <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>: 
 
                         <div className="skeleton-md-container">
                             {Array.apply(null, {length: 3}).map((i) => (

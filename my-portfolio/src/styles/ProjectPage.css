@@ -11,12 +11,12 @@
     text-align: center;
 }
 
-.proj-title {
+.proj-title, .skeleton-proj-title {
     font-weight: 900;
     margin-top: 6rem;
 }
 
-.date {
+.date, .skeleton-proj-date {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 2rem;
@@ -74,37 +74,48 @@
 }
 
 .skeleton-proj-title {
-    height: 4rem;
+    margin-bottom: 1rem;
+    height: 2.5rem;
     width: 20rem;
-    margin-top: 2rem;
 }
 
 .skeleton-proj-date {
     height: 2rem;
-    width: 10rem;
-    margin-top: 1rem;
+    width: 11rem;
 }
 
 .skel-about-title {
-    height: 5rem;
+    height: 4.25rem;
     width: 40rem;
 }
 
 .skel-title {
-    height: 3.5rem;
-    width: 10rem; 
+    height: 3.25rem;
+    width: 20rem; 
     margin-top: 1.75rem;
 }
 
 .skel-txt {
     height: 1.25rem;
+}
+
+.skeleton-md-container .skel-txt:nth-child(2) {
+    width: 80%;
+}
+
+.skeleton-md-container .skel-txt:nth-child(3) {
+    animation-delay: 0.1s;
     width: 100%;
 }
 
-.skeleton-md-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+.skeleton-md-container .skel-txt:nth-child(4) {
+    animation-delay: 0.2s;
+    width: 100%;
+}
+
+.skeleton-md-container .skel-txt:nth-child(5) {
+    animation-delay: .3s;
+    width: 60%;
 }
 
 /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
@@ -141,15 +152,26 @@
         margin-top: 1.25rem;
     }
 
-    .proj-title {
+    .proj-title, .skeleton-proj-title {
         font-size: clamp(1rem, 10vw, 3.75rem);
         margin-top: 2rem;
         margin-left: 5vw; 
         margin-right: 5vw;
     }
 
+    .skeleton-proj-title {
+        width: 75% !important;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
     .proj-about-title {
         font-size: clamp(1rem, 10vw, 2.75rem);
+    }
+
+    .skel-about-title {
+        width: 80%;
+        height: 2.75rem;
     }
 
     .pdf-viewer {
@@ -166,6 +188,25 @@
 
     .background{
         padding-bottom: 4rem;
+    }
+
+    .skel-proj-title-date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+    
+    .skeleton-proj-title {
+        height: 4rem;
+        width: 20rem;
+    }
+    
+    .skeleton-proj-date {
+        height: 2rem;
+        width: 10rem;
     }
 }
 

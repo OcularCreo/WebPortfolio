@@ -47,7 +47,7 @@
 @media only screen and (max-width: 600px) {
     
     /* Regardless of if the grid is just one column the sizes of the thumbnails will be the same */
-    .img {
+    .img, .skel-proj-thumb {
         aspect-ratio: 1/1;
         width: clamp(1rem, 71.944vw + 1rem, 20rem);
     }
@@ -56,7 +56,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
-    .single{
+    .single, .skel-proj-thumb{
         width: clamp(2rem, 83.85416vw + 1rem, 41.25rem);
         aspect-ratio: 33/13;
     }
@@ -83,7 +83,7 @@
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .single{
+    .single, .skel-proj-thumb{
         width: clamp(2rem, 83.5416vw + 1rem, 101.25rem);
         aspect-ratio: 81/22;
     }

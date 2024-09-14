@@ -47,12 +47,14 @@
     gap: 10px;
 }
 
-
-
 .project-item{
     width: 526px; 
     height: 296px;
     background: white;
+}
+
+.skel-proj-thumb {
+    border-radius: 0.25rem;
 }
 
 /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
