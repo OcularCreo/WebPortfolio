@@ -15,6 +15,8 @@ export const ProjectPage = (props) =>{
     const [project, setProject] = useState(null);           //used to store the data of the page's project
     const [markdownData, setMarkdownData] = useState("");   //used for converting the markdown data to html
 
+    const [numSkelTxt, setNumSkelTxt] = useState(3);        //used to determine average number of skeleton text lines to create
+
     useEffect(() => {
 
         //getting the page's project data
@@ -39,6 +41,25 @@ export const ProjectPage = (props) =>{
         getProjectData();   //call the function to get the project data
 
     }, [location]);
+
+    useEffect(() => {
+        const handleSkelTxtNum = () =>{
+            if(window.innerWidth < 600) {
+                setNumSkelTxt(7);
+            } else if(window.innerWidth < 992) {
+                setNumSkelTxt(5);
+            } else {    
+                setNumSkelTxt(3);
+            }
+        }
+
+        window.addEventListener('resize', handleSkelTxtNum);
+
+        handleSkelTxtNum(); 
+
+        return () => window.removeEventListener('resize', handleSkelTxtNum);
+
+    }, [])
 
     return (
         <div className="background">
@@ -86,7 +107,7 @@ export const ProjectPage = (props) =>{
                     ))
                 ) : ""}
                 <div className="desc-container">
-                    {!project ? <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1> : 
+                    {project ? <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1> : 
                     <div className="skeleton skel-about-title"></div>}
                     {!markdownData ? <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>: 
 
@@ -94,10 +115,9 @@ export const ProjectPage = (props) =>{
                             {Array.apply(null, {length: 3}).map((i) => (
                                 <div className="skel-res-exp" key={i}>
                                     <div className="skeleton skel-title"></div>
-                                    <div className="skeleton skel-txt"></div>
-                                    <div className="skeleton skel-txt"></div>
-                                    <div className="skeleton skel-txt"></div>
-                                    <div className="skeleton skel-txt"></div>
+                                    {Array.from({ length: numSkelTxt }).map((_, j) => (
+                                        <div className="skeleton skel-txt" key={j}></div>
+                                    ))}
                                 </div>
                             ))}
                         </div>

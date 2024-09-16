@@ -85,18 +85,18 @@
 }
 
 .skel-about-title {
-    height: 4.25rem;
+    height: 4rem;
     width: 40rem;
 }
 
 .skel-title {
-    height: 3.25rem;
+    height: 2.75rem;
     width: 20rem; 
     margin-top: 1.75rem;
 }
 
 .skel-txt {
-    height: 1.25rem;
+    height: 1.15rem;
 }
 
 .skeleton-md-container .skel-txt:nth-child(2) {
@@ -110,12 +110,22 @@
 
 .skeleton-md-container .skel-txt:nth-child(4) {
     animation-delay: 0.2s;
-    width: 100%;
+    width: 95%;
 }
 
 .skeleton-md-container .skel-txt:nth-child(5) {
     animation-delay: .3s;
     width: 60%;
+}
+
+.skeleton-md-container .skel-txt:nth-child(6) {
+    animation-delay: .3s;
+    width: 85%;
+}
+
+.skeleton-md-container .skel-txt:nth-child(8) {
+    animation-delay: .3s;
+    width: 70%;
 }
 
 /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */
