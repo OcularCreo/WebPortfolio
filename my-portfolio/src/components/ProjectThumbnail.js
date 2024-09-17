@@ -15,7 +15,6 @@ export const ProjectThumbnail = (props) =>{
 
     const handleClick = () =>{
         navigate(`${location.pathname}/proj/${props.id}`);
-        console.log(props.smallImgPath);
     }
 
     return(

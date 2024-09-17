@@ -16,8 +16,6 @@ export const ScrollPrompt = () => {
             const currentScrollY = window.scrollY;      //save the current window scroll position
             setScrollY(currentScrollY);                 //set scrollY to the current window scroll position
 
-            console.log(currentScrollY);
-
             //check if the currnet scrollY is between 0 and 55 and if the playAnimation boolean is set to false
             if(currentScrollY >=0 && currentScrollY <=80 && !playAnim.current){
 
@@ -58,7 +56,7 @@ export const ScrollPrompt = () => {
             }
         }
 
-    }, []);
+    }, [playAnim]);
 
     const maxScroll = 200;                                                  //max scroll used to cap animations at scroll distance
     const curOpacity = playAnim ? 1 - Math.min(scrollY / maxScroll, 1) : 0; //calculate opacity based on scroll distance, set to 0 if playAnim is false

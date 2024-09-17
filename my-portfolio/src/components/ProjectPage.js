@@ -3,9 +3,8 @@ import "../styles/ProjectPage.css";
 import "../styles/Loading.css";
 import { fetchOneProject } from "../services/apiServices";
 import Gallery from "./Gallery";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
-import { Loading } from "./Loading.js";
 
 export const ProjectPage = (props) =>{
     
@@ -16,8 +15,18 @@ export const ProjectPage = (props) =>{
     const [markdownData, setMarkdownData] = useState("");   //used for converting the markdown data to html
 
     const [numSkelTxt, setNumSkelTxt] = useState(3);        //used to determine average number of skeleton text lines to create
+    const controllerRef = useRef();                         //used to keep track of exiting abort controllers
 
     useEffect(() => {
+
+        //check if there's already a abort controller, if so abort it
+        if(controllerRef.current) {
+            controllerRef.current.abort();
+        } 
+
+        //create a new abort controller and signal
+        controllerRef.current = new AbortController();
+        const signal = controllerRef.current.signal;
 
         //getting the page's project data
         const getProjectData = async () => {
@@ -26,21 +35,27 @@ export const ProjectPage = (props) =>{
             const pageSegments = location.pathname.split('/'); 
             const section = '/' + pageSegments[1];
 
-            const data = await fetchOneProject(section, params.id); //fetch the proj data based on the project section and project id (from url)
+            const data = await fetchOneProject(section, params.id, { signal }); //fetch the proj data based on the project section and project id (from url)
             setProject(data);                                       //store the data that was fetched
 
             //if the data has a markdown path
             if(data && data.markdownPath){
-                const response = await fetch(data.markdownPath);    //fetch the markdown file 
+                const response = await fetch(data.markdownPath, { signal });    //fetch the markdown file 
                 const markdownText = await response.text();         //convert the data to text
                 setMarkdownData(markdownText);                      //save the markdown data
             }
-
         }
 
         getProjectData();   //call the function to get the project data
 
-    }, [location]);
+        //when dismounting, check if there's an abort controller and abort it if there is one
+        return () => {
+            if(controllerRef.current){
+                controllerRef.current.abort();
+            }
+        }
+
+    }, [location, params.id]);
 
     useEffect(() => {
         const handleSkelTxtNum = () =>{
@@ -76,7 +91,14 @@ export const ProjectPage = (props) =>{
                 </>}
             </div>
             <div className="content-container">
-                {project ? <Gallery imagePath={project.mediaPath} images={project.images}/> : ""}
+                {project ? <Gallery imagePath={project.mediaPath} images={project.images}/> :
+                    <div className="skel-img-container">
+                        {Array.from({ length: 6 }).map((_, i) => (
+                            <div className="skeleton skel-img" key={i}></div>
+                        ))}
+                    </div>
+                }
+                
                 {project && project.videos ? (
                     project.videos.map((video, index) => (
                         <iframe
@@ -112,9 +134,9 @@ export const ProjectPage = (props) =>{
                     {markdownData ? <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>: 
 
                         <div className="skeleton-md-container">
-                            {Array.apply(null, {length: 3}).map((i) => (
-                                <div className="skel-res-exp" key={i}>
-                                    <div className="skeleton skel-title"></div>
+                            {Array.apply(null, {length: 3}).map((_, i) => (
+                                <div className="skel-res-exp" key={`skel-res-exp-${i}`}>
+                                    <div className="skeleton skel-title" key={`skel-title-${i}`}></div>
                                     {Array.from({ length: numSkelTxt }).map((_, j) => (
                                         <div className="skeleton skel-txt" key={j}></div>
                                     ))}

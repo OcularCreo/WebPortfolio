@@ -7,13 +7,13 @@ const FILE_MAP = {
     '/extras' : '/data/extra/extra_projects.json'
 }
 
-//function used to fetch a single project based on section and id
-export async function fetchOneProject(section, projId){
+//function used to fetch a single project based on section and id | signal parameter to allow aborting the fetch
+export async function fetchOneProject(section, projId, { signal } = {}){
     
     const filePath = FILE_MAP[section]; //getting the json file path based on the passed value of seciton
 
     //fetch the json file from the found file path
-    return fetch(filePath)
+    return fetch(filePath, { signal })
         
         //handle the fetch response
         .then(response => {
@@ -39,17 +39,21 @@ export async function fetchOneProject(section, projId){
         })
         //send console error when any error occurs during fetch
         .catch(error =>{
-            console.error('Fetch operation error: ', error);
+            if(error.name === "AbortError"){
+                console.log("Fetch Aborted");
+            } else {
+                console.error('Fetch operation error: ', error);
+            }
         })
 }
 
-//function used to fetch all projects in a section
-export async function fetchAllProjects(section) {
+//function used to fetch all projects in a section | signal parameter to allow aborting the fetch
+export async function fetchAllProjects(section, { signal } = {}) {
 
     const filePath = FILE_MAP[section]; //get the file path based on the given value of section
 
     //fetch the json file from the file path found
-    return fetch(filePath)
+    return fetch(filePath, { signal })
         .then(response =>{
 
             //verify that the response is okay
@@ -61,7 +65,11 @@ export async function fetchAllProjects(section) {
         })
         //send console error when any occur during the fetch operation
         .catch(error =>{
-            console.error("fetch operation error: ", error);
+            if(error.name === "AbortError"){
+                console.log("Fetch Aborted");
+            } else {
+                console.error("fetch operation error: ", error);
+            }
         })
 
 }

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Gallery.css";
 
-const Gallery = ({imagePath, images, hasSmallImgs}) => {
+const Gallery = ({imagePath, images}) => {
 
     const [currIdx, setCurrIdx] = useState(0);                  //determines the current index of the previewed image
     const [isPreviewOpen, setIsPreviewOpen] = useState(false);  //helps keep track of if the preview image window is open
@@ -24,21 +24,22 @@ const Gallery = ({imagePath, images, hasSmallImgs}) => {
 
     }, [images, numImages]);
 
+    //useEffect used for key down events when the preview image is open
     useEffect(() => {
-        
+        //check which key has been pressed from the passed event
         const handleKeyDown = (event) => {
 
-            console.log("key down");
+            console.log("key pressed");
 
             switch(event.key) {
                 case "Escape": 
-                    closeImgPreview();
+                    closeImgPreview();  //close preview if escape key was pressed
                     break; 
                 case "ArrowRight": 
-                    nextImg();
+                    nextImg();          //go to the next image if the right arrow is pressed
                     break; 
                 case "ArrowLeft": 
-                    prevImg();
+                    prevImg();          //go to the previous image if the right arrow was pressed
                     break;
                 default: 
                     break;
@@ -46,9 +47,13 @@ const Gallery = ({imagePath, images, hasSmallImgs}) => {
 
         }
 
-        document.addEventListener("keydown", handleKeyDown);
+        if(isPreviewOpen) {
+            document.addEventListener("keydown", handleKeyDown);                    //add an event listener to the document when the preview image ui is open
+        } else {
+            document.removeEventListener("keydown", handleKeyDown);
+        }
 
-        return () => document.removeEventListener("keydown", handleKeyDown);
+        return () => document.removeEventListener("keydown", handleKeyDown);    //remove it when dismounted.
 
     }, [isPreviewOpen]);
 
@@ -109,8 +114,8 @@ const Gallery = ({imagePath, images, hasSmallImgs}) => {
         setTouchStart(null);                        //set the touchStart back to null regardless of direction
     }
 
+    //function uses adds loaded class to parent divs of the image to remove blur and transition to full sizes image
     const handleImgLoad = (imgEl) => {
-        console.log(imgEl);
         imgEl.classList.add('loaded');
     }
 
@@ -121,13 +126,15 @@ const Gallery = ({imagePath, images, hasSmallImgs}) => {
                     
                     {/* Create a div for each given image & dynamically give it tall or wide class based on json data */}
                     {images.map((image, index) => (
-                        <div className={`img ${image.tall ? "tall" : ""} ${image.wide ? "wide" : ""} blured-img`} 
+                        <div className={`img ${image.tall ? "tall" : ""} ${image.wide ? "wide" : ""}`} 
                              title={image.imgTitle}
                              key={index}
                              style={{backgroundImage: `url(${imagePath}scaled_${image.src})`}}
                              onClick={() => openImgPreview(index)}>
 
-                            <img src={`${imagePath}${image.src}`} alt="" loading="lazy" className="img-el" onLoad={(e) => handleImgLoad(e.target.parentElement)}/>
+                            <div className="blured-img">
+                                <img src={`${imagePath}${image.src}`} alt="" loading="lazy" className="img-el" onLoad={(e) => handleImgLoad(e.target.parentElement)}/>
+                            </div>
 
                         </div>
                     ))}
@@ -147,23 +154,25 @@ const Gallery = ({imagePath, images, hasSmallImgs}) => {
                     {/* Image Preivew Navigation Container - holds the navigation for next, previous, and circle buttons */}
                     <div className="next-prev-container">
 
-                        {/* PREVIOUS BUTTON - allows users to view the image PREVIOUS to the currently displayed */}
-                        <button className="previous-btn" onClick={prevImg}><FontAwesomeIcon icon="fa-solid fa-caret-left" /></button>
-
                         {/* CIRCLE NAV BTNS - Only render them if the number of images is between 3 and 12 to not overcrowd or just have 2 dots */}
                         {(numImages > 1 && numImages < 21) && (
-                        <div className="img-btn-container">
-                            {images && images.map((image, index) => (
-                                <div key={index} 
-                                     onClick={() => openImgPreview(index)} 
-                                     className={`img-btn-item ${index === currIdx ? "img-btn-cur" : ""}`}>
-                                </div>
-                            ))}
-                        </div>
-                        )}
+                        <>
+                            {/* PREVIOUS BUTTON - allows users to view the image PREVIOUS to the currently displayed */}
+                            <button className="previous-btn" onClick={prevImg}><FontAwesomeIcon icon="fa-solid fa-caret-left" /></button>
+                            
+                            <div className="img-btn-container">
+                                {images && images.map((image, index) => (
+                                    <div key={index} 
+                                        onClick={() => openImgPreview(index)} 
+                                        className={`img-btn-item ${index === currIdx ? "img-btn-cur" : ""}`}>
+                                    </div>
+                                ))}
+                            </div>
 
-                        {/* NEXT BUTTON - allows users to view the image NEXT to the currently displayed */}
-                        <button className="next-btn" onClick={nextImg}><FontAwesomeIcon icon="fa-solid fa-caret-right" /></button>
+                            {/* NEXT BUTTON - allows users to view the image NEXT to the currently displayed */}
+                            <button className="next-btn" onClick={nextImg}><FontAwesomeIcon icon="fa-solid fa-caret-right" /></button>
+                        </>
+                        )}
                         
                     </div>
 

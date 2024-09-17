@@ -2,32 +2,49 @@ import { ProjectThumbnail } from './ProjectThumbnail';
 import "../styles/ProjectGrid.css";
 import { fetchAllProjects } from '../services/apiServices';
 import { useLocation } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 export const ProjectGrid = (props) =>{
 
     const location = useLocation();                     //used to keep track of url locaiton
     const [projects, setProjects] = useState(null);         //variable stores data on the projects related to the page
     const [overEight, setOverEight] = useState(false);  //boolean to determine if num proj is over 8 (used for grid styling purposes)
+    const controllerRef = useRef();
 
     useEffect (() => {
+
+        //check if there's a controller ref already, if so abort it
+        if(controllerRef.current) {
+            controllerRef.current.abort();
+        } 
+
+        //create a new abort controller and signal variable
+        controllerRef.current = new AbortController();
+        const signal = controllerRef.current.signal;
 
         //fetching project data asyncronously
         const getProjects = async () => {
             
-            setProjects(null); //clear the projects when getting new projects
+            setProjects(null);                                                  //clear the projects when getting new projects
            
-            const data = await fetchAllProjects(location.pathname);    //using fetchallprojects and sending the file path location to get related projs
+            const data = await fetchAllProjects(location.pathname, { signal }); //using fetchallprojects and sending the file path location to get related projs
             
             if(data){
-                setOverEight(data.length > 8);                         //determining if the number of projects fetched is over 8
-                setProjects(data);                                     //storing fetched project data
+                setOverEight(data.length > 8);                                  //determining if the number of projects fetched is over 8
+                setProjects(data);                                              //storing fetched project data
             } else {
                 setProjects(null);
             }
         }
 
-        getProjects();                                                 //calling get projects for fetching the data
+        getProjects();                                                          //calling get projects for fetching the data
+
+        //when dismounting, if there's a controller ref abort it
+        return () => {
+            if(controllerRef.current) {
+                controllerRef.current.abort();
+            }
+        }
 
     }, [location]);
 

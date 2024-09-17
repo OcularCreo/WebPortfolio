@@ -37,11 +37,37 @@
     animation-delay: 0.8s;
 }
 
-@keyframes dots {
-    50%
-    {
-        background-color: rgba(255, 255, 255, 0.5);
+.skel-img-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: clamp(100px, 20vw, 400px);
+    gap: 0.75rem;
+}
+
+.skel-img-container .skel-img:nth-child(1) {
+    grid-column: span 6;
+}
+
+.skel-img-container .skel-img:nth-child(2), 
+.skel-img-container .skel-img:nth-child(3){
+    grid-column: span 3;
+}
+
+.skel-img-container .skel-img:nth-child(n+4) {
+    grid-column: span 2;
+}
+
+.skel-img {
+    border-radius: 0.25rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .skel-img-container {
+        gap: 0.25rem;
+        grid-auto-rows: 30vw;
     }
+
 }
 
 .skeleton {
@@ -61,5 +87,12 @@
 @keyframes skeleton-anim {
     to {
         background-position-x: -20%;
+    }
+}
+
+@keyframes dots {
+    50%
+    {
+        background-color: rgba(255, 255, 255, 0.5);
     }
 }
