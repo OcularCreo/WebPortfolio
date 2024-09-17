@@ -5,6 +5,7 @@
         "date": "April 2024", 
         "mediaPath": "/data/3d/arena/",
         "thumbSrc": "final-04.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "final-01.webp", "tall": false, "wide": false, "imgTitle":"Arena shot 1"},
             {"src": "final-02.webp", "tall": false, "wide": false, "imgTitle":"Arena shot 2"},
@@ -30,6 +31,7 @@
         "date": "March 2024", 
         "mediaPath": "/data/3d/bunker/",
         "thumbSrc": "A4-1.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "A4-1.webp", "tall": false, "wide": true, "imgTitle":"Bunker shot 1"},
             {"src": "A4-2.webp", "tall": false, "wide": false, "imgTitle":"Bunker shot 2"},
@@ -54,6 +56,7 @@
         "date": "February 2024", 
         "mediaPath": "/data/3d/modularkit/",
         "thumbSrc": "blender-models.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "blender-models.webp", "tall": true, "wide": true, "imgTitle":"Blender Models"},    
             {"src": "A1-02.webp", "tall": true, "wide": false, "imgTitle":"Saloon shot 2"},
@@ -71,6 +74,7 @@
         "date": "October 2023", 
         "mediaPath": "/data/3d/facial/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "Expressions.webp",  "tall": false, "wide": false, "imgTitle":"Expressions"}, 
             {"src": "Visemes.webp",      "tall": false, "wide": false, "imgTitle":"Visemes"}       
@@ -87,6 +91,7 @@
         "date": "October 2023", 
         "mediaPath": "/data/3d/parkour/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "sketch_01.webp", "tall": false, "wide": false, "imgTitle":"Example Sketch 1"}, 
             {"src": "sketch_02.webp", "tall": false, "wide": false, "imgTitle":"Example Sketch 2"}, 
@@ -104,6 +109,7 @@
         "date": "October 2023", 
         "mediaPath": "/data/3d/flourbag/",
         "thumbSrc": "test.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "sketch.webp", "tall": true, "wide": false, "imgTitle":"Animation Sketch"}      
         ], 
@@ -119,6 +125,7 @@
         "date": "April 2023", 
         "mediaPath": "/data/3d/texturemap/",
         "thumbSrc": "Render_01.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "Render_01.webp", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 1"}, 
             {"src": "Render_02.webp", "tall": false, "wide": false, "imgTitle":"Cylix Room Angle 2"}, 
@@ -135,6 +142,7 @@
         "date": "March 2023", 
         "mediaPath": "/data/3d/lego/",
         "thumbSrc": "render.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "lego_UI.webp", "tall": false, "wide": false, "imgTitle":"Generative UI Controls"}, 
             {"src": "overview.webp", "tall": false, "wide": false, "imgTitle":"Maya Environment With Generated Lego"}, 
@@ -151,6 +159,7 @@
         "date": "", 
         "mediaPath": "/data/3d/model/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "sketch_front.webp", "tall": false, "wide": false, "imgTitle":"Reference front"}, 
             {"src": "sketch_side.webp",  "tall": false, "wide": false, "imgTitle":"Reference side"}, 
@@ -169,6 +178,7 @@
         "date": "November 2020", 
         "mediaPath": "/data/3d/walk/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [ 
             {"src": "Contact.webp",   "tall": false, "wide": false, "imgTitle":"Contact"}, 
             {"src": "Recoil.webp",    "tall": false, "wide": false, "imgTitle":"Recoil"}, 

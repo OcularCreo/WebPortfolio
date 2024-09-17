@@ -5,6 +5,7 @@
         "date": "February 2023", 
         "mediaPath": "/data/extra/vector/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [{"src": "demo.webp", "tall": false, "wide": false, "imgTitle":"Mapping Interactions Example"}], 
         "markdownPath": "/data/extra/vector/vector_desc.md"
     },
@@ -14,6 +15,7 @@
         "date": "July 2022", 
         "mediaPath": "/data/extra/gac_reels/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [], 
         "markdownPath": "/data/extra/gac_reels/gac_reels_desc.md", 
         "videos": [
@@ -27,6 +29,7 @@
         "date": "December 2021", 
         "mediaPath": "/data/extra/arduino/",
         "thumbSrc": "gp_overview.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "prototype.webp",        "tall": false, "wide": false, "imgTitle":"Ghost Patrol Prototype"},
             {"src": "proto_cntrl.webp",      "tall": false, "wide": false, "imgTitle":"Controller Prototype"},

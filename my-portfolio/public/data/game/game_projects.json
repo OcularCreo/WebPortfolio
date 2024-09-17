@@ -5,6 +5,7 @@
         "date": "April 2024", 
         "mediaPath": "/data/game/damed/",
         "thumbSrc": "damed_mapPreview.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "damed_poster0.webp",        "tall": true,  "wide": false, "imgTitle":"Dam'ed Poster"}, 
             {"src": "damed_interactionMap.webp", "tall": false, "wide": false, "imgTitle":"State Machine Map"},
@@ -26,6 +27,7 @@
         "date": "December 2023", 
         "mediaPath": "/data/game/rps/",
         "thumbSrc": "rps_thumbnail.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "rps_mainmenu.webp",             "tall": true,  "wide": false, "imgTitle":"RPS: Best of Three - Main Menu"}, 
             {"src": "rps_characterIllustrator.webp", "tall": false,  "wide": false, "imgTitle":"RPS: Characters - Illustrator"},
@@ -46,6 +48,7 @@
         "date": "April 2021", 
         "mediaPath": "/data/game/pastry/",
         "thumbSrc": "PastryPeril_Thumbnail.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "PastryPeril_Thumbnail.webp",    "tall": false,  "wide": true, "imgTitle":"Pastry Peril Banner"}, 
             {"src": "pastry_menu.webp",              "tall": false,  "wide": false, "imgTitle":"Main Menu"}, 

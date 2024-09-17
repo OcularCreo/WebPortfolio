@@ -5,6 +5,7 @@
         "date": "July 2024", 
         "mediaPath": "/data/web/port/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": false,
         "images": [
             {"src": "desktop_lay.webp",  "tall": false,  "wide": false, "imgTitle":"Desktop layout"},
             {"src": "mobile_lay.webp",   "tall": true,  "wide": false, "imgTitle":"Mobile layout"},
@@ -18,6 +19,7 @@
         "date": "December 2023", 
         "mediaPath": "/data/web/fullstack/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "loginproto.webp",       "tall": false,  "wide": false, "imgTitle":"Login Prototype"},
             {"src": "recipeproto.webp",      "tall": false,  "wide": false, "imgTitle":"Recipe Prototype"},
@@ -41,6 +43,7 @@
         "date": "April 2023", 
         "mediaPath": "/data/web/mars/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [
         ], 
         "markdownPath": "/data/web/mars/mars_desc.md", 
@@ -54,6 +57,7 @@
         "date": "March 2023", 
         "mediaPath": "/data/web/wack/",
         "thumbSrc": "lobby.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "lobby.webp",        "tall": true,  "wide": false, "imgTitle":"Lobby Area"}, 
             {"src": "coopgameplay.webp", "tall": false,  "wide": false, "imgTitle":"Co-op - Gameplay Snapshot"}, 
@@ -72,6 +76,7 @@
         "date": "April 2020", 
         "mediaPath": "/data/web/edu/",
         "thumbSrc": "thumb.webp",
+        "hasSmallImages": true,
         "images": [
         ], 
         "markdownPath": "/data/web/edu/edu_desc.md", 

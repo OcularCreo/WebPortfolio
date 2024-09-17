@@ -54,7 +54,7 @@ export const ProjectGrid = (props) =>{
                 {/* Project items: Following elements should be thumbnails for projects featured on this page */}
                 {projects ? projects.map(project => (
                     <ProjectThumbnail className={!overEight ? "single" : "multi"} key={project.id} id={project.id} title={project.title} 
-                    imgPath={`${project.mediaPath}${project.thumbSrc}`} />)) : 
+                    imgPath={`${project.mediaPath}${project.thumbSrc}`} smallSrc={project.hasSmallImages ? `${project.mediaPath}scaled_${project.thumbSrc}`: false} />)) : 
                     <>
                         <div className="skeleton skel-proj-thumb"></div>
                         <div className="skeleton skel-proj-thumb"></div>

@@ -148,17 +148,17 @@
 @media only screen and (max-width: 600px) {
     .col-grid-3 {
         grid-template-columns: repeat(3, minmax(75px, 1fr));
-        grid-auto-rows:  minmax(75px, 1fr);
+        grid-auto-rows: 120px;
     }
 
     .col-grid-2 {
         grid-template-columns: repeat(2, minmax(75px, 1fr));
-        grid-auto-rows:  minmax(75px, 1fr);
+        grid-auto-rows: 120px;
     }
 
     .col-grid-1 {
         grid-template-columns: minmax(75px, 1fr);
-        grid-auto-rows: minmax(75px, 1fr);
+        grid-auto-rows: 120px;
     }
 
     .close-btn {

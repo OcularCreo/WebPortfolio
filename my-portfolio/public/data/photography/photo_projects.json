@@ -6,6 +6,7 @@
         "mediaPath": "/data/photography/uni_book/",
         "thumbSrc": "uni_thumb.webp",
         "images": [], 
+        "hasSmallImages": true,
         "markdownPath": "/data/photography/uni_book/unibook_desc.md", 
         "pdfs" : [
             {"pdfSrc": "CooliganPang_Jordan_FinalAssign-compressed.pdf", 
@@ -18,6 +19,7 @@
         "date": "March 2021", 
         "mediaPath": "/data/photography/street/",
         "thumbSrc": "9.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "1.webp",    "tall": true,  "wide": false, "imgTitle":"Walking downtown"}, 
             {"src": "2.webp",    "tall": true,  "wide": false, "imgTitle":"Smoking on the Step"}, 
@@ -42,6 +44,7 @@
         "date": "March 2021", 
         "mediaPath": "/data/photography/uniq_portrait/",
         "thumbSrc": "2.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "1.webp",        "tall": true,  "wide": false, "imgTitle":"Suprise Portrait"}, 
             {"src": "2-loop.webp",   "tall": true,  "wide": false, "imgTitle":"Rembrant - Loop"}, 
@@ -58,6 +61,7 @@
         "date": "March 2021", 
         "mediaPath": "/data/photography/architecture/",
         "thumbSrc": "1.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "4.webp", "tall": true, "wide": false, "imgTitle": "Old Times vs Modernization"},
             {"src": "1.webp", "tall": false, "wide": false, "imgTitle": "Greenhouse"},
@@ -78,6 +82,7 @@
         "date": "March 2021", 
         "mediaPath": "/data/photography/night/",
         "thumbSrc": "3.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "4.webp", "tall": false, "wide": false, "imgTitle": "Night Sky"},
             {"src": "1.webp", "tall": false, "wide": false, "imgTitle": "Road Lights"},
@@ -96,6 +101,7 @@
         "date": "February 2021", 
         "mediaPath": "/data/photography/nature/",
         "thumbSrc": "1.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "1.webp", "tall": false, "wide": false, "imgTitle": "Standing infront of a frozen desert"},
             {"src": "4.webp", "tall": false, "wide": false, "imgTitle": "Snow covered bog"},
@@ -114,6 +120,7 @@
         "date": "February 2021", 
         "mediaPath": "/data/photography/highkey/",
         "thumbSrc": "IMG_6214-2.webp",
+        "hasSmallImages": true,
         "images": [
             {"src": "IMG_6040.webp",     "tall": true, "wide": false, "imgTitle": "Tie"},    
             {"src": "IMG_6108.webp",     "tall": false, "wide": false, "imgTitle": "Woman Looking Left"},
@@ -131,6 +138,7 @@
         "date": "June 2019", 
         "mediaPath": "/data/photography/cpt/",
         "thumbSrc": "cpt_thumb.webp",
+        "hasSmallImages": true,
         "images": [
         ],
         "markdownPath": "/data/photography/cpt/cpt_desc.md", 

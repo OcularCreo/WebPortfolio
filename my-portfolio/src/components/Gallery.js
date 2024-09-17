@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Gallery.css";
 
-const Gallery = ({imagePath, images}) => {
+const Gallery = ({imagePath, images, hasSmallImgs}) => {
 
     const [currIdx, setCurrIdx] = useState(0);                  //determines the current index of the previewed image
     const [isPreviewOpen, setIsPreviewOpen] = useState(false);  //helps keep track of if the preview image window is open
@@ -109,6 +109,11 @@ const Gallery = ({imagePath, images}) => {
         setTouchStart(null);                        //set the touchStart back to null regardless of direction
     }
 
+    const handleImgLoad = (imgEl) => {
+        console.log(imgEl);
+        imgEl.classList.add('loaded');
+    }
+
     return (
         <>
             {/* Gallery Div - Dynamically changes grid style based on num of images given to component */}
@@ -116,12 +121,13 @@ const Gallery = ({imagePath, images}) => {
                     
                     {/* Create a div for each given image & dynamically give it tall or wide class based on json data */}
                     {images.map((image, index) => (
-                        <div className={`img ${image.tall ? "tall" : ""} ${image.wide ? "wide" : ""}`} 
+                        <div className={`img ${image.tall ? "tall" : ""} ${image.wide ? "wide" : ""} blured-img`} 
                              title={image.imgTitle}
                              key={index}
+                             style={{backgroundImage: `url(${imagePath}scaled_${image.src})`}}
                              onClick={() => openImgPreview(index)}>
 
-                            <img src={`${imagePath}${image.src}`} alt="" loading="lazy" className="img-el"/>
+                            <img src={`${imagePath}${image.src}`} alt="" loading="lazy" className="img-el" onLoad={(e) => handleImgLoad(e.target.parentElement)}/>
 
                         </div>
                     ))}
