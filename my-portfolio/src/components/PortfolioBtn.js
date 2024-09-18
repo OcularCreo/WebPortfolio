@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import "../styles/PortfolioBtn.css";
-import { PiDropSimple } from "react-icons/pi";
 
 export const PortfolioBtn = (props) =>{
 
@@ -13,8 +12,19 @@ export const PortfolioBtn = (props) =>{
         }
     }
 
+    //funciton keeps track of mouse cursor when hovering over a portfolio button. Positions flashlight effect at position of cursor
+    const handleMouseMove = (e) => {
+        //get the x and y position of the target
+        let x = e.pageX - e.currentTarget.offsetLeft;   
+        let y = e.pageY - e.currentTarget.offsetTop; 
+
+        //set the --x and --y variables to the x and y calculated
+        e.currentTarget.style.setProperty('--x', x + "px");
+        e.currentTarget.style.setProperty('--y', y + "px");
+    }
+
     return (
-        <button className="port-btn" onClick={handleClick}>
+        <button onMouseMove={handleMouseMove} className="port-btn" onClick={handleClick}>
                 <span className="btn-icon">{props.icon}</span>
                 <span className="btn-title">{props.title}</span>
         </button>

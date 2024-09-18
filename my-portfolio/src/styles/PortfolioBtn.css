@@ -1,7 +1,6 @@
 .port-btn {
     font-family: "Montserrat", sans-serif;
     color: white; 
-    background-color: transparent;
     text-align: center;
     aspect-ratio: 1/1;
     display: flex;
@@ -11,10 +10,40 @@
     transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
     user-select: none;
 
-    background-color: rgba( 255, 255, 255, 0.1 );
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-    backdrop-filter: blur( 2px );
-    -webkit-backdrop-filter: blur( 2px );
+    position: relative;
+    background: rgba(45,45,45,1);
+    border: none;
+    overflow: hidden;
+}
+
+.port-btn::before {
+    content: '';
+    position: absolute; 
+    background: radial-gradient(rgba(255, 255, 255, 0.5), transparent, transparent);
+    width: 200%; 
+    height: 200%;
+    opacity: 0;
+    transition: 0.5s, top 0, left 0;
+    top: var(--y); 
+    left: var(--x);
+    transform: translate(-50%, -50%);
+}
+
+.port-btn:hover::before {
+    opacity: 1;
+}
+
+.port-btn:hover::after {
+    content: '';
+    position: absolute; 
+    inset: 2px; 
+    background: rgba(45, 45, 45, 0.9);
+    border-radius: inherit;
+}
+
+.port-btn .btn-icon, 
+.port-btn .btn-title {
+    z-index: 1;
 }
 
 .btn-title{
@@ -28,9 +57,10 @@
     transition: transform 0.25s ease-in-out;
 }
 
+/*
 .port-btn:hover{
     background: linear-gradient(0deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.1) 100%);
-}
+}*/
 
 .port-btn:hover .btn-title {
     transition: ease-in-out 0.25s;

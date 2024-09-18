@@ -148,12 +148,13 @@ export const Home = () =>{
         }
     }
 
+    //following code used to navigate to the resume page when the resume button is clicked
     const navigate = useNavigate();
-
     const navToResumes = () => {
         navigate("/resumes");
     }
 
+    //code used to add loaded class to profile img div, this helps with the loading in effect
     const handleProfileLoad = (imgEl) => {
         imgEl.classList.add('loaded');
     }

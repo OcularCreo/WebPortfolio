@@ -61,6 +61,14 @@
     border-radius: 0.25rem;
 }
 
+.skel-res-link {
+    width: 60%;
+    height: 1.25rem;
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem; 
+    border-radius: 0.2rem;
+}
+
 @media only screen and (max-width: 600px) {
 
     .skel-img-container {

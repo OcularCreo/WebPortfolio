@@ -39,9 +39,7 @@ export async function fetchOneProject(section, projId, { signal } = {}){
         })
         //send console error when any error occurs during fetch
         .catch(error =>{
-            if(error.name === "AbortError"){
-                console.log("Fetch Aborted");
-            } else {
+            if(error.name !== "AbortError"){
                 console.error('Fetch operation error: ', error);
             }
         })
@@ -65,9 +63,7 @@ export async function fetchAllProjects(section, { signal } = {}) {
         })
         //send console error when any occur during the fetch operation
         .catch(error =>{
-            if(error.name === "AbortError"){
-                console.log("Fetch Aborted");
-            } else {
+            if(error.name !== "AbortError"){
                 console.error("fetch operation error: ", error);
             }
         })

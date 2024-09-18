@@ -130,13 +130,23 @@ export const Resumes = () => {
                 <div className="resume-list-container">
                     <h1 id="resumes-title">resumes</h1>
                     <div className="resume-items-container">
-                        {resumeData && resumeData.map((resume, index) => (
+                        {resumeData ? resumeData.map((resume, index) => (
                             <>
                                 <div className="resume-link-txt" onClick={() => toggleResumePreview(resume)}>
                                     <p>{resume.type}</p>
                                     <FontAwesomeIcon icon="fa-solid fa-angle-right" />
                                 </div>
                                 {index < resumeData.length - 1 ? <hr></hr> : null}
+                            </>
+                        )): 
+
+                        Array.from({ length: 4 }).map((_, i) => (
+                            <>
+                                <div className="resume-link-txt" key={i}>
+                                    <div className="skeleton skel-res-link"></div>
+                                    <FontAwesomeIcon icon="fa-solid fa-angle-right" />
+                                </div>
+                                {i < 3 ? <hr></hr> : null}
                             </>
                         ))}
                     </div>

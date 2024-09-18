@@ -81,6 +81,7 @@ export const ProjectPage = (props) =>{
     return (
         <div className="background">
             <div className="proj-title-container">
+                {/* Project page title and date elements - conditionally rendering skeleton or actual elements based on if data is loaded*/}
                 {project ? 
                 <>
                     <h1 className="proj-title">{project && project.title}</h1>
@@ -93,6 +94,7 @@ export const ProjectPage = (props) =>{
                 </>}
             </div>
             <div className="content-container">
+                {/* Project Image Gallery - conditionally renders elements or skeleton based on if data is loaded*/}
                 {project ? <Gallery imagePath={project.mediaPath} images={project.images}/> :
                     <div className="skel-img-container">
                         {Array.from({ length: 6 }).map((_, i) => (
@@ -100,7 +102,8 @@ export const ProjectPage = (props) =>{
                         ))}
                     </div>
                 }
-                
+
+                {/* Project Videos */}
                 {project && project.videos ? (
                     project.videos.map((video, index) => (
                         <iframe
@@ -113,6 +116,8 @@ export const ProjectPage = (props) =>{
                         ></iframe>
                     ))
                 ) : ""}
+
+                {/* Project PDFs */}
                 {project && project.pdfs ? (
                     project.pdfs.map((pdf, index) => (
                         <>
@@ -130,9 +135,15 @@ export const ProjectPage = (props) =>{
                         </>
                     ))
                 ) : ""}
+
+                {/* Project Descripton container - holds description elements */}
                 <div className="desc-container">
+
+                    {/* project about title - conditionaly renders the skeleton title if waiting for data */}
                     {project ? <h1 className="proj-about-title"><span className="thick">about</span> <span className="thin">{project && project.title}</span></h1> : 
                     <div className="skeleton skel-about-title"></div>}
+
+                    {/* Markdown/description element - conditionally renders skeleton elements if waiting for data */}
                     {markdownData ? <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>: 
 
                         <div className="skeleton-md-container">
@@ -145,9 +156,7 @@ export const ProjectPage = (props) =>{
                                 </div>
                             ))}
                         </div>
-
                     }
-                    
                 </div>
             </div>
         </div>
