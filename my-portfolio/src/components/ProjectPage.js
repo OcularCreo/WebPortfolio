@@ -38,8 +38,8 @@ export const ProjectPage = (props) =>{
             const data = await fetchOneProject(section, params.id, { signal }); //fetch the proj data based on the project section and project id (from url)
             setProject(data);                                       //store the data that was fetched
 
-            //if the data has a markdown path
-            if(data && data.markdownPath){
+            //check that data has been fetched and if the data has a markdown path
+            if(data && data.markdownPath) {
                 const response = await fetch(data.markdownPath, { signal });    //fetch the markdown file 
                 const markdownText = await response.text();         //convert the data to text
                 setMarkdownData(markdownText);                      //save the markdown data
@@ -57,7 +57,10 @@ export const ProjectPage = (props) =>{
 
     }, [location, params.id]);
 
+    //useeffect for skeleton text elements
     useEffect(() => {
+
+        //function used to dynamically change number of skeleton txt elements depending on window width
         const handleSkelTxtNum = () =>{
             if(window.innerWidth < 600) {
                 setNumSkelTxt(7);
@@ -68,13 +71,12 @@ export const ProjectPage = (props) =>{
             }
         }
 
-        window.addEventListener('resize', handleSkelTxtNum);
+        window.addEventListener('resize', handleSkelTxtNum);    //adding event listener to call haldeSkelTxtNum function
+        handleSkelTxtNum();                                     //calling function for first initialization
 
-        handleSkelTxtNum(); 
+        return () => window.removeEventListener('resize', handleSkelTxtNum);    //removing event listener when dismounting
 
-        return () => window.removeEventListener('resize', handleSkelTxtNum);
-
-    }, [])
+    }, []);
 
     return (
         <div className="background">

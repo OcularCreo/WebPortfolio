@@ -42,7 +42,7 @@ const Gallery = ({imagePath, images}) => {
                     prevImg();          //go to the previous image if the right arrow was pressed
                     break;
                 default: 
-                    break;
+                    break;              //do nothing if any other key is pressed
             }
 
         }
@@ -154,12 +154,12 @@ const Gallery = ({imagePath, images}) => {
                     {/* Image Preivew Navigation Container - holds the navigation for next, previous, and circle buttons */}
                     <div className="next-prev-container">
 
-                        {/* CIRCLE NAV BTNS - Only render them if the number of images is between 3 and 12 to not overcrowd or just have 2 dots */}
                         {(numImages > 1 && numImages < 21) && (
                         <>
                             {/* PREVIOUS BUTTON - allows users to view the image PREVIOUS to the currently displayed */}
                             <button className="previous-btn" onClick={prevImg}><FontAwesomeIcon icon="fa-solid fa-caret-left" /></button>
                             
+                            {/* RECTANGLE NAV BTNS - Only render them if the number of images is between 3 and 12 to not overcrowd or just have 2 dots */}
                             <div className="img-btn-container">
                                 {images && images.map((image, index) => (
                                     <div key={index} 

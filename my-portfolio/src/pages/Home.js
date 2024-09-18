@@ -4,6 +4,7 @@ import { CustomBtn } from "../components/CustomBtn";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "../styles/Home.css";
 import profileImg from "../assets/images/8.webp";
+import smallProfileImg from "../assets/images/scaled_8.webp";
 import { MultiCarousel } from "../components/MultiCarousel.js";
 import BorderBox from "../components/BorderBox.js";
 import KnowledgeItems from "../components/KnowledgeItems.js";
@@ -153,6 +154,10 @@ export const Home = () =>{
         navigate("/resumes");
     }
 
+    const handleProfileLoad = (imgEl) => {
+        imgEl.classList.add('loaded');
+    }
+
     return(
         <div>
 
@@ -182,7 +187,11 @@ export const Home = () =>{
                     
                     {/* Profile image div */}
                     <div className="profile-div">
-                        <img src={profileImg} loading="lazy" className="profile-img" alt="Jordan Cooligan Pang Headshot"></img>
+                        <div className="profile-img">
+                            <div className="blured-img" style={{backgroundImage: `url(${smallProfileImg})`}}>
+                                <img src={profileImg} loading="lazy" onLoad={(e) => handleProfileLoad(e.target.parentElement)} className="profile-img" alt="Jordan Cooligan Pang Headshot"></img>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Description and links div */}

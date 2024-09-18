@@ -28,6 +28,7 @@
 .gallery .img:hover {
     transform: translateY(-3px) scale(1.1);
     cursor: pointer;
+    z-index: 1;
 }
 
 .gallery .tall {
@@ -112,13 +113,14 @@
     backdrop-filter: blur( 2px );
     -webkit-backdrop-filter: blur( 2px );
     flex: 1;
+    transition: background 200ms ease-in-out;
 }
 
 .img-btn-cur{
     background: white;
 }
 
-.img-btn-item:hover {
+.img-btn-item:not(.img-btn-cur):hover {
     border: solid 1px white;
     background: rgba( 255, 255, 255, 0.25);
 }

@@ -59,6 +59,11 @@ body {
     object-fit: cover;
     object-position: 0% 15%;
     opacity: 100%;
+    overflow: hidden;
+}
+
+.profile-img .blured-img {
+    background-position: 50% 10%;
 }
 
 .thick{
