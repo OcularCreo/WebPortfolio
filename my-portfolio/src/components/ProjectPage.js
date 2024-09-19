@@ -1,15 +1,17 @@
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate, Navigate } from "react-router-dom";
 import "../styles/ProjectPage.css";
 import "../styles/Loading.css";
 import { fetchOneProject } from "../services/apiServices";
 import Gallery from "./Gallery";
 import React, { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
+import { NotFound } from "../pages/NotFound";
 
 export const ProjectPage = (props) =>{
     
     const params = useParams();         //used to get the project id in url
     const location = useLocation();     //used to get the current page location
+    const [error, setError] = useState(false);   //used to show 404 page if the user tries to access a non-existing project
 
     const [project, setProject] = useState(null);           //used to store the data of the page's project
     const [markdownData, setMarkdownData] = useState("");   //used for converting the markdown data to html
@@ -31,19 +33,24 @@ export const ProjectPage = (props) =>{
         //getting the page's project data
         const getProjectData = async () => {
 
-            //get the id from the page url to identify which project to fetch
-            const pageSegments = location.pathname.split('/'); 
-            const section = '/' + pageSegments[1];
+            try {
+                //get the id from the page url to identify which project to fetch
+                const pageSegments = location.pathname.split('/'); 
+                const section = '/' + pageSegments[1];
 
-            const data = await fetchOneProject(section, params.id, { signal }); //fetch the proj data based on the project section and project id (from url)
-            setProject(data);                                       //store the data that was fetched
+                const data = await fetchOneProject(section, params.id, { signal }); //fetch the proj data based on the project section and project id (from url)
+                setProject(data);                                       //store the data that was fetched
 
-            //check that data has been fetched and if the data has a markdown path
-            if(data && data.markdownPath) {
-                const response = await fetch(data.markdownPath, { signal });    //fetch the markdown file 
-                const markdownText = await response.text();         //convert the data to text
-                setMarkdownData(markdownText);                      //save the markdown data
+                //check that data has been fetched and if the data has a markdown path
+                if(data && data.markdownPath) {
+                    const response = await fetch(data.markdownPath, { signal });    //fetch the markdown file 
+                    const markdownText = await response.text();         //convert the data to text
+                    setMarkdownData(markdownText);                      //save the markdown data
+                }
+            } catch (error) {
+                setError(true); //send user to 404 page if data could not be found
             }
+        
         }
 
         getProjectData();   //call the function to get the project data
@@ -77,6 +84,11 @@ export const ProjectPage = (props) =>{
         return () => window.removeEventListener('resize', handleSkelTxtNum);    //removing event listener when dismounting
 
     }, []);
+
+    //render the not found page if an error occurs (basically when a non-exisiting project has been attempted to be accessed)
+    if(error) {
+        return <NotFound />
+    }
 
     return (
         <div className="background">

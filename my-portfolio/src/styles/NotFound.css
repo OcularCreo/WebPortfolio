@@ -1,0 +1,103 @@
+.nf-background {
+    background-image: url(../assets/images/notFoundBG.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content-area {
+    width: 100vw; 
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.glass-container {
+    width: 40rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+    border: 1px solid white;
+    border-radius: 1rems;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    
+    height: 44rem;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+#nf-title {
+    font-weight: 900;
+    font-size: 8rem;
+}
+
+#home-btn {
+    background: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: white; 
+    border-radius: 20rem;
+    border: 1.5px solid white;
+    text-transform: uppercase;
+    transition: background-color 250ms ease-in-out, color 250ms ease-out;
+    margin-top: auto;
+
+    padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+#home-btn:hover {
+    background-color: white; 
+    color: black;
+}
+
+.messages-container {
+    width: 100%;
+}
+
+#standard-message, .quote {
+    font-weight: 600;
+}
+
+.quote {
+    font-size: 1.5rem;
+}
+
+#standard-message {
+    font-size: 3rem;
+}
+
+.author {
+    margin-bottom: 0;
+}
+
+ /* Extra small devices (phones, 600px and down) */     
+ @media only screen and (max-width: 600px) {
+    
+ }
+ 
+ @media only screen and (min-width: 601px) {
+    .content-area {
+        padding-top: 6rem;
+    }
+ }
+
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+
+ }
+ 
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+    
+ }
+ 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+    .content-area {
+        padding-top: 7.5rem;
+        min-height: 900px;
+    }
+ } 

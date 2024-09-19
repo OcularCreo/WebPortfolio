@@ -41,6 +41,7 @@ export async function fetchOneProject(section, projId, { signal } = {}){
         .catch(error =>{
             if(error.name !== "AbortError"){
                 console.error('Fetch operation error: ', error);
+                throw error;
             }
         })
 }
