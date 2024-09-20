@@ -12,6 +12,26 @@ export const NotFound = () => {
 
     const [message, setMessage] = useState();
 
+    //function returns a special message which includes the current date
+    const getCurrentDate = () => {
+        const today = new Date(); 
+
+        const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        const ordinals = ["th", "st", "nd", "rd"];
+
+        const month = months[today.getMonth()]; 
+        const date = today.getDate();
+
+        const suffix = ordinals[(date % 10 > 3 || Math.floor(date % 100 === 1)) ? 0 : date % 10];
+
+        //return special message if it is Christmas
+        if(date === 25 && month == "December") {
+            return "Merry Christmas and Happy Holidays!";
+        }
+
+        return <>It's {`${month} ${date}${suffix}`}! <em>WWHACK</em></>;
+    }
+
     const notFoundMessages = [
         {
             quote: "You can't dissapoint a web page if you never found it.", 
@@ -83,6 +103,16 @@ export const NotFound = () => {
                 {quote: "This page is made up!", author: "Annie Edison"}, 
                 {quote: <><em>Knocks over can</em> - IT'S RIOT TIME, YEAH!!!</>, author: "Neil"}
             ]
+        }, 
+        {
+            quotes: [
+                {quote: "Please it's Christmas!", author: "Extra"}, 
+                {quote: getCurrentDate(), author: "Shirley Bennett"}
+            ]
+        }, 
+        {
+            quote: "This is wrinkling my brain!", 
+            author: "Troy Barnes"
         }
     ]
 
