@@ -14,7 +14,6 @@
 }
 
 .glass-container {
-    width: 40rem;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(6px);
     border: 1px solid white;
@@ -23,15 +22,10 @@
     align-items: center;
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
-    
-    height: 44rem;
-    padding: 4rem;
-    border-radius: 1rem;
 }
 
 #nf-title {
     font-weight: 900;
-    font-size: 8rem;
 }
 
 #home-btn {
@@ -44,8 +38,6 @@
     text-transform: uppercase;
     transition: background-color 250ms ease-in-out, color 250ms ease-out;
     margin-top: auto;
-
-    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 #home-btn:hover {
@@ -61,14 +53,6 @@
     font-weight: 600;
 }
 
-.quote {
-    font-size: 1.5rem;
-}
-
-#standard-message {
-    font-size: 3rem;
-}
-
 .author {
     margin-bottom: 0;
 }
@@ -76,11 +60,67 @@
  /* Extra small devices (phones, 600px and down) */     
  @media only screen and (max-width: 600px) {
     
+    .content-area {
+        padding-top: 5rem;
+        min-height: 700px;
+    }
+
+    .glass-container {
+        width: 20rem;
+        height: 30rem;
+        padding: 2rem;
+        border-radius: 0.75rem;
+    }
+
+    #nf-title {
+        font-size: 3rem;
+    }
+
+    #standard-message {
+        font-size: 1.5rem;
+    }
+
+    .quote, .author {
+        font-size: 1rem;
+    }
+
+    #home-btn {
+        font-size: 1rem;
+        border-radius: 5rem;
+        padding: 0.25rem 1rem 0.25rem 1rem;
+    }
+
  }
  
  @media only screen and (min-width: 601px) {
     .content-area {
         padding-top: 6rem;
+        min-height: 700px;
+    }
+
+    .glass-container {
+        width: 30rem;
+        height: 35rem;
+        padding: 3rem;
+        border-radius: 1rem;
+    }
+
+    #home-btn {
+        font-size: 1.5rem;
+        border-radius: 20rem;
+        padding: 0.5rem 2rem 0.5rem 2rem;
+    }
+
+    #nf-title {
+        font-size: 6rem;
+    }
+
+    #standard-message {
+        font-size: 2rem;
+    }
+
+    .quote {
+        font-size: 1rem;
     }
  }
 
@@ -99,5 +139,24 @@
     .content-area {
         padding-top: 7.5rem;
         min-height: 900px;
+    }
+
+    .glass-container {
+        width: 40rem;
+        height: 44rem;
+        padding: 4rem;
+        border-radius: 1rem;
+    }
+
+    #nf-title {
+        font-size: 8rem;
+    }
+
+    #standard-message {
+        font-size: 3rem;
+    }
+
+    .quote {
+        font-size: 1.5rem;
     }
  } 

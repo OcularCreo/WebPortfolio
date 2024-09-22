@@ -25,7 +25,7 @@ export const NotFound = () => {
         const suffix = ordinals[(date % 10 > 3 || Math.floor(date % 100 === 1)) ? 0 : date % 10];
 
         //return special message if it is Christmas
-        if(date === 25 && month == "December") {
+        if(date === 25 && month === "December") {
             return "Merry Christmas and Happy Holidays!";
         }
 
