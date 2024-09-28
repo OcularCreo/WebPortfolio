@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ImgZoomer } from "./ImgZoomer";
 import "../styles/Gallery.css";
 
 const Gallery = ({imagePath, images}) => {
@@ -178,7 +179,14 @@ const Gallery = ({imagePath, images}) => {
 
                     {/* div and image are used to preview the images in their full ratio */}
                     <div className="preview-content">
-                        <img src={`${imagePath}${images[currIdx].src}`} alt={images[currIdx].imgTitle} className="preview-img" loading="lazy"/>
+                        <ImgZoomer imgEl={
+                            <img
+                                draggable={false} 
+                                src={`${imagePath}${images[currIdx].src}`} 
+                                alt={images[currIdx].imgTitle} 
+                                className="preview-img" loading="lazy"/>
+                            }
+                        />
                     </div>
                 </div>
             )}

@@ -1,0 +1,4 @@
+.scaler-transformer {
+    transition: transform 250ms ease-in-out;
+    transform-origin: top left;
+}
