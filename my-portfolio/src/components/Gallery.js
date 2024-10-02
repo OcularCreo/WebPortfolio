@@ -178,15 +178,15 @@ const Gallery = ({imagePath, images}) => {
                     </div>
 
                     {/* div and image are used to preview the images in their full ratio */}
-                    <div className="preview-content">
-                        <ImgZoomer imgEl={
-                            <img
+                    {/* 
+                        <img
                                 draggable={false} 
                                 src={`${imagePath}${images[currIdx].src}`} 
                                 alt={images[currIdx].imgTitle} 
                                 className="preview-img" loading="lazy"/>
-                            }
-                        />
+                    */}
+                    <div className="preview-content">
+                        <ImgZoomer src={`${imagePath}${images[currIdx].src}`} alt={images[currIdx].imgTitle} />
                     </div>
                 </div>
             )}

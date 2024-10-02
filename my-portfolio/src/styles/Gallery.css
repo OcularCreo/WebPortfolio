@@ -62,11 +62,11 @@
     overflow: hidden;
 }
 
-.preview-img {
+.preview-content .preview-img, 
+.preview-content img {
     max-width: 75vw; 
     max-height: 75vh;
     object-fit: contain;
-    transition: all 250ms;
 }
 
 .img-desc-container,
