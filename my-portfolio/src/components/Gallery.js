@@ -11,6 +11,8 @@ const Gallery = ({imagePath, images}) => {
     const [gridColStyle, setGridColStyle] = useState("");       //used for setting the number of for the gallery grid
     const [touchStart, setTouchStart] = useState(null);         //used for swipping through image previews
 
+    const [scale, setScale] = useState(1);
+
     useEffect(() => {
 
         setNumImages (images ? images.length : 0); //track the number of images given
@@ -30,8 +32,6 @@ const Gallery = ({imagePath, images}) => {
         //check which key has been pressed from the passed event
         const handleKeyDown = (event) => {
 
-            console.log("key pressed");
-
             switch(event.key) {
                 case "Escape": 
                     closeImgPreview();  //close preview if escape key was pressed
@@ -48,13 +48,35 @@ const Gallery = ({imagePath, images}) => {
 
         }
 
-        if(isPreviewOpen) {
-            document.addEventListener("keydown", handleKeyDown);                    //add an event listener to the document when the preview image ui is open
-        } else {
-            document.removeEventListener("keydown", handleKeyDown);
+        //function used to prevent going to a previous page if the browser back button is pressed while previewing an image
+        const handlePopState = (e) => {
+            //make sure the preview is open
+            if(isPreviewOpen) {
+                closeImgPreview();  //close the image if the preview is open
+                e.preventDefault(); //prevent navigation to the previous page
+            }
         }
 
-        return () => document.removeEventListener("keydown", handleKeyDown);    //remove it when dismounted.
+        //check if the preview is open
+        if(isPreviewOpen) {
+            //add an event listener to the document when the preview image ui is open
+            document.addEventListener("keydown", handleKeyDown);                    
+
+            //add event listeners to the window. Used for the navigation prevention while previwing an image
+            window.history.pushState(null, "", window.location.href);
+            window.addEventListener("popstate", handlePopState);
+        } else {
+
+            //if the preview is not open (has been close) then remove all the previously added event listeners
+            document.removeEventListener("keydown", handleKeyDown);
+            window.removeEventListener("popstate", handlePopState);
+        }
+
+        //remove the event listeners when dismounting.
+        return () => {
+            window.removeEventListener("popstate", handlePopState);
+            document.removeEventListener("keydown", handleKeyDown);
+        }
 
     }, [isPreviewOpen]);
 
@@ -99,7 +121,7 @@ const Gallery = ({imagePath, images}) => {
     //determines if the user has swiped left or right and changes image based on distance moved
     const handleTouchMove = (e) => {
 
-        if(!touchStart) return; //if there is no touch start then do not run the code
+        if(!touchStart || scale !== 1) return; //if there is no touch start then do not run the code
 
         const touchEndX = e.touches[0].clientX;     //get the ending position of the touch
         const distance = touchStart - touchEndX;    //calculate the distance from start to finishs
@@ -178,15 +200,8 @@ const Gallery = ({imagePath, images}) => {
                     </div>
 
                     {/* div and image are used to preview the images in their full ratio */}
-                    {/* 
-                        <img
-                                draggable={false} 
-                                src={`${imagePath}${images[currIdx].src}`} 
-                                alt={images[currIdx].imgTitle} 
-                                className="preview-img" loading="lazy"/>
-                    */}
                     <div className="preview-content">
-                        <ImgZoomer src={`${imagePath}${images[currIdx].src}`} alt={images[currIdx].imgTitle} />
+                        <ImgZoomer src={`${imagePath}${images[currIdx].src}`} alt={images[currIdx].imgTitle} setParentScale={setScale}/>
                     </div>
                 </div>
             )}
