@@ -54,11 +54,10 @@
 
 .preview-content {
     position: relative; 
-    max-width: 85%;
+    width: 100%;
     max-height: 80%; 
     display: flex;
     align-items: center;
-    justify-content: center;
     overflow: hidden;
 }
 
@@ -144,6 +143,17 @@
 
 .no-scroll {
     overflow: hidden !important;
+}
+
+.preview-carousel-container {
+    display: flex;
+}
+
+.carousel-slide {
+    width: 100vw;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 /* BREAK POINTS BORROWED FROM W3SCHOOLS (THANK YOU KIND SOULS OF THAT WEBSITE) */

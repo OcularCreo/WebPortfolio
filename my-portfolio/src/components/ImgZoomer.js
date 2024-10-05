@@ -1,13 +1,14 @@
 import { useState, useRef, useEffect } from "react"
 import "../styles/ImgZoomer.css";
 
-export const ImgZoomer = ({src, alt, setParentScale}) => {
+export const ImgZoomer = ({src, miniSrc, alt, setParentScale, setParentDrag}) => {
 
     const [scale, setScale] = useState(1);                              //sets the scale of the img
     const [position, setPosition] = useState({x: 0, y: 0});             //sets the position of the img while panning
     const [isDragging, setIsDragging] = useState(false);                //helps identify if the image is being dragged
     const [transformOrig, setTransformOrig] = useState({x: 0, y: 0});   //sets the transformation origin of the image
     const [lastMousePos, setLastMousePos] = useState({x: 0, y: 0});     //keeps track of the last position of the mouse
+    const [isLoaded, setIsLoaded] = useState(false);                    //used to keep track of this image has been loaded
 
     const containerRef = useRef(null);  //reference to the parent element container of the image element
     const imgRef = useRef(null);        //reference to the image element
@@ -118,6 +119,10 @@ export const ImgZoomer = ({src, alt, setParentScale}) => {
     //funciton used for when dragging is over
     const disableDrag = () => {
         setIsDragging(false);
+
+        if(typeof setParentDrag === "function"){
+            setParentDrag(false);
+        }
     }
 
     //helper function for initializing dragging, requires a position {x, y}
@@ -127,6 +132,10 @@ export const ImgZoomer = ({src, alt, setParentScale}) => {
         if(scale > 1) {
             setIsDragging(true);                            //if so set drag to true
             setLastMousePos({x: pos.x, y: pos.y});          //track the last mouse position
+
+            if(typeof setParentDrag === "function"){
+                setParentDrag(true);
+            }
         }
     }
 
@@ -151,6 +160,10 @@ export const ImgZoomer = ({src, alt, setParentScale}) => {
         }
     }
 
+    const handleImgLoaded = () => {
+        setIsLoaded(true);
+    }
+
     return (
         
         <div 
@@ -163,19 +176,28 @@ export const ImgZoomer = ({src, alt, setParentScale}) => {
           onMouseLeave={disableDrag}
           onWheel={handleScroll}
         >
-            <img
+            {/*Loading parent element - used for loading fxs*/}
+            <div 
+                className={`blurred-img ${isLoaded ? "loaded" : ""}`}
+                style={miniSrc ? {backgroundImage: `url(${miniSrc})`} :{}}
+            >
+                {/*Image element*/}
+                <img
                 className="zoom-img"
                 draggable={false}
                 src={src}
                 alt={alt}
                 ref={imgRef}
+                onLoad={handleImgLoaded}
+                loading="lazy"
                 style={{
                     transform: `scale(${scale}) translate(${position.x}px, ${position.y}px)`, 
                     transformOrigin: `${transformOrig.x}px ${transformOrig.y}px`, 
-                    transition:  isDragging? "none" : "transform 250ms ease-in-out", 
+                    transition: isDragging? "none" : `transform 250ms ease-in-out${isLoaded ? "" : ", opacity 0.25s ease-in-out"}`, 
                     cursor: scale > 1 ? (isDragging ? "grabbing" : "grab") : ("zoom-in")
                 }}
-            />
+                />
+            </div>
         </div>
     )
 }
