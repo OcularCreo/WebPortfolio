@@ -5,11 +5,12 @@
         "date": "July 2024", 
         "mediaPath": "/data/web/port/",
         "thumbSrc": "thumb.webp",
-        "hasSmallImages": false,
+        "hasSmallImages": true,
         "images": [
-            {"src": "desktop_lay.webp",  "tall": false,  "wide": false, "imgTitle":"Desktop layout"},
-            {"src": "mobile_lay.webp",   "tall": true,  "wide": false, "imgTitle":"Mobile layout"},
-            {"src": "tablet_lay.webp",   "tall": false,  "wide": false, "imgTitle":"Tablet layout"}
+            {"src": "DesktopLayouts.webp",  "tall": false,  "wide": true, "imgTitle":"Old and Revised Desktop Layout"},
+            {"src": "MobileLayouts.webp",   "tall": true,  "wide": false, "imgTitle":"Old and Revised Mobile Layout"},
+            {"src": "TabletLayouts.webp",   "tall": false,  "wide": false, "imgTitle":"Old and Revised Tablet Layout"}, 
+            {"src": "FooterConcepts.webp",   "tall": false,  "wide": false, "imgTitle":"Footer Concepts"}
         ], 
         "markdownPath": "/data/web/port/port_desc.md"
     },
