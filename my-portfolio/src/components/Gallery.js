@@ -10,6 +10,7 @@ const Gallery = ({imagePath, images}) => {
     const [numImages, setNumImages] = useState(0);              //keeps track of the number of images that were given to the component
     const [gridColStyle, setGridColStyle] = useState("");       //used for setting the number of for the gallery grid
     const [touchStart, setTouchStart] = useState(null);         //used for swipping through image previews
+    const [touchDistance, setTouchDistance] = useState(0);
 
     const [scale, setScale] = useState(1);                      //used to tell current image scale
     const [shouldAnim, setShouldAnim] = useState(true);
@@ -36,8 +37,15 @@ const Gallery = ({imagePath, images}) => {
         if (slideIdx === 0) {
             //wait for the transition animation to end. Then disable animations and set slide idx to the real last image (for infinite illusion)
             setTimeout(() => {
-                setSlideIdx(numImages);
-                setShouldAnim(false);
+                
+                console.log("Wrap Arround: " + slideIdx);
+                console.log("Wrap Arround - Set to: " + numImages);
+
+                if(slideIdx === 0) {
+                    setSlideIdx(numImages);
+                    setShouldAnim(false);
+                }
+                
             }, 200);
         }
 
@@ -45,8 +53,10 @@ const Gallery = ({imagePath, images}) => {
         if (slideIdx === numImages + 1) {
             // Jump to the real first image without animation
             setTimeout(() => {
-                setSlideIdx(1);
-                setShouldAnim(false);
+                if(slideIdx === numImages + 1) {
+                    setSlideIdx(1);
+                    setShouldAnim(false);
+                }
             }, 200);
         }
     }, [currIdx, numImages]);
@@ -178,25 +188,36 @@ const Gallery = ({imagePath, images}) => {
     const handleTouchStart = (e) => {
         const touchStartX = e.touches[0].clientX; 
         setTouchStart(touchStartX);
+        setShouldAnim(false);
     }
 
     //determines if the user has swiped left or right and changes image based on distance moved
     const handleTouchMove = (e) => {
+        
+        if(!touchStart) return;
+        
+        const currentTouchX = e.touches[0].clientX; 
+        const distance = currentTouchX - touchStart;
 
-        if(!touchStart || scale !== 1) return; //if there is no touch start then do not run the code
+        setTouchDistance(distance);
+    }
 
-        const touchEndX = e.touches[0].clientX;     //get the ending position of the touch
-        const distance = touchStart - touchEndX;    //calculate the distance from start to finishs
+    const handleTouchEnd = (e) => {
+        if(!touchStart) return; 
 
-        console.log(distance);
+        const threshold = 25; 
+        const swipeSuccess = Math.abs(touchDistance) > threshold; 
 
-        if(distance > 8) {
-            nextImg();                              //move to next image if distance is in a positive direct and significant enough
-        } else if(distance < -8){
-            prevImg();                              //move to prev img if the distance is neg direction and significant enough
+        if(swipeSuccess) {
+            if(touchDistance < 0) {
+                nextImg();
+            } else {
+                prevImg();
+            }
         }
 
-        setTouchStart(null);                        //set the touchStart back to null regardless of direction
+        setTouchDistance(0);
+        setTouchStart(null);
     }
 
     //function uses adds loaded class to parent divs of the image to remove blur and transition to full sizes image
@@ -227,7 +248,7 @@ const Gallery = ({imagePath, images}) => {
             
             {/* if isPreviewOpen is true then review the following html */}
             {isPreviewOpen && (
-                <div className="preview-overlay" onMouseDown={handleOverlayClick} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove}>
+                <div className="preview-overlay" onMouseDown={handleOverlayClick} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd}>
                     
                     {/* CLOSE BUTTON - allows users to close the preview window */}
                     <button className="close-btn" onClick={closeImgPreview}><b><FontAwesomeIcon icon="fa-solid fa-xmark" /></b></button>
@@ -263,7 +284,7 @@ const Gallery = ({imagePath, images}) => {
 
                     {/* div and image are used to preview the images in their full ratio */}
                     <div className="preview-content">
-                        <div className="preview-carousel-container" style={{transform: `translateX(-${(slideIdx) * 100}vw)`, transition: shouldAnim ? "200ms ease-in-out" : "none"}}>
+                        <div className="preview-carousel-container" style={{transform: `translateX(calc(-${(slideIdx) * 100}vw + ${touchDistance}px))`, transition: shouldAnim ? "200ms ease-in-out" : "none"}}>
                             
                             {/* Render the last duplicate image */}
                             <div className="carousel-slide">
