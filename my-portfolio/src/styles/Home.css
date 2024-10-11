@@ -1,8 +1,8 @@
-h1, h2, p, .about-email-link{
+h1, h2, h3, p, .about-email-link{
     color: white !important;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: "Montserrat", sans-serif;
 }
 

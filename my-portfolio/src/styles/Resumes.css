@@ -167,7 +167,15 @@
 
     #resumes-title {
         font-size: 2.25rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .resume-title-container {
         margin-bottom: 4rem;
+    }
+
+    .resume-title-container p {
+        font-size: 0.7rem;
     }
 
     .preview-controls {
@@ -229,6 +237,10 @@
 
     #resumes-title {
         font-size: 4rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .resume-title-container {
         margin-bottom: 3rem;
     }
 
@@ -287,6 +299,10 @@
 
     #resumes-title {
         font-size: 5.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .resume-title-container {
         margin-bottom: 6rem;
     }
 

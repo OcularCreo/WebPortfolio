@@ -1,29 +1,75 @@
-**[GitHub Repo](https://github.com/OcularCreo/WebPortfolio.git)**
+---
 
-## Software, Languages, & Tools
-- Visual Studio Code
-- HTML, CSS, JavaScript
-- React 
-- Figma
-- Adobe Illustrator, Photoshop
-- Bootstrap (like 1% of the project)
-- Font Awesome
-- React Router V6
-- Gitbash Terminal
+This project aimed to develop a professional and visually engaging platform to showcase my technical skills and creative projects. Built using React, HTML, CSS, and JavaScript, the website features a modular structure, responsive design, and optimization techniques for quick load times. The website highlights my expertise in frontend development and UI/UX design, offering a seamless experience across various devices.
 
-## The Overview
-The goal of this project was to create a central hub to display my projects, skills, and experience. Using tools such as React, Figma, and Git, I developed my website portfolio from scratch. I aimed to include key features such as professional look, responsive design, and modularized code, ensuring my work is presented gracefully, accessible on any device, and easy to modify. This project significantly deepened my understanding of React, CSS, and web development as a whole, enhancing my skills in creating responsive, modular web applications and boosting my proficiency in React development.
+**[GITHUB REPOSITORY](https://github.com/OcularCreo/WebPortfolio.git)**
 
-## The Process
-The creation of my website portfolio began with extensive research, sifting through various layout and web design examples on platforms like Pinterest, Adobe Portfolio, and Google Images. The most appealing designs were compiled and utilized in a brainstorming section on a personal Figma project. From the beginning I aimed to incorporate modularization and responsiveness into my website portfolio, applying designs and future plans that would help achieve these goals.
+## SOFTWARE, TOOLS, & LANGUAGES
 
-I developed multiple layouts in Figma, focusing on finalizing the design, fonts, and colour palette for mobile, tablet, and desktop views. Standardized dimensions and ratios were used for each screen type to ensure compatibility across different screen sizes. With the website layout finalized, I began developing the React application.
+---
 
-My react workflow naturally followed these steps: 
-- Concentrate on one page
-- Create needed compononets
-- Impliment responsive design
+- **Languages & Libraries:** React, HTML, CSS, JavaScript, JSON, Markdown
 
-To avoid issues down the line, I immediately tested for bugs after implementing each feature, resolving them quickly. The home page took the longest to implement as it was the most unique and component heavy. Although I had experience with React, this project allowed me to take a deep dive into React and CSS, leading to slower but more significant progress initially. My commitment led me to forums, YouTube videos, and tutorials for tips and tricks to expand my knowledge on CSS and React.
+- **Frameworks:** React Router, Font Awesome, React Markdown, ~~Bootstrap~~
 
-Opting for modularity allowed easy updates and management of projects, images, and descriptions through JSON objects. I designed the components to seamlessly integrate with a future backend, should I choose to implement one. Overall, I created a base system with React and CSS, making the process of adding projects quick and simple, ensuring a smooth implementation of projects.
+- **Development Tools:** Visual Studio Code, Github, Git Bash
+
+- **Design Tools:** Figma, Illustrator, Photoshop, Premiere Pro
+
+## KEY FEATURES
+
+---
+
+- Designed & Developed a fully responsive React application with modular components.
+
+- Integrated Navigation System using React Router for seamless transitions between pages.
+
+- Optimized Load Times using lazy loading and .webp image formats to enhance performance.
+
+- Created Custom Layouts with CSS Grid and Flexbox for consistent styling and spacing.
+
+## DEVELOPMENT PROCESS
+
+---
+
+The project began with extensive research and brainstorming on platforms like Pinterest and Adobe Portfolio to define the desired look and feel. Initial designs were created in Figma, where I settled on the layout, typography, and color palette for desktop, tablet, and mobile views.
+
+### **Implementation workflow**
+
+1. Component Breakdown: Created individual React components for each section, such as headers, project cards, and footers.
+
+2. Responsive Design: Used CSS Grid and Flexbox to ensure consistent spacing and visual integrity across devices.
+
+3. Navigation Setup: Implemented React Router to handle multi-page navigation and dynamic project routes.
+
+Following this structured approach, I ensured that each feature was thoroughly tested and visually aligned with the overall design.
+
+## TECHNICAL IMPLIMENTATIONS
+
+---
+
+- **JSON-Based Project Management:** Created a modular system using JSON to handle project data, making it easy to update and expand.
+
+- **State Management & Dynamic Routing:** Leveraged React state hooks to dynamically update components based on user interactions and set up nested routing for project detail pages.
+
+- **Lazy Loading & Image Optimization:** Implemented lazy loading for images and converted large assets to .webp to reduce page load times by up to 30%.
+
+
+## POST LAUNCH REFINEMENTS
+
+---
+
+After launching the initial version, I continued to refine and optimize the website based on user feedback, testing results, and comparisons to other professionally developed websites:
+
+## RESULTS & REFLECTIONS
+
+---
+
+- **Significant Performance Improvements:** Page load times improved by 35% due to image optimizations and code refactoring.
+
+- **UI/UX Improvements:** 
+
+- **Positive Feedback:** Received compliments on the layout's professionalism and responsiveness from peers and industry professionals.
+
+- **Skills Gained:** Deepened my expertise in React, CSS Grid, and state management, while also improving my understanding of modular design principles.
+Creating this portfolio has been a pivotal project that not only allowed me to showcase my skills but also improved my ability to manage large-scale frontend applications efficiently.

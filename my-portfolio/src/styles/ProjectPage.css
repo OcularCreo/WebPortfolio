@@ -38,18 +38,31 @@
 }
 
 .proj-about-title{
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-top: 4rem;
 }
 
 .md-desc p, 
 .md-desc li, 
-.md-desc a {
+.md-desc a, 
+.md-desc hr {
     color: white;
 }
 
+.md-desc hr {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 .md-desc h2 {
-    font-size: 3rem;
-    margin-top: 2rem;
+    font-size: 2.25rem;
+    margin-top: 3.25rem;
+    font-weight: 400;
+}
+
+.md-desc h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .video {
@@ -159,7 +172,11 @@
 
     .md-desc h2 {
         font-size: 2rem;
-        margin-top: 1.25rem;
+        margin-top: 2.5rem;
+    }
+
+    .md-desc hr {
+        margin-bottom: 1rem;
     }
 
     .proj-title, .skeleton-proj-title {
@@ -177,6 +194,7 @@
 
     .proj-about-title {
         font-size: clamp(1rem, 10vw, 2.75rem);
+        margin-top: 2rem;
     }
 
     .skel-about-title {
@@ -258,13 +276,13 @@
 @media only screen and (min-width: 1200px) {
 
     .content-container {
-        width: clamp(1000px, 70%, 3000px);
+        width: clamp(1000px, 60%, 1200px);
     }
 
     .md-desc p, 
     .md-desc li, 
     .md-desc a {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
     }
 
     .pdf-viewer {

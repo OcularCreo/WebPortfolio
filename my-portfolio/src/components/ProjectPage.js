@@ -5,6 +5,7 @@ import { fetchOneProject } from "../services/apiServices";
 import Gallery from "./Gallery";
 import React, { useState, useEffect, useRef } from "react";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { NotFound } from "../pages/NotFound";
 
 export const ProjectPage = (props) =>{
@@ -156,7 +157,7 @@ export const ProjectPage = (props) =>{
                     <div className="skeleton skel-about-title"></div>}
 
                     {/* Markdown/description element - conditionally renders skeleton elements if waiting for data */}
-                    {markdownData ? <ReactMarkdown className={"md-desc"}>{markdownData}</ReactMarkdown>: 
+                    {markdownData ? <ReactMarkdown className={"md-desc"} remarkPlugins={[remarkGfm]}>{markdownData}</ReactMarkdown>: 
 
                         <div className="skeleton-md-container">
                             {Array.apply(null, {length: 3}).map((_, i) => (
