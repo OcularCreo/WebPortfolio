@@ -12,21 +12,23 @@ This project aimed to develop a professional and visually engaging platform to s
 
 - **Frameworks:** React Router, Font Awesome, React Markdown, ~~Bootstrap~~
 
-- **Development Tools:** Visual Studio Code, Github, Git Bash
+- **Development Tools:** Visual Studio Code, GitHub, Git Bash
 
 - **Design Tools:** Figma, Illustrator, Photoshop, Premiere Pro
 
-## KEY FEATURES
+## KEY RESULTS
 
 ---
 
-- Designed & Developed a fully responsive React application with modular components.
+- Designed & developed a fully responsive React application with over 15 modular components.
 
-- Integrated Navigation System using React Router for seamless transitions between pages.
+- Integrated navigation system using React Router for seamless transitions between pages.
 
-- Optimized Load Times using lazy loading and .webp image formats to enhance performance.
+- Optimized load times using lazy loading and .webp image formats improving overall performace by 30%.
 
-- Created Custom Layouts with CSS Grid and Flexbox for consistent styling and spacing.
+- Designed visually appealing and professional responsive layouts on Figma for 3 device categories: Mobile, Tablet, and Desktop.
+
+- Implimented custom layouts with CSS Grid and Flexbox for consistent styling and spacing across all devices and browsers.
 
 ## DEVELOPMENT PROCESS
 
@@ -34,7 +36,7 @@ This project aimed to develop a professional and visually engaging platform to s
 
 The project began with extensive research and brainstorming on platforms like Pinterest and Adobe Portfolio to define the desired look and feel. Initial designs were created in Figma, where I settled on the layout, typography, and color palette for desktop, tablet, and mobile views.
 
-### **Implementation workflow**
+### Implementation workflow
 
 1. Component Breakdown: Created individual React components for each section, such as headers, project cards, and footers.
 
@@ -42,9 +44,10 @@ The project began with extensive research and brainstorming on platforms like Pi
 
 3. Navigation Setup: Implemented React Router to handle multi-page navigation and dynamic project routes.
 
+\
 Following this structured approach, I ensured that each feature was thoroughly tested and visually aligned with the overall design.
 
-## TECHNICAL IMPLIMENTATIONS
+## TECHNICAL IMPLEMENTATIONS
 
 ---
 
@@ -59,17 +62,28 @@ Following this structured approach, I ensured that each feature was thoroughly t
 
 ---
 
-After launching the initial version, I continued to refine and optimize the website based on user feedback, testing results, and comparisons to other professionally developed websites:
+After the initial launch, I continuously refined and optimized the website based on user feedback, testing outcomes, and comparisons with professional standards in web development. These post-launch adjustments focused on enhancing the design, user experience, and performance:
 
-## RESULTS & REFLECTIONS
+### Improved Styling & Design
+
+To elevate the designs and visuals of the website, I set aside the use of gradients and introduced Glassmorphism elements across many areas, leading to a more modern look. The website footer was also given new designs and features such as a sitemap, adding improvements to navigation. Additionally, layout adjustments were made to improve overall user experience and address issues such as broken styling for mobile landscape screens and project description readability. 
+
+
+### Advanced Project Image Previewer Enhancements
+
+The project image previewer gained significant enhancements with the addition of  several features. The new Glassmorphism designs of the image indicators helped resolve the issue of indicators spilling off the screen for certain mobile devices. Navigation between next and previous images now included animations and received many advancements through improved touch controls and the addition of keyboard support. Arrow keys or swiping now allow navigation between the previous or next image, while the escape key or previous page navigation action closes the previewer. Finally, desktop and laptop devices have been granted zoom and drag controls to allow users to inspect images in detail.
+
+
+### Enhanced User Experience & Performance
+
+While testing on slower networks, I noticed unloaded images appeared blank leaving empty areas. To improve the user experience, I implemented loading skeletons while waiting for data to be fetched, and a blurred image placeholder to seamlessly transition to once the full image had been loaded. These additions improved the perceived performance times while waiting for content to load.
+
+### Expanded Functionality with New Pages
+
+The dropdown resume button had issues with the number of resumes that could be listed while only being accessible within certain menus. To mitigate these problems, a dedicated page was created to allow users to easily find relevant resumes. Previewing the resumes has now been made possible, while still maintaining the ability to view on a separate tab or download as a PDF. Additionally, a 404 page has now been included to handle missing page errors, providing users with a randomized and playful message along with a means to navigate back to the home page.
+
+## REFLECTIONS
 
 ---
 
-- **Significant Performance Improvements:** Page load times improved by 35% due to image optimizations and code refactoring.
-
-- **UI/UX Improvements:** 
-
-- **Positive Feedback:** Received compliments on the layout's professionalism and responsiveness from peers and industry professionals.
-
-- **Skills Gained:** Deepened my expertise in React, CSS Grid, and state management, while also improving my understanding of modular design principles.
-Creating this portfolio has been a pivotal project that not only allowed me to showcase my skills but also improved my ability to manage large-scale frontend applications efficiently.
+The process of developing this website has deepened my understanding and expertise in React, CSS, and state management along with allowing me to practice and improve my implementation of modular design principles. This website has been a pivotal project that not only provided me a place to showcase my diverse set of skills, but also demonstrated my abilities to independently research, design, develop, test, and deploy a front end web application.

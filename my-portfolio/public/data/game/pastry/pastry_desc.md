@@ -1,33 +1,68 @@
-## Role: Lead Programmer & Vector Artist
+---
+**Role:** Lead Programmer & Vector Artist
 
-## Software Used 
-- Unity, C#
-- Adobe Illustrator
-- GitHub (Desktop)
+Pastry Peril is an intense cooking game developed during my second year game development course. Players take on the role of a chef competing in a cooking show, challenging contestants to quickly memorize the recipe ingredients and select the correct ones from a given set. With the ingredients missing from the instructions, contestants must follow the instructions to bake a dessert to the best of their abilities. The game’s core challenge lies in the stress-inducing timers, randomized ingredients, and difficulty scaling, creating an intense and engaging experience. This project allowed me to learn the essential basics of Unity such as creating prefabs, animating, reading inputs, and working with basic physics.
 
-## Main Contributions
-- Programming
-- Animation Creation & Implimentation
-- Asset Creation
-- Difficulty Implimentation
-- Cooking Mechanics/Interactions
-- Rating systems
+Play Pastry Peril on Itch.io | [Pastry Peril Full Release](https://bedrockbadger.itch.io/pastry-peril)
 
-## Link to Play
-[Pastry Peril Full Release](https://bedrockbadger.itch.io/pastry-peril)
-
-*If you're interesting in seeing early stages of the game checkout the alpha and beta versions below!*\
+*If you are interested in seeing early stages of the game checkout the alpha and beta builds below!\
 [BETA](https://bedrockbadger.itch.io/beta-pastry-peril) | [ALPHA](https://bedrockbadger.itch.io/alpha-pastry-peril)
 
-## The Overview
-During my second year at university, I took my first game development course. After forming teams for this project, we used spreadsheets and key prompts like "a game with an interesting mechanic where ____" to brainstorm ideas. Every idea was listed and assessed, with the best ones being expanded until we settled on a concept we liked.
+## LANGUAGES, SOFTWARE, & TOOLS
 
-We then pitched our final idea: a game where you play as a chef on a cooking show, memorizing ingredients for a recipe and then selecting them correctly from a given selection. Players then follow cooking instructions to bake their dessert. Our goal was to create an intense and stressful game. Initially, we planned to have one set of recipes, but feedback from our professor and industry guests encouraged us to focus on replayability. This led to the addition of randomization in the ingredients, varying things like the type of sugar (granulated, brown sugar, cane sugar) while maintaining the essence of the original recipes.
+---
 
-This project allowed me to learn essential Unity basics such as creating and using prefabs, animating, reading inputs, and working with basic physics. With the strongest coding experience in the group, I implemented the scoring systems, difficulties, cooking mechanics, interactions, animations, and several vector assets.
+- **Languages:** C#
 
-Our teamwork was crucial in this project. We collaborated on idea generation, story narrative, some asset creation, and most importantly, troubleshooting and debugging. The team effectively communicated and supported each other, which was vital for overcoming challenges and ensuring a cohesive final product.
+- **Game Engine:** Unity
 
-During the virtual demo day, we were thrilled to see players experience the stress and fun we intended. The intense classical music, daunting timers, and quick memorization tasks created the desired emotional response. The randomization of ingredients and varying difficulties incentivized players to replay the game and achieve higher scores. Some even attempted speed runs.
+- **Design:** Adobe Illustrator
 
-While not the pinnacle of my game development works, this project was a significant stepping stone in learning Unity and understanding the dynamics of teamwork in game development.
+- **Version Control:** GitHub (Desktop)
+
+## KEY CONTRIBUTIONS
+
+---
+
+- Designed and programmed core gameplay mechanics, including interactive cooking systems and recipe steps.
+
+- Implemented difficulty scaling and randomization systems to enhance replayability, keeping players engaged with varied ingredient combinations.
+
+- Built reusable prefabs for consistent gameplay elements and managed input systems for precise player control.
+
+- Created animations natively in Unity to improve player immersion and experience.
+
+- Developed a scoring and rating system to encourage competitive gameplay, rewarding players based on speed and accuracy.
+
+- Created vector-based assets, such as backgrounds, ingredients, cooking tools, menus, and items, using Adobe Illustrator for in-game visuals.
+
+- Collaborated with teammates to identify and resolve bugs, ensuring smooth and polished gameplay during demo day.
+
+
+## KEY FEATURES
+
+---
+
+- Difficulty Levels: Included difficulty levels to allow players to challenge themselves as they progress, with significant decrease in time constraints.
+
+- Cooking Mechanics: Developed interactive cooking systems where players follow recipe steps in sequence.
+
+- Randomization for Replayability: Introduced random ingredient variations, such as different types of sugar (granulated, brown, cane), to enhance replay value.
+
+- Scoring and Rating System: Built a scoring mechanic based on chosen ingredients, cook time, and correct ingredient usage  to encourage competitive gameplay.
+
+## DEVELOPMENT PROCESS
+
+---
+
+The development process for Pastry Peril began with idea generation exercises, using prompts like “a game with an interesting mechanic like _____” to kickstart creativity. The team recorded every idea and continued to build off the strongest concepts, leading to Pastry Peril. We then created a pitch presentation to present to the class and guests from the industry. Feedback from the presentation helped shape our game even more, highlighting the importance of replayability and encouraging randomization.
+
+Given that this was one of the team’s first Unity projects we aimed for a small scope. We followed an iterative development pattern, beginning with collaborative asset creation in Adobe Illustrator. Using my existing programming knowledge and techniques shown in the Intro to Game Development course, I developed scripts to implement the assets into Unity. I continuously tested each script, acquiring additional testing from my teammates to catch further issues.
+
+The course structured development with alpha and beta build deadlines, providing additional opportunities for external user testing. While playtesting was done virtually due to the initial rise of covid, testers revealed weaknesses in the UI and overlooked bugs. Playtest results encouraged me to revisit and refine these elements, improving the gameplay and clarity. This iterative process ensured that Pastry Peril continued to evolve, resulting in a highly polished and engaging experience in the final build.
+
+## RESULTS & REFLECTIONS
+
+---
+
+During the virtual demo day, the team was happy to hear praise on the final build’s intense and engaging gameplay. Incorporating dramatic classical music, daunting timers, and quick memorization tasks evoked the desired emotional response from our players. This project marked the near beginning of my game development journey, significantly strengthening my development and teamwork skills, while allowing me to learn about dynamic game mechanics.
