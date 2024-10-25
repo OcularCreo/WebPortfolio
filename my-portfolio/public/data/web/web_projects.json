@@ -12,7 +12,10 @@
             {"src": "TabletLayouts.webp",   "tall": false,  "wide": false, "imgTitle":"Old and Revised Tablet Layout"}, 
             {"src": "FooterConcepts.webp",   "tall": false,  "wide": false, "imgTitle":"Footer Concepts"}
         ], 
-        "markdownPath": "/data/web/port/port_desc.md"
+        "markdownPath": "/data/web/port/port_desc.md",
+        "videos": [
+            {"vidSrc": "https://www.youtube.com/embed/YGEq-EY31wU?si=6TxeMN0N21VkicP8"}
+        ]
     },
     {
         "id": "1", 
