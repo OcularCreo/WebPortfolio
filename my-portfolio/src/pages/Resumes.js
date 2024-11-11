@@ -130,7 +130,7 @@ export const Resumes = () => {
                 <div className="resume-list-container">
                     <div className="resume-title-container">
                         <h1 id="resumes-title">resumes</h1>
-                        <p>Note: Additional contact information and references are available upon person request.</p>
+                        <p>Note: Additional contact information and references are available upon personal request.</p>
                     </div>
                     <div className="resume-items-container">
                         {resumeData ? resumeData.map((resume, index) => (
