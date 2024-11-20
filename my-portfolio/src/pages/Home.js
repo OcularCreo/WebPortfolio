@@ -78,7 +78,7 @@ export const Home = () =>{
             id: "2",
             Title: "Grades", 
             icon: <FontAwesomeIcon icon="fa-solid fa-scroll" style={{color: "#ffffff",}} />, 
-            description: "3.9 GPA\n10.8 CGPA"
+            description: "3.9 GPA\n11.02 CGPA"
         }, 
     ]; 
 
