@@ -42,7 +42,7 @@
         "thumbSrc": "thumb.webp",
         "hasSmallImages": true,
         "images": [
-            {"src": "SkillsComp.jpg", "tall": true, "wide": false, "imgTitle":"Competition Submission Poster"}
+            {"src": "SkillsComp_fixed.jpg", "tall": true, "wide": false, "imgTitle":"Competition Submission Poster"}
         ],
         "markdownPath": "/data/2d/skillscomp/skillscomp_desc.md"
     }
